@@ -1,0 +1,263 @@
+---
+title: "1. Introduction to Niche Theory"
+subtitle: ""  
+author: 
+  - "Jasper Slingsby, BIO2014F"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "custom styles.css"]
+    nature:
+      slideNumberFormat: "%current% / %total%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+
+# library(RefManageR)
+# BibOptions(check.entries = FALSE,
+#            bib.style = "authoryear",
+#            cite.style = "alphabetic",
+#            style = "markdown",
+#            hyperlink = FALSE,
+#            dashed = FALSE)
+# myBib <- ReadBib("bib/2_species.bib", check = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+
+# style_duo_accent(
+#   primary_color = "#1381B0",
+#   secondary_color = "#FF961C",
+#   inverse_header_color = "#FFFFFF"
+# )
+
+style_mono_light(base_color = "#23395b")
+
+#https://mycolor.space/?hex=%2323395B&sub=1 
+#"Generic gradient" - #23395B #006287 #008E9D #00B897 #89DD81 #F9F871
+#"Matching gradient" (reverse) - #23395B #494E77 #716292 #9C77AA #C88DBF #F5A3D0
+
+
+
+library(knitr)
+library(kableExtra)
+```
+
+
+```{r xaringan-tile-view, echo=FALSE}
+# xaringanExtra::use_tile_view()
+```
+
+
+
+```{r echo = F, fig.align = 'center', out.width = '75%'}
+knitr::include_graphics("images/seeds_front.jpg")
+```
+
+---
+
+```{r echo = F, fig.align = 'center', out.width = '75%'}
+knitr::include_graphics("images/seeds_back.jpg")
+```
+
+---
+
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/seed_instructions.jpg")
+```
+
+---
+
+```{r echo = F, fig.align = 'center', out.width = '75%'}
+knitr::include_graphics("images/sabertooth.png")
+```
+
+.footnote[image: Mauricio Antón, CC BY 3.0]
+
+---
+
+layout: false
+
+.pull-left[
+
+### Early observations of the Niche
+
+```{r echo = F, fig.align = 'center', out.width = '60%'}
+knitr::include_graphics("images/Willdenow.jpg")
+```
+.footnote[image: Wikipedia]
+
+####_Carl Ludwig Willdenow_
+
+]
+
+.pull-right[
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/willdenowia_sulcata_AGR.jpg")
+```
+.footnote[image: Tony Rebelo CC BY-SA 4.0]
+
+####_Willdenowia sulcata_, The "Groovy Sunreed"
+
+Perhaps the first to recognize the role of climate in determining the geography of plants, with vegetation organised in latitudinal and elevational zones.
+
+]
+
+
+---
+
+layout: false
+
+.pull-left[
+### Early observations of the Niche
+
+
+```{r echo = F, fig.align = 'center', out.width = '50%'}
+knitr::include_graphics("images/von_Humboldt.jpg")
+```
+.footnote[painting by: Joseph Karl Stieler, 1843]
+
+####_Alexander von Humboldt_
+
+A friend of Willdenow, and first to test his ideas.
+
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '85%'}
+knitr::include_graphics("images/humboldt.jpg")
+```
+.footnote[_Essay on the Geography of Plants_, von Humboldt and Bonpland (1805)]
+]
+
+---
+
+background-image: url("images/torres_del_paine.jpg")
+background-size: contain
+
+---
+
+layout: false
+
+## Climate zones and biomes
+
+```{r echo = F, fig.align = 'center', out.width = '60%'}
+knitr::include_graphics("images/resolv_ecoregions2017.png")
+```
+
+.footnote[https://ecoregions.appspot.com/]
+
+---
+
+layout: false
+
+.pull-left[
+## Climate zones and biomes
+
+Here is RH Whittaker's mapping of biomes against two major axes of climate variation. 
+
+He wasn't the first to do this, but the "Whittaker plot" is one of the best known.
+
+The biomes align reasonably well with temperature and precipitation.
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/whittakerplot.png")
+```
+
+.footnote[Whittaker 1975]
+]
+
+---
+
+class: center, middle
+
+# Hang on?
+
+```{r echo = F, fig.align = 'center', out.width = '80%'}
+knitr::include_graphics("images/world_seasonality.gif")
+```
+
+### We started by talking about species of vegetable and now we're looking at the whole world?
+
+
+---
+
+layout: false
+
+## The Hierarchy of Ecology
+
+.left-column[
+**Individual organism**
+
+**Populations** are groups of interacting individuals of the same species.
+
+**Communities** are groups of interacting individuals or populations of different species.
+
+**Ecosystems** are the combination of biotic communities and their physical environment. 
+]
+
+.right-column[
+```{r echo = F, fig.align = 'center', out.width = '95%'}
+knitr::include_graphics("images/hierarchy_in_ecology.jpg")
+```
+]
+
+.center[image: _The Atlas of World Wildlife_ 1973]
+
+---
+
+class: center, middle
+
+## The Niche Concept
+
+
+Typically applied at the level of the population or species, but has implications for higher order levels of the hierarchy - i.e. communities, ecosystems (including biomes or the whole biosphere).
+
+---
+
+
+---
+class: middle
+
+## Take-home
+
+>*Remote sensing is a rapidly growing field that is seen as the holy grail for mapping and monitoring biodiversity (and Essential Biodiversity Variables) at high spatial resolution from local to global scales.*
+
+>*There are many remote sensing methods and tools, and these are constantly improving.*
+
+>*While there are many limitations (e.g. spatial resolution), many can be addressed with modelling approaches, and are being overcome as the technology and methods improve.*
+
+>*Remote sensing approaches must be paired with _in situ_ observations to "ground-truth" and calibrate/validate that they do reflect reality on the ground.*
+
+>*Remote sensing can be valuable for mapping habitat variables such as climate, topography, etc that can inform inference about species distributions or other proxies for biodiversity like environmental heterogeneity or spectral diversity.*
+
+
+---
+class: center, middle
+
+# Thanks!
+
+Slides created via the R packages:
+
+[**xaringan**](https://github.com/yihui/xaringan)<br>
+[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
