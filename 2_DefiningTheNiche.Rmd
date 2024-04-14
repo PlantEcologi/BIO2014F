@@ -1,0 +1,291 @@
+---
+title: "2. Defining the Niche"
+subtitle: ""  
+author: 
+  - "Jasper Slingsby, BIO2014F"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "custom styles.css"]
+    nature:
+      slideNumberFormat: "%current% / %total%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+
+# library(RefManageR)
+# BibOptions(check.entries = FALSE,
+#            bib.style = "authoryear",
+#            cite.style = "alphabetic",
+#            style = "markdown",
+#            hyperlink = FALSE,
+#            dashed = FALSE)
+# myBib <- ReadBib("bib/2_species.bib", check = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+
+# style_duo_accent(
+#   primary_color = "#1381B0",
+#   secondary_color = "#FF961C",
+#   inverse_header_color = "#FFFFFF"
+# )
+
+style_mono_light(base_color = "#23395b")
+
+#https://mycolor.space/?hex=%2323395B&sub=1 
+#"Generic gradient" - #23395B #006287 #008E9D #00B897 #89DD81 #F9F871
+#"Matching gradient" (reverse) - #23395B #494E77 #716292 #9C77AA #C88DBF #F5A3D0
+
+
+
+library(knitr)
+library(kableExtra)
+```
+
+
+```{r xaringan-tile-view, echo=FALSE}
+# xaringanExtra::use_tile_view()
+```
+
+class: center, middle
+
+> _"Ecology's love-hate relationship with the niche concept has been long and not
+ especially pretty. Whereas some ecologists continue to see value in the concept,
+ others have despaired of ever finding an expression that is both general and non-circular. Part of the problem, originating early in our science, has been that different investigators have meant different things by "niche.""_
+ 
+Nelson G. Hairson, Jr. - _Editor's Note on [**Leibold 1995**](http://dx.doi.org/10.2307/1938141)_
+
+<br>
+
+>_"...most [ecologists] would agree that niche is a central concept in ecology, even though we do not know exactly what it means..."_ 
+
+[**Real and Levin 1991**](https://press.uchicago.edu/ucp/books/book/chicago/F/bo3613618.html)
+
+---
+
+class: middle
+
+### Central figures in defining the niche
+
+- Joseph Grinnell | The _Grinnellian Niche_
+- Charles Elton | The _Eltonian Niche_
+- G Evelyn Hutchinson | The _Hutchinsonian Niche_
+
+---
+
+### The Grinnellian Niche
+
+.pull-left[
+```{r echo = F, fig.align = 'center', out.width = '85%'}
+knitr::include_graphics("images/grinnell_1917.png")
+```
+
+> _"An explanation of this restricted distribution is probably to be found in the close adjustment of the bird in various physiological and psychological respects to a narrow range of **environmental conditions**. The nature of these critical conditions is to be learned through an examination of the bird's habitat."_
+
+.footnote[[**Grinnell 1917**](http://dx.doi.org/10.2307/4072271)]
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '85%'}
+knitr::include_graphics("images/california_thrasher.jpg")
+```
+
+.footnote[Photo: Leslie Cavaliere, iNaturalist]
+]
+
+---
+
+.pull-left[
+
+### The Grinnellian Niche
+
+<br>
+
+Focused on the **abiotic** by exploring species _habitat_ based on the environmental requirements of organisms (temperature, rainfall, soils, etc).
+
+Has largely become synonymous with species' geographic distributions.
+
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '90%'}
+knitr::include_graphics("images/grinnell_1917_map.png")
+```
+
+.footnote[[**Grinnell 1917**](http://dx.doi.org/10.2307/4072271)]
+]
+
+---
+
+### The Eltonian Niche
+
+> _"what [an animal] is doing in its community,... its place in the **biotic** environment, its relations to food and enemies"_ - [**Elton 1927**](https://press.uchicago.edu/ucp/books/book/chicago/A/bo25281897.html)
+
+> _"used in ecology in the sense that we speak of trades or professions or jobs in a human community"_ - [**Elton 1933**](https://books.google.co.za/books/about/The_Ecology_of_Animals.html?id=OxzZAAAAMAAJ&redir_esc=y)
+
+<br>
+
+This definition focuses on the organism's role or _function_ in the ecosystem.
+
+It often considers the traits of species that allow them to fulfill their role.
+
+Since Charles Elton was mostly working with animals, his focus was largely on trophic position (consumers, predators, etc), but this can be expanded to plants and other life forms.
+  - Generally the focus is on _resource use_.
+
+---
+
+### The Eltonian Niche
+
+He used the two African rhinoceros species as an example.
+.pull-left[
+```{r echo = F, fig.align = 'center', out.width = '85%'}
+knitr::include_graphics("images/white_rhino.jpg")
+```
+
+White rhinos have a wide ("wyd") mouth (the origin of its name), for feeding on grass (a grazer). 
+
+.footnote[Photo: Frédéric Bacuez, iNaturalist]
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '85%'}
+knitr::include_graphics("images/black_rhino.jpg")
+```
+
+Black rhinos have narrow pointed lips for selective feeding on the foliage of bushes (a browser). 
+
+.footnote[Photo: Greg Lasley, iNaturalist]
+]
+
+---
+
+### The Eltonian vs Grinnellian Niche
+
+Focuses on: 
+
+.pull-left[
+
+- the biotic environment
+- resource exploitation
+- resource limitations/constraints
+- species can interact with and modify these resources (i.e. they have both a _response to_ and _effect on_ the environment)
+
+]
+
+.pull-right[
+
+- the abiotic environment
+- environmental conditions
+- environmental limitations/constraints
+- mostly only considers species' _response to_ the environment
+
+]
+
+<br>
+
+Note the key difference between:
+
+- _**resources**_ (which can be exploited and altered by the species, e.g. prey or nutrient availability) and 
+- _**environmental conditions**_ (are not altered by the species on ecological timescales, e.g temperature, rainfall)
+
+---
+
+### The Hutchinsonian Niche
+
+.pull-left[
+
+G Evelyn Hutchinson made a few key propositions that really expanded the utility of the niche concept in ecology.
+
+**Firstly**, he proposed that _the niche is an n-dimensional hypervolume within which a species is able to maintain a viable population_ - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
+
+This both aids our ability to think about the niche, but also allows us to explicitly **quantify the niche and niche space**.
+
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/treurnicht2020_hutchinson.jpg")
+```
+
+.footnote[Figure from [**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048)]
+]
+
+---
+
+### The Hutchinsonian Niche
+
+.pull-left[
+
+**Secondly**, Hutchinson made a distinction between the _fundamental_ versus the _realised_ niche - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
+
+- The _**fundamental niche**_ is the range of conditions (biotic and abiotic) and resources in which a species could survive and reproduce if free of interference from other species.
+- The _**realised niche**_ is a subset of the fundamental niche where a species actually occurs due to interference from other species (e.g. interspecific competition). 
+
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Fundamental vs Realised Niche_Escobar et al 2017.jpg")
+```
+
+.footnote[Figure from [**Escobar et al 2017**](https://doi.org/10.3389/fvets.2017.00105)]
+]
+
+---
+
+### A simplified summary of how the approaches fit together
+
+```{r echo = F, fig.align = 'center', out.width = '60%'}
+knitr::include_graphics("images/Niches_Escobar and Craft.jpg")
+```
+
+.footnote[[**Escobar and Craft 2016**](https://doi.org/10.3389/fmicb.2016.01174)]
+
+---
+class: middle
+
+## Take-home
+
+>**
+
+>**
+
+>**
+
+---
+
+layout: false
+
+## This module from here...
+
+1. Intro
+2. Different definitions of the niche
+3.
+
+---
+class: center, middle
+
+# Thanks!
+
+Slides created via the R packages:
+
+[**xaringan**](https://github.com/yihui/xaringan)<br>
+[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).

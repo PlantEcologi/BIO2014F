@@ -195,7 +195,7 @@ class: center, middle
 knitr::include_graphics("images/world_seasonality.gif")
 ```
 
-### We started by talking about species of vegetable and now we're looking at the whole world?
+### We started by talking about growing vegetables and now we're looking at the whole world?
 
 
 ---
@@ -233,22 +233,32 @@ Typically applied at the level of the population or species, but has implication
 
 ---
 
+layout: false
+
+## This module from here...
+
+1. Introduction to Niche Theory
+2. Defining the Niche
+3. Geographic distributions and the Niche
+4. Population growth and intraspecific competition
+5. Interspecific competition and coexistence
+6. …
+7. …
+8. …
+9. …
+10. …
+11. Prac follow-up
 
 ---
 class: middle
 
 ## Take-home
 
->*Remote sensing is a rapidly growing field that is seen as the holy grail for mapping and monitoring biodiversity (and Essential Biodiversity Variables) at high spatial resolution from local to global scales.*
+>*While the idea that species have particular environmental preferences/requirements and that they play specific roles in ecosystems is as old as life itself, the formal recognition and development of definitions of the niche allows us to develop more sophisticated theory in ecology and evolution.*
 
->*There are many remote sensing methods and tools, and these are constantly improving.*
+>*Niche theory perhaps has its roots in early biogeographic observations about the geography of plants by Willdenow, von Humboldt and others.*
 
->*While there are many limitations (e.g. spatial resolution), many can be addressed with modelling approaches, and are being overcome as the technology and methods improve.*
-
->*Remote sensing approaches must be paired with _in situ_ observations to "ground-truth" and calibrate/validate that they do reflect reality on the ground.*
-
->*Remote sensing can be valuable for mapping habitat variables such as climate, topography, etc that can inform inference about species distributions or other proxies for biodiversity like environmental heterogeneity or spectral diversity.*
-
+>*While the niche concept has implications for higher order levels of the ecological hierarchy (communities, ecosystems, biomes), it is typically applied at the population or species level.*
 
 ---
 class: center, middle
