@@ -1,5 +1,5 @@
 ---
-title: "3. Geographic distributions and the Niche"
+title: "3. Geographic distributions and Niche modelling"
 subtitle: ""  
 author: 
   - "Jasper Slingsby, BIO2014F"
@@ -65,7 +65,7 @@ library(kableExtra)
 
 class: center, middle
 
-> _""_
+
 
 ---
 
@@ -113,12 +113,106 @@ knitr::include_graphics("images/treurnicht2020_hutchinson.jpg")
 
 ### Species Distribution Models (SDMs)
 
-Also referred to as Ecological Niche Models
+.pull-left[
+Also referred to as Ecological Niche Models.
 
+Utilise the concepts proposed by Grinnell and Hutchinson to predict the geographic distribution (or range) of species.
+
+SDMs propose that a species' distribution can be predicted based on the environmental conditions at localities where they have been observed.
+
+The "prediction" is usually based on a statistical model that uses the known localities to estimate the probability of a species occurring across the given environmental space.
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/simpleSDM.png")
+```
+
+.footnote[Figure by [**Ragnvald**](https://commons.wikimedia.org/wiki/File:Predicting_habitats.png)]
+]
+---
+
+### Species Distribution Models (SDMs)
+
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/SDM_Elith_Leathwick.gif")
+```
+
+**Left:** mapped species occurrences plus spatial data for environmental variables across a particular area. 
+
+**Centre:** a 3-dimentional volume showing species occurrences (black) in environmental space (grey). Occurrences are clearly non-random, allowing us to predict the probability of species occurrence at any point. 
+
+**Right:** The predicted geographic distribution of the species, with dark regions representing a high probability of species occurrence and light areas a low probability.
+
+.footnote[[**Elith and Leathwick. 2009**](http://dx.doi.org/10.1146/annurev.ecolsys.110308.120159)]
 
 ---
 
+.pull-left[
+
+### What are SDMs used for?
+
+SDMs can predict the present distribution of a species if it is poorly known, but have also been used extensively to explore species' vulnerability to climate change by projecting their potential range under future climates, among other uses.
+
+```{r echo = F, fig.align = 'center', out.width = '85%'}
+knitr::include_graphics("images/ld_arcuatum.jpg")
+```
+.footnote[_Leucadendron arcuatum_ by [**Francois du Randt, iNaturalist**](https://www.inaturalist.org/observations/34417163)]
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '75%'}
+knitr::include_graphics("images/SDM_Leuc.jpg")
+```
+
+.footnote[Figure from [**The Protea Atlas Project**](https://www.proteaatlas.org.za/)]
+]
+
 ---
+
+### What are SDMs used for?
+
+.pull-left[
+> _"A search of articles in peer-reviewed journals over the past 20 years found more than 6000 studies using or mentioning one of the most common classes of biodiversity modeling: species distribution models (SDMs)."_ 
+
+[**Araújo et al. 2019**](http://dx.doi.org/10.1126/sciadv.aat4858)
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/araujo_SDM_uses.jpeg")
+```
+
+A) type of biodiversity assessment accomplished with the trend in the numbers of studies shown over time
+
+B) purpose of the model
+
+.footnote[Figure from [**Araújo et al. 2019**](http://dx.doi.org/10.1126/sciadv.aat4858)]
+]
+
+---
+
+class: center, middle
+
+### Can you foresee any issues with SDMs?
+
+---
+
+### Statistical models vs reality?
+
+Statistical models are necessarily simplifications of reality, and their predictions always come with some error (i.e. there is uncertainty). 
+
+Sources of error in SDMs:
+
+- the choice of variables included in the model 
+    - have all of the most important determinants of a species distribution been included?
+- biases in the occurrence data 
+    - easy-to-access areas are usually overrepresented
+- quality of the occurrence and environmental data...
+    - GIGO (garbage in - garbage out)
+- the type and structure of the statistical model...
+
+Ideally one quantifies and report the uncertainty for your model, but that is a topic for [**BIO3019S**](https://science.uct.ac.za/department-biological-sciences/undergraduate-study/third-year-courses)...
 
 ---
 
@@ -147,6 +241,98 @@ knitr::include_graphics("images/Fundamental vs Realised Niche_Escobar et al 2017
 
 ---
 
+### SDMs and the assumption of equilibrium?
+
+```{r echo = F, fig.align = 'center', out.width = '80%'}
+knitr::include_graphics("images/brown_carnaval_niches.png")
+```
+
+A) If a species has an equilibrium distribution, it is occupying all of the potentially suitable habitats in the world (the potential niche is completely filled). 
+
+B) If a species is in a non-equilibrium distribution, its potential niche is not fully occupied due to dispersal constraints or seasonal or long-term dynamism of habitats.
+
+.pull-right[
+.footnote[[**Brown and Carnaval 2019**](http://dx.doi.org/10.21425/F5FBG44158)]
+]
+
+
+---
+
+### Invasive species and the assumption of equilibrium
+
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/tingley2014_SDM_projected.jpeg")
+```
+
+Reciprocal projections of models calibrated using data from either the invasive Australian (left) or native South American (right) occurrence of the cane toad, _Rhinella marina_, and projected into the other.
+
+Invasive (left): predicted a broader latitudinal distribution in the native South American range than is observed
+
+Native (right): failed to predict invasive populations in drier and cooler regions to the SE of Australia
+
+- Why???
+
+.pull-right[
+.footnote[[**Tingley et al. 2014**](https://doi.org/10.1073/pnas.1405766111)]
+]
+
+---
+
+### Invasive species and the assumption of equilibrium
+
+Why the difference between the native and invasive realised niches of the cane toad? - [**Tingley et al. 2014**](https://doi.org/10.1073/pnas.1405766111)
+
+.pull-left[
+####Hypothesis 1
+
+Dispersal limitation or absence of drier, cooler climate in South America?
+]
+
+.pull-right[
+####Hypothesis 2
+
+Difference in biotic interactions experienced on each continent?
+
+]
+
+---
+
+### Invasive species and the assumption of equilibrium
+
+Why the difference between the native and invasive realised niches of the cane toad? - [**Tingley et al. 2014**](https://doi.org/10.1073/pnas.1405766111)
+
+.pull-left[
+####Hypothesis 1
+
+Dispersal limitation or absence of drier, cooler climate in South America?
+
+>*"...our findings demonstrate that novel climates colonized by R. marina in Australia were available, but unoccupied, in the species’ native range...*
+]
+
+.pull-right[
+####Hypothesis 2
+
+Difference in biotic interactions experienced on each continent?
+
+>*"One possibility is that the presence of a closely related species (R. schneideri) in cooler and drier regions of Southern Brazil may be preventing R. marina from colonizing suitable environments south of its present range.* 
+*...these two species hybridize..., and even low rates of interspecific hybridization can enforce stable range boundaries"*
+]
+
+---
+
+### Invasive species and the assumption of equilibrium
+
+Why the difference between the native and invasive realised niches of the cane toad? - [**Tingley et al. 2014**](https://doi.org/10.1073/pnas.1405766111)
+
+####Hypothesis 2
+
+Difference in biotic interactions experienced on each continent?
+
+The _Enemy release hypothesis_ - invasive species are less impacted by enemies than native species, because in the new geographical location, invasive species are freed from the enemies that kept their growth in check in their native environment.
+
+> *"we used a previously parameterized mechanistic model to make predictions of the fundamental niche of* R. marina *[by linking] microclimatic condition estimates derived from long-term weather station data with biophysical and physiological constraints on the eggs, larvae, and adults ... to predict the potential number of breeding months per year."*
+
+---
 ### A simplified summary of how the approaches fit together
 
 ```{r echo = F, fig.align = 'center', out.width = '60%'}

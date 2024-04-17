@@ -141,12 +141,12 @@ knitr::include_graphics("images/grinnell_1917_map.png")
 
 <br>
 
-This definition focuses on the organism's role or _function_ in the ecosystem.
+This definition focuses on the organism's role or **function** in the ecosystem.
 
 It often considers the traits of species that allow them to fulfill their role.
 
 Since Charles Elton was mostly working with animals, his focus was largely on trophic position (consumers, predators, etc), but this can be expanded to plants and other life forms.
-  - Generally the focus is on _resource use_.
+  - Generally the focus is on **resource use**.
 
 ---
 
@@ -251,32 +251,43 @@ knitr::include_graphics("images/Fundamental vs Realised Niche_Escobar et al 2017
 
 ### A simplified summary of how the approaches fit together
 
-```{r echo = F, fig.align = 'center', out.width = '60%'}
+```{r echo = F, fig.align = 'center', out.width = '50%'}
 knitr::include_graphics("images/Niches_Escobar and Craft.jpg")
 ```
 
+.pull-left[
 .footnote[[**Escobar and Craft 2016**](https://doi.org/10.3389/fmicb.2016.01174)]
+]
 
+.pull-right[
+.footnote[*Dispersal component covered in later lectures]
+]
 ---
 class: middle
 
 ## Take-home
 
->**
+>*While the niche is a central concept in ecology, a universally accepted definition has eluded us.*
 
->**
+>*Grinnell and Elton proposed niche concepts focused on the species' occurrence across the abiotic environment versus the species' functional role and use of resources respectively.*
 
->**
+>*Hutchinson proposed the n-dimensional hypervolume as a means to quantify the niche. He also made a distinction between the fundamental and realised niches.*
 
 ---
 
-layout: false
+## The module from here...
 
-## This module from here...
-
-1. Intro
-2. Different definitions of the niche
-3.
+1. Introduction to Niche Theory
+2. Defining the Niche
+3. Geographic distributions and Niche modelling
+4. Population growth and intraspecific competition
+5. Interspecific competition and coexistence
+6. …
+7. …
+8. …
+9. Prac follow-up
+10. Public holiday!!!
+11. Revision tutorial
 
 ---
 class: center, middle
