@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+  <head>
+    <title>4. Population Growth and Intraspecific Competition</title>
+    <meta charset="utf-8" />
+    <meta name="author" content="Jasper Slingsby, BIO2014F" />
+    <meta name="date" content="2024-04-18" />
+    <script src="4_PopulationGrowth_files/header-attrs/header-attrs.js"></script>
+    <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
+    <link rel="stylesheet" href="custom styles.css" type="text/css" />
+  </head>
+  <body>
+    <textarea id="source">
+class: center, middle, inverse, title-slide
+
+.title[
+# 4. Population Growth and Intraspecific Competition
+]
+.author[
+### Jasper Slingsby, BIO2014F
+]
+.date[
+### 2024-04-18
+]
+
+---
+
+
+
+
+
+
+
+
+
+### The Hutchinsonian Niche
+
+.pull-left[
+
+&lt;br&gt;
+
+G Evelyn Hutchinson proposed that _the niche is an n-dimensional hypervolume within which a species is **able to maintain a viable population**_ - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
+
+&lt;br&gt;
+
+Does the occurrence of a species at a locality mean it is able to maintain a viable population there...?
+
+]
+
+.pull-right[
+&lt;img src="images/treurnicht2020_hutchinson.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+
+.footnote[Figure from [**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048)]
+]
+
+---
+
+class: center, middle
+
+### What does maintaining a viable population even mean?
+
+---
+
+### Population growth curve
+
+.pull-left[
+Consider growth of a population, starting with 2 individuals at t = 0. 
+- Assume a per-capita reproductive rate, `\(r\)` = 2
+
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-2-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+Consider growth of a population, starting with 2 individuals at t = 0. 
+- Assume a per-capita reproductive rate, `\(r\)` = 2
+
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-3-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+Consider growth of a population, starting with 2 individuals at t = 0. 
+- Assume a per-capita reproductive rate, `\(r\)` = 2
+
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-4-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+Consider growth of a population, starting with 2 individuals at t = 0. 
+- Assume a per-capita reproductive rate, `\(r\)` = 2
+
+&lt;br&gt;
+
+_Growth is exponential!_
+
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-5-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+Consider growth of a population, starting with 2 individuals at t = 0. 
+- Assume a per-capita reproductive rate, `\(r\)` = 2
+
+&lt;br&gt;
+
+_Growth is exponential!_
+
+Using calculus, we can express growth as an instantaneous rate as `\(dN/dt\)`, the rate of change in number of organisms at a particular instant in time.
+
+Since our example is an exponential function, the slope of this curve is given by  `\(dN/dt = rN\)`
+
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-6-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+.pull-left[
+
+### Is growth always exponential?
+
+
+&lt;img src="images/Branch1975_F3.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+Resources available to individuals typically shrink as population size and density increase. Competition between individuals limits growth and reproductive output (i.e. per-capita reproductive rate ( `\(r\)` )).
+
+.footnote[[**Branch 1975**](http://dx.doi.org/10.1111/geb.13048)]
+
+]
+
+.pull-right[
+
+&lt;img src="images/Scutellastra cochlear.jpeg" width="65%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="images/Branch1975_F6.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+.footnote[image: Allan Ellis, [**iNaturalist**](https://www.inaturalist.org/observations/99128657)]
+
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-10-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It probably starts out much the same while resources are abundant...
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-11-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+...but slows as resources become limiting...
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-12-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It probably starts out much the same while resources are abundant...
+
+...but slows as resources become limiting...
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-13-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It probably starts out much the same while resources are abundant...
+
+...but slows as resources become limiting...
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-14-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It probably starts out much the same while resources are abundant...
+
+...but slows as resources become limiting...
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-15-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It probably starts out much the same while resources are abundant...
+
+...but slows as resources become limiting...
+
+...and eventually flattens out...
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-16-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It probably starts out much the same while resources are abundant...
+
+...but slows as resources become limiting...
+
+...and eventually flattens out...
+
+Any thoughts on the equation to fit this curve?
+
+`\(dN/dt = ?\)`
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-17-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It probably starts out much the same while resources are abundant...
+
+...but slows as resources become limiting...
+
+...and eventually flattens out...
+
+Any thoughts on the equation to fit this curve?
+
+`\(dN/dt = rN (K – N)/K\)`
+
+A logistic function, or what we call the logistic growth curve.
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-18-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+Show r and K on graph, explain what they are and link to Terry's lectures?
+
+---
+
+Add something like this?
+
+&lt;img src="images/Kahn_academy_growth_curves.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+---
+
+Then carry on as Tony did with Gause and _Paramecium_
+
+---
+
+### SDMs and the Hutchinsonian Niche?
+
+.pull-left[
+
+Hutchinson made a distinction between the _fundamental_ versus the _realised_ niche - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
+
+- The _**fundamental niche**_ is the range of conditions (biotic and abiotic) and resources in which a species could survive and reproduce if free of interference from other species.
+- The _**realised niche**_ is a subset of the fundamental niche where a species actually occurs due to interference from other species (e.g. interspecific competition). 
+
+&lt;br&gt;
+
+Which do SDMs represent?
+
+]
+
+.pull-right[
+&lt;img src="images/Fundamental vs Realised Niche_Escobar et al 2017.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+
+.footnote[Figure from [**Escobar et al 2017**](https://doi.org/10.3389/fvets.2017.00105)]
+]
+
+---
+
+
+
+
+---
+
+### The Hutchinsonian Niche
+
+.pull-left[
+
+&lt;br&gt;
+
+G Evelyn Hutchinson proposed that _the niche is an n-dimensional hypervolume within which a species is **able to maintain a viable population**_ - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
+
+&lt;br&gt;
+
+Does the occurrence of a species at a locality mean it is able to maintain a viable population there...?
+
+]
+
+.pull-right[
+&lt;img src="images/treurnicht2020_hutchinson.jpg" width="100%" style="display: block; margin: auto;" /&gt;
+
+.footnote[Figure from [**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048)]
+]
+
+---
+
+class: center, middle
+
+### What does maintaining a viable population even mean?
+
+--
+
+The topic of our next lecture...
+
+---
+
+class: middle
+
+## Take-home
+
+&gt;**
+
+&gt;**
+
+&gt;**
+
+---
+class: center, middle
+
+# Thanks!
+
+Slides created via the R packages:
+
+[**xaringan**](https://github.com/yihui/xaringan)&lt;br&gt;
+[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
+    </textarea>
+<style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
+<script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
+<script>var slideshow = remark.create({
+"slideNumberFormat": "%current% / %total%",
+"highlightStyle": "github",
+"highlightLines": true,
+"ratio": "16:9",
+"countIncrementalSlides": true
+});
+if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
+  window.dispatchEvent(new Event('resize'));
+});
+(function(d) {
+  var s = d.createElement("style"), r = d.querySelector(".remark-slide-scaler");
+  if (!r) return;
+  s.type = "text/css"; s.innerHTML = "@page {size: " + r.style.width + " " + r.style.height +"; }";
+  d.head.appendChild(s);
+})(document);
+
+(function(d) {
+  var el = d.getElementsByClassName("remark-slides-area");
+  if (!el) return;
+  var slide, slides = slideshow.getSlides(), els = el[0].children;
+  for (var i = 1; i < slides.length; i++) {
+    slide = slides[i];
+    if (slide.properties.continued === "true" || slide.properties.count === "false") {
+      els[i - 1].className += ' has-continuation';
+    }
+  }
+  var s = d.createElement("style");
+  s.type = "text/css"; s.innerHTML = "@media print { .has-continuation { display: none; } }";
+  d.head.appendChild(s);
+})(document);
+// delete the temporary CSS (for displaying all slides initially) when the user
+// starts to view slides
+(function() {
+  var deleted = false;
+  slideshow.on('beforeShowSlide', function(slide) {
+    if (deleted) return;
+    var sheets = document.styleSheets, node;
+    for (var i = 0; i < sheets.length; i++) {
+      node = sheets[i].ownerNode;
+      if (node.dataset["target"] !== "print-only") continue;
+      node.parentNode.removeChild(node);
+    }
+    deleted = true;
+  });
+})();
+// add `data-at-shortcutkeys` attribute to <body> to resolve conflicts with JAWS
+// screen reader (see PR #262)
+(function(d) {
+  let res = {};
+  d.querySelectorAll('.remark-help-content table tr').forEach(tr => {
+    const t = tr.querySelector('td:nth-child(2)').innerText;
+    tr.querySelectorAll('td:first-child .key').forEach(key => {
+      const k = key.innerText;
+      if (/^[a-z]$/.test(k)) res[k] = t;  // must be a single letter (key)
+    });
+  });
+  d.body.setAttribute('data-at-shortcutkeys', JSON.stringify(res));
+})(document);
+(function() {
+  "use strict"
+  // Replace <script> tags in slides area to make them executable
+  var scripts = document.querySelectorAll(
+    '.remark-slides-area .remark-slide-container script'
+  );
+  if (!scripts.length) return;
+  for (var i = 0; i < scripts.length; i++) {
+    var s = document.createElement('script');
+    var code = document.createTextNode(scripts[i].textContent);
+    s.appendChild(code);
+    var scriptAttrs = scripts[i].attributes;
+    for (var j = 0; j < scriptAttrs.length; j++) {
+      s.setAttribute(scriptAttrs[j].name, scriptAttrs[j].value);
+    }
+    scripts[i].parentElement.replaceChild(s, scripts[i]);
+  }
+})();
+(function() {
+  var links = document.getElementsByTagName('a');
+  for (var i = 0; i < links.length; i++) {
+    if (/^(https?:)?\/\//.test(links[i].getAttribute('href'))) {
+      links[i].target = '_blank';
+    }
+  }
+})();
+// adds .remark-code-has-line-highlighted class to <pre> parent elements
+// of code chunks containing highlighted lines with class .remark-code-line-highlighted
+(function(d) {
+  const hlines = d.querySelectorAll('.remark-code-line-highlighted');
+  const preParents = [];
+  const findPreParent = function(line, p = 0) {
+    if (p > 1) return null; // traverse up no further than grandparent
+    const el = line.parentElement;
+    return el.tagName === "PRE" ? el : findPreParent(el, ++p);
+  };
+
+  for (let line of hlines) {
+    let pre = findPreParent(line);
+    if (pre && !preParents.includes(pre)) preParents.push(pre);
+  }
+  preParents.forEach(p => p.classList.add("remark-code-has-line-highlighted"));
+})(document);</script>
+
+<script>
+slideshow._releaseMath = function(el) {
+  var i, text, code, codes = el.getElementsByTagName('code');
+  for (i = 0; i < codes.length;) {
+    code = codes[i];
+    if (code.parentNode.tagName !== 'PRE' && code.childElementCount === 0) {
+      text = code.textContent;
+      if (/^\\\((.|\s)+\\\)$/.test(text) || /^\\\[(.|\s)+\\\]$/.test(text) ||
+          /^\$\$(.|\s)+\$\$$/.test(text) ||
+          /^\\begin\{([^}]+)\}(.|\s)+\\end\{[^}]+\}$/.test(text)) {
+        code.outerHTML = code.innerHTML;  // remove <code></code>
+        continue;
+      }
+    }
+    i++;
+  }
+};
+slideshow._releaseMath(document);
+</script>
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+(function () {
+  var script = document.createElement('script');
+  script.type = 'text/javascript';
+  script.src  = 'https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-MML-AM_CHTML';
+  if (location.protocol !== 'file:' && /^https?:/.test(script.src))
+    script.src  = script.src.replace(/^https?:/, '');
+  document.getElementsByTagName('head')[0].appendChild(script);
+})();
+</script>
+  </body>
+</html>
