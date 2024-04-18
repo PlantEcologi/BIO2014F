@@ -90,6 +90,8 @@ knitr::include_graphics("images/grinnell_1917_map.png")
 
 .pull-left[
 
+<br>
+
 G Evelyn Hutchinson proposed that _the niche is an n-dimensional hypervolume within which a species is able to maintain a viable population_ - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
 
 This both aids our ability to think about the niche, but also allows us to explicitly **quantify the niche and niche space**.
@@ -168,6 +170,9 @@ knitr::include_graphics("images/SDM_Leuc.jpg")
 ### What are SDMs used for?
 
 .pull-left[
+
+<br>
+
 > _"A search of articles in peer-reviewed journals over the past 20 years found more than 6000 studies using or mentioning one of the most common classes of biodiversity modeling: species distribution models (SDMs)."_ 
 
 [**Araújo et al. 2019**](http://dx.doi.org/10.1126/sciadv.aat4858)
@@ -202,10 +207,11 @@ Sources of error in SDMs:
 - the choice of variables included in the model 
     - have all of the most important determinants of a species distribution been included?
 - biases in the occurrence data 
-    - easy-to-access areas are usually overrepresented
+    - easy-to-access areas are usually overrepresented (e.g. near roads)
 - quality of the occurrence and environmental data...
     - GIGO (garbage in - garbage out)
 - the type and structure of the statistical model...
+    - continuous (abundance), discrete (presence/absence), frequentist vs Bayesian, etc
 
 Ideally one quantifies and report the uncertainty for your model, but that is a topic for [**BIO3019S**](https://science.uct.ac.za/department-biological-sciences/undergraduate-study/third-year-courses)...
 
@@ -334,11 +340,13 @@ class: center, middle
 
 .pull-left[
 
+<br>
+
 G Evelyn Hutchinson proposed that _the niche is an n-dimensional hypervolume within which a species is **able to maintain a viable population**_ - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
 
 <br>
 
-Does the occurrence of a species at a locality mean it is able to maintain a viable population there?
+Does the occurrence of a species at a locality mean it is able to maintain a viable population there...?
 
 ]
 
@@ -351,6 +359,17 @@ knitr::include_graphics("images/treurnicht2020_hutchinson.jpg")
 ]
 
 ---
+
+class: center, middle
+
+### What does maintaining a viable population even mean?
+
+--
+
+The topic of our next lecture...
+
+---
+
 class: middle
 
 ## Take-home
@@ -360,16 +379,6 @@ class: middle
 >**
 
 >**
-
----
-
-layout: false
-
-## This module from here...
-
-1. Intro
-2. Different definitions of the niche
-3.
 
 ---
 class: center, middle
