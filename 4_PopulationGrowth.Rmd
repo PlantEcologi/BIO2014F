@@ -595,6 +595,10 @@ knitr::include_graphics("images/Kahn_academy_growth_curves.png")
 
 ---
 
+Fire life histories and the seeds of chaos paper?
+
+---
+
 Then carry on as Tony did with Gause and _Paramecium_
 
 ---

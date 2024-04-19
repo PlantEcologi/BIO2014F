@@ -85,6 +85,10 @@ class: center, middle
 
 Given this uncertainty, what you are getting in this module is my understanding of the niche. With time and experience you will develop your own...
 
+<br>
+
+I like to think of niche concepts as akin to species concepts. Each has its pros and cons, but none are perfect.
+
 ---
 
 class: middle
@@ -104,7 +108,7 @@ class: middle
 knitr::include_graphics("images/grinnell_1917.png")
 ```
 
-> _"An explanation of this restricted distribution is probably to be found in the close adjustment of the bird in various physiological and psychological respects to a narrow range of **environmental conditions**. The nature of these critical conditions is to be learned through an examination of the bird's habitat."_
+> _"An explanation of this restricted distribution is probably to be found in the close adjustment of the bird in various physiological and psychological respects to a narrow range of **environmental conditions**. The nature of these critical conditions is to be learned through an examination of the bird's **habitat**."_
 
 .footnote[[**Grinnell 1917**](http://dx.doi.org/10.2307/4072271)]
 ]
@@ -175,7 +179,7 @@ knitr::include_graphics("images/california_thrasher_ground.jpg")
 
 .pull-left[
 
-What's the difference between Grinnell's niche conception of the niche and "habitat"?
+What's the difference between Grinnell's niche concept and "habitat"?
 
 > _"The physical space where an [organism] lives, which contains its environment, is its habitat"_ - [Hickman et al. 2008](https://www.mheducation.com/highered/product/integrated-principles-zoology-hickman-jr-larson/M9781264091218.html)
 
@@ -247,11 +251,9 @@ Black rhinos have narrow pointed lips for selective feeding on the foliage of bu
 
 ---
 
-### The Eltonian vs Grinnellian Niche
-
-Focuses on: 
-
 .pull-left[
+
+### The Eltonian versus
 
 - the biotic environment
 - resource exploitation
@@ -261,6 +263,8 @@ Focuses on:
 ]
 
 .pull-right[
+
+### Grinnellian Niche
 
 - the abiotic environment
 - environmental conditions
@@ -275,6 +279,27 @@ Note the key difference between:
 
 - _**resources**_ (which can be exploited and altered by the species, e.g. prey or nutrient availability) and 
 - _**environmental conditions**_ (are not altered by the species on ecological timescales, e.g temperature, rainfall)
+
+---
+
+### The Eltonian versus Grinnellian Niche
+
+.pull-left[
+There certainly are gray areas of overlap... 
+
+It is often difficult to separate variables into "resources" vs "environmental conditions" or biotic vs abiotic, e.g. fire, soil fertility, light availability 
+
+E.g. Light availability can be an abiotic environmental condition (incoming solar radiation) or a biotically alterable limiting resource (light competition among plants))...
+
+It is often a matter of spatial or temporal scale. E.g. there is good evidence for biotic effects on the formation of geological strata!
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '90%'}
+knitr::include_graphics("images/pausas_bond_2020_1.jpg")
+```
+.footnote[e.g. Biotic feedbacks - Pausas and Bond 2020. _Trends in Ecology and Evolution_]
+]
 
 ---
 
@@ -338,7 +363,7 @@ knitr::include_graphics("images/Niches_Escobar and Craft.jpg")
 ]
 
 .pull-right[
-.footnote[*Dispersal component covered in later lectures]
+.footnote[*Soberon and Peterson covered in later lectures]
 ]
 ---
 class: middle
