@@ -81,6 +81,12 @@ Consider growth of a population, starting with 2 individuals at t = 0.
 Consider growth of a population, starting with 2 individuals at t = 0. 
 - Assume a per-capita reproductive rate, `\(r\)` = 2
 
+&gt; **Note:**
+
+&gt; _The per-capita reproductive rate ( `\(r\)` ) is the number of reproductively mature individuals contributed per individual from one generation to the next._
+
+&gt; _It is a fundamental biological parameter, determined by things like the number of eggs/seeds produced, the hatching/germination success of eggs/seeds, and the success with which hatchlings/germinants survive to reproductive maturity._
+
 ]
 
 .pull-right[
@@ -200,7 +206,8 @@ It probably starts out much the same while resources are abundant...
 .pull-left[
 What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
 
-...but slows as resources become limiting...
+It probably starts out much the same while resources are abundant...
+
 ]
 
 .pull-right[
@@ -216,7 +223,6 @@ What does our curve look like once we include **density-dependent** effects like
 
 It probably starts out much the same while resources are abundant...
 
-...but slows as resources become limiting...
 ]
 
 .pull-right[
@@ -321,82 +327,144 @@ A logistic function, or what we call the logistic growth curve.
 
 ---
 
-Show r and K on graph, explain what they are and link to Terry's lectures?
-
----
-
-Add something like this?
-
-&lt;img src="images/Kahn_academy_growth_curves.png" width="80%" style="display: block; margin: auto;" /&gt;
-
----
-
-Fire life histories and the seeds of chaos paper?
-
----
-
-Then carry on as Tony did with Gause and _Paramecium_
-
----
-
-### SDMs and the Hutchinsonian Niche?
+### Population growth curve
 
 .pull-left[
+The population growth curve including **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species) is a logistic function, flattening out as resources become limiting.
 
-Hutchinson made a distinction between the _fundamental_ versus the _realised_ niche - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
-
-- The _**fundamental niche**_ is the range of conditions (biotic and abiotic) and resources in which a species could survive and reproduce if free of interference from other species.
-- The _**realised niche**_ is a subset of the fundamental niche where a species actually occurs due to interference from other species (e.g. interspecific competition). 
+`\(dN/dt = rN (K – N)/K\)`
 
 &lt;br&gt;
 
-Which do SDMs represent?
+We know `\(N\)`, `\(t\)` and `\(r\)`, but what is `\(K\)`?
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-19-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+The population growth curve including **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species) is a logistic function, flattening out as resources become limiting.
+
+`\(dN/dt = rN (K – N)/K\)`
+
+&lt;br&gt;
+
+We know `\(N\)`, `\(t\)` and `\(r\)`, but what is `\(K\)`?
+
+`\(K\)` = carrying capacity
+
+Familiar?
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-20-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+&lt;img src="images/terry_rvsK.png" width="65%" style="display: block; margin: auto;" /&gt;
+
+.footnote[Terry Hedderson's lecture on life history models]
+
+---
+
+.pull-left[
+
+### Exponential growth
+
+`\(dN/dt = rN\)`
+
+Population growth rate, `\(r\)`, doesn't change with population size
+
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-22-1.png" width="80%" /&gt;
 
 ]
 
 .pull-right[
-&lt;img src="images/Fundamental vs Realised Niche_Escobar et al 2017.jpg" width="100%" style="display: block; margin: auto;" /&gt;
 
-.footnote[Figure from [**Escobar et al 2017**](https://doi.org/10.3389/fvets.2017.00105)]
+### Logistic growth
+
+`\(dN/dt = rN (K – N)/K\)`
+
+Population growth rate, `\(r\)`, gets small as the population approaches carrying capacity, `\(K\)`
+
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-23-1.png" width="80%" /&gt;
 ]
 
 ---
 
-
-
+### What are the implications of density-dependent growth?
 
 ---
 
-### The Hutchinsonian Niche
+### What are the implications of density-dependent growth?
+
+Serotinous Proteaceae are well known for extreme population density fluctuations after fire.
 
 .pull-left[
 
-&lt;br&gt;
+&lt;img src="images/proteas_Roets2006.jpg" width="70%" style="display: block; margin: auto;" /&gt;
 
-G Evelyn Hutchinson proposed that _the niche is an n-dimensional hypervolume within which a species is **able to maintain a viable population**_ - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
-
-&lt;br&gt;
-
-Does the occurrence of a species at a locality mean it is able to maintain a viable population there...?
-
+.footnote[image: Roets et al 2006]
 ]
-
-.pull-right[
-&lt;img src="images/treurnicht2020_hutchinson.jpg" width="100%" style="display: block; margin: auto;" /&gt;
-
-.footnote[Figure from [**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048)]
-]
-
----
-
-class: center, middle
-
-### What does maintaining a viable population even mean?
 
 --
 
-The topic of our next lecture...
+.pull-right[
+&lt;img src="images/Bond1995.png" width="100%" style="display: block; margin: auto;" /&gt;
 
+While some of this may be exogenous, driven by external forces like climate fluctuations or variability in the fire regime, [**Bond et al 1995**](http://dx.doi.org/10.1080/11956860.1995.11682291) demonstrated that it could be endogenous, driven by internal population dynamics due to density-dependent effects.
+
+.footnote[[**Bond et al 1995**](http://dx.doi.org/10.1080/11956860.1995.11682291)]
+
+]
+
+---
+
+### Density-dependence in serotinous Cape Proteaceae 
+
+.pull-left[
+Empirical datasets showed evidence for a negative impact of density-dependence on:
+
+- recruitment (Figure 1)
+- fecundity (Figure 4)
+
+&lt;br&gt;
+
+Notice the exogenous effect of aridity on _Protea repens_ seedling establishment at the arid inland site (Figure 1, bottom).
+
+.footnote[[**Bond et al 1995**](http://dx.doi.org/10.1080/11956860.1995.11682291)]
+]
+
+.pull-right[
+&lt;img src="images/Bond1995_F1_4.png" width="100%" style="display: block; margin: auto;" /&gt;
+]
+
+---
+
+.pull-left[
+
+### Protea density-dependence 
+
+They fed their empirical data into population models and projected population growth over multiple generations.
+
+Note that generations and fires are synonymous, because serotinous Proteaceae mostly only recruit after fire.
+
+Decreasing the starting population size ( `\(N_0\)` ), which would reduce the initial effect of density on population growth, increased the amplitude of population fluctuations, creating risk of total population crashes.
+
+This effect was stronger in _P. neriifolia_, because its cone production (fecundity) was more sensitive to population density.
+
+.footnote[[**Bond et al 1995**](http://dx.doi.org/10.1080/11956860.1995.11682291)]
+]
+
+.pull-right[
+&lt;img src="images/Bond1995_F5.png" width="70%" style="display: block; margin: auto;" /&gt;
+]
 ---
 
 class: middle
