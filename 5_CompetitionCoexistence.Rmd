@@ -1,0 +1,990 @@
+---
+title: "4. Interspecific Competition and Coexistence"
+subtitle: ""  
+author: 
+  - "Jasper Slingsby, BIO2014F"
+date: '`r Sys.Date()`'
+output:
+  xaringan::moon_reader:
+    css: ["xaringan-themer.css", "custom styles.css"]
+    nature:
+      slideNumberFormat: "%current% / %total%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: true
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+
+# library(RefManageR)
+# BibOptions(check.entries = FALSE,
+#            bib.style = "authoryear",
+#            cite.style = "alphabetic",
+#            style = "markdown",
+#            hyperlink = FALSE,
+#            dashed = FALSE)
+# myBib <- ReadBib("bib/2_species.bib", check = FALSE)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+
+# style_duo_accent(
+#   primary_color = "#1381B0",
+#   secondary_color = "#FF961C",
+#   inverse_header_color = "#FFFFFF"
+# )
+
+style_mono_light(base_color = "#23395b")
+
+#https://mycolor.space/?hex=%2323395B&sub=1 
+#"Generic gradient" - #23395B #006287 #008E9D #00B897 #89DD81 #F9F871
+#"Matching gradient" (reverse) - #23395B #494E77 #716292 #9C77AA #C88DBF #F5A3D0
+
+
+
+library(knitr)
+library(kableExtra)
+```
+
+
+```{r xaringan-tile-view, echo=FALSE}
+# xaringanExtra::use_tile_view()
+```
+
+.pull-left[
+
+### Exponential growth
+
+$dN/dt = rN$
+
+Population growth rate, $r$, doesn't change with population size
+
+- i.e. no competition
+
+```{r, echo = F, out.width="80%", fig.height = 6}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16,32), 
+           t = c(0,1,2,3,4)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,5) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+
+]
+
+.pull-right[
+
+### Logistic growth
+
+$dN/dt = rN (K – N)/K$
+
+Population growth rate, $r$, gets small as the population approaches carrying capacity, $K$
+
+- i.e. _**intraspecific competition!**_
+
+```{r, echo = F, out.width="80%", fig.height = 6}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16,24,28,30,30,30), 
+           t = c(0,1,2,3,4,5,6,7,8)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,10) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold")) +
+  geom_hline(yintercept = 30, colour = "blue", linetype = 2) +
+  geom_text(aes(x = 0, y = 32, label = "K"), colour = "blue", size = 10)
+
+```
+]
+
+--
+
+.footnote[_But what about int**er**specific competition?_]
+
+---
+
+.pull-left[
+
+### Experiments with _Paramecium_
+
+<br>
+
+Georgyi Frantsevitch Gause's experiments with species of the unicellular cilliate genus _Paramecium_ taught us a lot about intra- and interspecific competition.
+]
+
+.pull-right[
+
+<br>
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Paramecium_aurelia.jpg")
+```
+
+.footnote[image: [**Wikipedia**](https://en.wikipedia.org/wiki/Paramecium#/media/File:Paramecium.jpg)]
+
+]
+
+---
+
+### Experiments with _Paramecium_ spp
+
+_Paramecium_ species cultured separately, demonstrating **_intraspecific_** competition.
+
+```{r echo = F, fig.align = 'center', out.width = '60%'}
+knitr::include_graphics("images/paramecium_separate.png")
+```
+
+.footnote[[**Gause 1934**](http://dx.doi.org/10.1126/science.79.2036.16.b)]
+--
+
+_Paramecium_ species cultured together, demonstrating **_interspecific_** competition.
+
+```{r echo = F, fig.align = 'center', out.width = '40%'}
+knitr::include_graphics("images/paramecium_together.png")
+```
+
+---
+
+### Experiments with _Paramecium_ spp
+
+.pull-left[
+So why are these different?
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/paramecium_together.png")
+```
+.footnote[[**Gause 1934**](http://dx.doi.org/10.1126/science.79.2036.16.b)]
+
+In the panel on the left, growth of both species is suppressed, but _P. caudatum_ actually goes extinct!
+
+The pair on the right appear to be able to coexist, albeit at lower densities than when grown alone.
+
+]
+
+.pull-right[
+
+**Explain why i.t.o. the species resource requirements.**
+
+How can we determine which species can coexist?
+
+How do we quantify the effect of interspecific competition on population growth? 
+
+]
+
+---
+
+Lotka-Volterra - see Tony's slides
+
+---
+
+
+```{r, echo = F}
+# library(gauseR)
+# 
+# data(gause_1934_book_f22)
+# 
+# logistic_data<-gause_1934_book_f22[gause_1934_book_f22$Treatment=="Pa",]
+# 
+# plot(Volume_Species2~Day, logistic_data, xlab="Day", ylab="P. aurelia Popln density (by volume)")
+# 
+# timelst<-seq(0, 25, by=0.1) # sequence of time values to plot
+# prediction<-get_logistic(time = timelst, N0 = 0.6, r = 0.8, K=230)
+# 
+# lines(timelst, prediction, lwd=2)
+```
+
+
+---
+
+### The Hutchinsonian Niche
+
+.pull-left[
+
+<br>
+
+G Evelyn Hutchinson proposed that _the niche is an n-dimensional hypervolume within which a species is **able to maintain a viable population**_ - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
+
+<br>
+
+Does the occurrence of a species at a locality mean it is able to maintain a viable population there...?
+
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/treurnicht2020_hutchinson.jpg")
+```
+
+.footnote[Figure from [**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048)]
+]
+
+---
+
+class: center, middle
+
+### What does maintaining a viable population even mean?
+
+---
+
+### Population growth curve
+
+.pull-left[
+Consider growth of a population, starting with 2 individuals at t = 0. 
+- Assume a per-capita reproductive rate, $r$ = 2
+
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2), 
+           t = c(0)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,5) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+Consider growth of a population, starting with 2 individuals at t = 0. 
+- Assume a per-capita reproductive rate, $r$ = 2
+
+> **Note:**
+
+> _The per-capita reproductive rate ( $r$ ) is the number of reproductively mature individuals contributed per individual from one generation to the next._
+
+> _It is a fundamental biological parameter, determined by things like the number of eggs/seeds produced, the hatching/germination success of eggs/seeds, and the success with which hatchlings/germinants survive to reproductive maturity._
+
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2,4), 
+           t = c(0,1)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,5) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+Consider growth of a population, starting with 2 individuals at t = 0. 
+- Assume a per-capita reproductive rate, $r$ = 2
+
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2,4,8), 
+           t = c(0,1,2)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,5) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+Consider growth of a population, starting with 2 individuals at t = 0. 
+- Assume a per-capita reproductive rate, $r$ = 2
+
+<br>
+
+_Growth is exponential!_
+
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16,32), 
+           t = c(0,1,2,3,4)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,5) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+Consider growth of a population, starting with 2 individuals at t = 0. 
+- Assume a per-capita reproductive rate, $r$ = 2
+
+<br>
+
+_Growth is exponential!_
+
+Using calculus, we can express growth as an instantaneous rate as $dN/dt$, the rate of change in number of organisms at a particular instant in time.
+
+Since our example is an exponential function, the slope of this curve is given by  $dN/dt = rN$
+
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16,32), 
+           t = c(0,1,2,3,4)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,5) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+]
+
+---
+
+.pull-left[
+
+### Is growth always exponential?
+
+
+```{r echo = F, fig.align = 'center', out.width = '80%'}
+knitr::include_graphics("images/Branch1975_F3.png")
+```
+
+Resources available to individuals typically shrink as population size and density increase. Competition between individuals limits growth and reproductive output (i.e. per-capita reproductive rate ( $r$ )).
+
+.footnote[[**Branch 1975**](http://dx.doi.org/10.1111/geb.13048)]
+
+]
+
+.pull-right[
+
+```{r echo = F, fig.align = 'center', out.width = '65%'}
+knitr::include_graphics("images/Scutellastra cochlear.jpeg")
+```
+
+```{r echo = F, fig.align = 'center', out.width = '65%'}
+knitr::include_graphics("images/Branch1975_F6.png")
+```
+
+.footnote[image: Allan Ellis, [**iNaturalist**](https://www.inaturalist.org/observations/99128657)]
+
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2), 
+           t = c(0)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,10) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It probably starts out much the same while resources are abundant...
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2,4), 
+           t = c(0,1)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,10) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It probably starts out much the same while resources are abundant...
+
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16), 
+           t = c(0,1,2,3)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,10) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It probably starts out much the same while resources are abundant...
+
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16,24), 
+           t = c(0,1,2,3,4)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,10) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It probably starts out much the same while resources are abundant...
+
+...but slows as resources become limiting...
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16,24,28), 
+           t = c(0,1,2,3,4,5)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,10) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It probably starts out much the same while resources are abundant...
+
+...but slows as resources become limiting...
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16,24,28,30), 
+           t = c(0,1,2,3,4,5,6)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,10) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It probably starts out much the same while resources are abundant...
+
+...but slows as resources become limiting...
+
+...and eventually flattens out...
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16,24,28,30,30,30), 
+           t = c(0,1,2,3,4,5,6,7,8)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,10) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It probably starts out much the same while resources are abundant...
+
+...but slows as resources become limiting...
+
+...and eventually flattens out...
+
+Any thoughts on the equation to fit this curve?
+
+$dN/dt = ?$
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16,24,28,30,30,30), 
+           t = c(0,1,2,3,4,5,6,7,8)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,10) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It probably starts out much the same while resources are abundant...
+
+...but slows as resources become limiting...
+
+...and eventually flattens out...
+
+Any thoughts on the equation to fit this curve?
+
+$dN/dt = rN (K – N)/K$
+
+A logistic function, or what we call the logistic growth curve.
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16,24,28,30,30,30), 
+           t = c(0,1,2,3,4,5,6,7,8)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,10) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+The population growth curve including **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species) is a logistic function, flattening out as resources become limiting.
+
+$dN/dt = rN (K – N)/K$
+
+<br>
+
+We know $N$, $t$ and $r$, but what is $K$?
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16,24,28,30,30,30), 
+           t = c(0,1,2,3,4,5,6,7,8)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,10) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+The population growth curve including **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species) is a logistic function, flattening out as resources become limiting.
+
+$dN/dt = rN (K – N)/K$
+
+<br>
+
+We know $N$, $t$ and $r$, but what is $K$?
+
+$K$ = carrying capacity
+
+Familiar?
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16,24,28,30,30,30), 
+           t = c(0,1,2,3,4,5,6,7,8)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,10) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold")) +
+  geom_hline(yintercept = 30, colour = "blue", linetype = 2) +
+  geom_text(aes(x = 0, y = 32, label = "K"), colour = "blue", size = 10)
+
+```
+]
+
+---
+
+```{r echo = F, fig.align = 'center', out.width = '65%'}
+knitr::include_graphics("images/terry_rvsK.png")
+```
+
+.footnote[Terry Hedderson's lecture on life history models]
+
+---
+
+.pull-left[
+
+### Exponential growth
+
+$dN/dt = rN$
+
+Population growth rate, $r$, doesn't change with population size
+
+```{r, echo = F, out.width="80%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16,32), 
+           t = c(0,1,2,3,4)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,5) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+
+]
+
+.pull-right[
+
+### Logistic growth
+
+$dN/dt = rN (K – N)/K$
+
+Population growth rate, $r$, gets small as the population approaches carrying capacity, $K$
+
+```{r, echo = F, out.width="80%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16,24,28,30,30,30), 
+           t = c(0,1,2,3,4,5,6,7,8)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,10) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold")) +
+  geom_hline(yintercept = 30, colour = "blue", linetype = 2) +
+  geom_text(aes(x = 0, y = 32, label = "K"), colour = "blue", size = 10)
+
+```
+]
+
+---
+
+### What are the implications of density-dependent growth?
+
+---
+
+### What are the implications of density-dependent growth?
+
+Serotinous Proteaceae are well known for extreme population density fluctuations after fire.
+
+.pull-left[
+
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/proteas_Roets2006.jpg")
+```
+
+.footnote[image: Roets et al 2006]
+]
+
+--
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Bond1995.png")
+```
+
+While some of this may be exogenous, driven by external forces like climate fluctuations or variability in the fire regime, [**Bond et al 1995**](http://dx.doi.org/10.1080/11956860.1995.11682291) demonstrated that it could be endogenous, driven by internal population dynamics due to density-dependent effects.
+
+.footnote[[**Bond et al 1995**](http://dx.doi.org/10.1080/11956860.1995.11682291)]
+
+]
+
+---
+
+### Density-dependence in serotinous Cape Proteaceae 
+
+.pull-left[
+Empirical datasets showed evidence for a negative impact of density-dependence on:
+
+- recruitment (Figure 1)
+- fecundity (Figure 4)
+
+<br>
+
+Notice the exogenous effect of aridity on _Protea repens_ seedling establishment at the arid inland site (Figure 1, bottom).
+
+.footnote[[**Bond et al 1995**](http://dx.doi.org/10.1080/11956860.1995.11682291)]
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Bond1995_F1_4.png")
+```
+]
+
+---
+
+.pull-left[
+
+### Protea density-dependence 
+
+They fed their empirical data into population models and projected population growth over multiple generations.
+
+Note that generations and fires are synonymous, because serotinous Proteaceae mostly only recruit after fire.
+
+Decreasing the starting population size ( $N_0$ ), which would reduce the initial effect of density on population growth, increased the amplitude of population fluctuations, creating risk of total population crashes.
+
+This effect was stronger in _P. neriifolia_, because its cone production (fecundity) was more sensitive to population density.
+
+.footnote[[**Bond et al 1995**](http://dx.doi.org/10.1080/11956860.1995.11682291)]
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/Bond1995_F5.png")
+```
+]
+---
+
+class: middle
+
+## Take-home
+
+>**
+
+>**
+
+>**
+
+---
+class: center, middle
+
+# Thanks!
+
+Slides created via the R packages:
+
+[**xaringan**](https://github.com/yihui/xaringan)<br>
+[gadenbuie/xaringanthemer](https://github.com/gadenbuie/xaringanthemer)
+
+The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihui.name/knitr), and [R Markdown](https://rmarkdown.rstudio.com).
