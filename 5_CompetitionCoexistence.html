@@ -4,7 +4,7 @@
     <title>4. Interspecific Competition and Coexistence</title>
     <meta charset="utf-8" />
     <meta name="author" content="Jasper Slingsby, BIO2014F" />
-    <meta name="date" content="2024-04-19" />
+    <meta name="date" content="2024-04-21" />
     <script src="5_CompetitionCoexistence_files/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom styles.css" type="text/css" />
@@ -20,7 +20,7 @@ class: center, middle, inverse, title-slide
 ### Jasper Slingsby, BIO2014F
 ]
 .date[
-### 2024-04-19
+### 2024-04-21
 ]
 
 ---
@@ -62,7 +62,7 @@ Population growth rate, `\(r\)`, gets small as the population approaches carryin
 
 --
 
-.footnote[_But what about int**er**specific competition?_]
+.footnote[_But what about int**er**specific competition? (i.e. between species)_]
 
 ---
 
@@ -73,6 +73,10 @@ Population growth rate, `\(r\)`, gets small as the population approaches carryin
 &lt;br&gt;
 
 Georgyi Frantsevitch Gause's experiments with species of the unicellular cilliate genus _Paramecium_ taught us a lot about intra- and interspecific competition.
+
+&lt;br&gt;
+
+He cultured them in test tubes supplied with an oatmeal medium, which promotes the growth of bacteria in the upper, oxygenated part of the test tube, and yeast in the lower, de-oxygenated part of the test tube.
 ]
 
 .pull-right[
@@ -104,27 +108,92 @@ _Paramecium_ species cultured together, demonstrating **_interspecific_** compet
 
 ### Experiments with _Paramecium_ spp
 
+Why the different outcomes between the species mixes?
+
 .pull-left[
-So why are these different?
+#### Observation
 
-&lt;img src="images/paramecium_together.png" width="100%" style="display: block; margin: auto;" /&gt;
-.footnote[[**Gause 1934**](http://dx.doi.org/10.1126/science.79.2036.16.b)]
+&lt;img src="images/paramecium_together.png" width="90%" style="display: block; margin: auto;" /&gt;
 
-In the panel on the left, growth of both species is suppressed, but _P. caudatum_ actually goes extinct!
+In the panel on the **left**, growth of both species is suppressed, but _P. caudatum_ actually goes extinct!
 
-The pair on the right appear to be able to coexist, albeit at lower densities than when grown alone.
+The pair on the **right** appear to be able to coexist, albeit at lower densities than when grown alone.
 
 ]
+
+--
 
 .pull-right[
 
-**Explain why i.t.o. the species resource requirements.**
+#### Explanation
 
-How can we determine which species can coexist?
+**Left:** _P. caudatum_ and _P. aurelia_ both feed on bacteria, but _P. aurelia_ grows 6 times faster than _P. caudatum_, resulting in its **competitive exclusion**.
 
-How do we quantify the effect of interspecific competition on population growth? 
+&lt;br&gt;
 
+**Right:** While _P. caudatum_ out-competes _P. bursaria_ for bacteria, _P. bursaria_ can survive on yeast in the lower, less oxygenated part of the test tube, because it contains tiny green algae that provide it with oxygen. This is an example of **resource partitioning**.
+
+.footnote[[**Gause 1934**](http://dx.doi.org/10.1126/science.79.2036.16.b)]
 ]
+
+---
+
+.pull-left[
+### Resource partitioning
+
+There are many examples in nature of species that are able to coexist in a community, because they partition their resources.
+
+Many of these examples are from birds, such as [**Robert MacArthur's 1958 study**](http://dx.doi.org/10.2307/1931600) of warblers in the genus _Dendroica_ in the conifer forests of northeastern USA. Here he concluded
+
+&gt;_"There are differences of feeding position, behavior, and nesting date which reduce competition."_
+]
+
+.pull-right[
+&lt;img src="images/bird_apartment.jpg" width="75%" style="display: block; margin: auto;" /&gt;
+
+.footnote[The Atlas of World Wildlife (not MacArthur's warblers...)]
+]
+
+---
+
+### Competitive Exclusion
+
+The **competitive exclusion principle** is often attributed to Gause, and sometimes called Gause's law, but there were earlier observations by Grinnell, Darwin and others, e.g.
+
+&gt;_Two species of approximately the same food habits are not likely to remain long evenly balanced in numbers in the same region. One will crowd out the other._ - [**Grinnell 1904**](https://doi.org/10.2307/4070199)
+
+--
+
+&lt;br&gt;
+
+Unequivocal examples of competitive exclusion are rare, and can only be demonstrated with experiments such as Gause's. These experiments are near-impossible for organisms with longer lifespans.
+
+--
+
+&lt;br&gt;
+
+Why would we need experiments? Why would field observations not be good enough?
+
+---
+
+### The Ghost of Competition Past
+
+&lt;img src="images/Connell_1980_Ghost.png" width="75%" style="display: block; margin: auto;" /&gt;
+
+In nature, while interspecific competition may be common, where competitive exclusion has occurred it cannot be observed - only one competitor would remain.
+
+While similar species occurring in sympatry may suggest that competitive exclusion has occurred, there are other potential explanations like dispersal limitation that prevents them accessing the same physical space.
+
+The criteria required to demonstrate that competitive exclusion has occurred, or that species have coevolved due to competition (e.g. resource partitioning or character displacement) are onerous! - see [**Connell 1980**](http://dx.doi.org/10.2307/3544421).
+
+---
+
+
+class: center, middle
+
+### How can we determine which species can coexist?
+
+### How do we quantify the effect of interspecific competition on population growth? 
 
 ---
 
@@ -175,7 +244,7 @@ Consider growth of a population, starting with 2 individuals at t = 0.
 ]
 
 .pull-right[
-&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-9-1.png" width="100%" height="100%" /&gt;
+&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-11-1.png" width="100%" height="100%" /&gt;
 ]
 
 ---
@@ -195,7 +264,7 @@ Consider growth of a population, starting with 2 individuals at t = 0.
 ]
 
 .pull-right[
-&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-10-1.png" width="100%" height="100%" /&gt;
+&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-12-1.png" width="100%" height="100%" /&gt;
 ]
 
 ---
@@ -209,7 +278,7 @@ Consider growth of a population, starting with 2 individuals at t = 0.
 ]
 
 .pull-right[
-&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-11-1.png" width="100%" height="100%" /&gt;
+&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-13-1.png" width="100%" height="100%" /&gt;
 ]
 
 ---
@@ -227,7 +296,7 @@ _Growth is exponential!_
 ]
 
 .pull-right[
-&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-12-1.png" width="100%" height="100%" /&gt;
+&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-14-1.png" width="100%" height="100%" /&gt;
 ]
 
 ---
@@ -249,7 +318,7 @@ Since our example is an exponential function, the slope of this curve is given b
 ]
 
 .pull-right[
-&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-13-1.png" width="100%" height="100%" /&gt;
+&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-15-1.png" width="100%" height="100%" /&gt;
 ]
 
 ---
@@ -287,35 +356,6 @@ What does our curve look like once we include **density-dependent** effects like
 ]
 
 .pull-right[
-&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-17-1.png" width="100%" height="100%" /&gt;
-]
-
----
-
-### Population growth curve
-
-.pull-left[
-What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
-
-It probably starts out much the same while resources are abundant...
-]
-
-.pull-right[
-&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-18-1.png" width="100%" height="100%" /&gt;
-]
-
----
-
-### Population growth curve
-
-.pull-left[
-What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
-
-It probably starts out much the same while resources are abundant...
-
-]
-
-.pull-right[
 &lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-19-1.png" width="100%" height="100%" /&gt;
 ]
 
@@ -327,7 +367,6 @@ It probably starts out much the same while resources are abundant...
 What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
 
 It probably starts out much the same while resources are abundant...
-
 ]
 
 .pull-right[
@@ -343,7 +382,6 @@ What does our curve look like once we include **density-dependent** effects like
 
 It probably starts out much the same while resources are abundant...
 
-...but slows as resources become limiting...
 ]
 
 .pull-right[
@@ -359,11 +397,42 @@ What does our curve look like once we include **density-dependent** effects like
 
 It probably starts out much the same while resources are abundant...
 
-...but slows as resources become limiting...
 ]
 
 .pull-right[
 &lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-22-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It probably starts out much the same while resources are abundant...
+
+...but slows as resources become limiting...
+]
+
+.pull-right[
+&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-23-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It probably starts out much the same while resources are abundant...
+
+...but slows as resources become limiting...
+]
+
+.pull-right[
+&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-24-1.png" width="100%" height="100%" /&gt;
 ]
 
 ---
@@ -381,7 +450,7 @@ It probably starts out much the same while resources are abundant...
 ]
 
 .pull-right[
-&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-23-1.png" width="100%" height="100%" /&gt;
+&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-25-1.png" width="100%" height="100%" /&gt;
 ]
 
 ---
@@ -403,7 +472,7 @@ Any thoughts on the equation to fit this curve?
 ]
 
 .pull-right[
-&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-24-1.png" width="100%" height="100%" /&gt;
+&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-26-1.png" width="100%" height="100%" /&gt;
 ]
 
 ---
@@ -427,7 +496,7 @@ A logistic function, or what we call the logistic growth curve.
 ]
 
 .pull-right[
-&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-25-1.png" width="100%" height="100%" /&gt;
+&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-27-1.png" width="100%" height="100%" /&gt;
 ]
 
 ---
@@ -445,7 +514,7 @@ We know `\(N\)`, `\(t\)` and `\(r\)`, but what is `\(K\)`?
 ]
 
 .pull-right[
-&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-26-1.png" width="100%" height="100%" /&gt;
+&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-28-1.png" width="100%" height="100%" /&gt;
 ]
 
 ---
@@ -467,7 +536,7 @@ Familiar?
 ]
 
 .pull-right[
-&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-27-1.png" width="100%" height="100%" /&gt;
+&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-29-1.png" width="100%" height="100%" /&gt;
 ]
 
 ---
@@ -486,7 +555,7 @@ Familiar?
 
 Population growth rate, `\(r\)`, doesn't change with population size
 
-&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-29-1.png" width="80%" /&gt;
+&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-31-1.png" width="80%" /&gt;
 
 ]
 
@@ -498,7 +567,7 @@ Population growth rate, `\(r\)`, doesn't change with population size
 
 Population growth rate, `\(r\)`, gets small as the population approaches carrying capacity, `\(K\)`
 
-&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-30-1.png" width="80%" /&gt;
+&lt;img src="5_CompetitionCoexistence_files/figure-html/unnamed-chunk-32-1.png" width="80%" /&gt;
 ]
 
 ---

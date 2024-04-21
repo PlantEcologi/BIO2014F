@@ -126,7 +126,7 @@ data.frame(N = c(2,4,8,16,24,28,30,30,30),
 
 --
 
-.footnote[_But what about int**er**specific competition?_]
+.footnote[_But what about int**er**specific competition? (i.e. between species)_]
 
 ---
 
@@ -137,6 +137,10 @@ data.frame(N = c(2,4,8,16,24,28,30,30,30),
 <br>
 
 Georgyi Frantsevitch Gause's experiments with species of the unicellular cilliate genus _Paramecium_ taught us a lot about intra- and interspecific competition.
+
+<br>
+
+He cultured them in test tubes supplied with an oatmeal medium, which promotes the growth of bacteria in the upper, oxygenated part of the test tube, and yeast in the lower, de-oxygenated part of the test tube.
 ]
 
 .pull-right[
@@ -174,29 +178,98 @@ knitr::include_graphics("images/paramecium_together.png")
 
 ### Experiments with _Paramecium_ spp
 
-.pull-left[
-So why are these different?
+Why the different outcomes between the species mixes?
 
-```{r echo = F, fig.align = 'center', out.width = '100%'}
+.pull-left[
+#### Observation
+
+```{r echo = F, fig.align = 'center', out.width = '90%'}
 knitr::include_graphics("images/paramecium_together.png")
 ```
-.footnote[[**Gause 1934**](http://dx.doi.org/10.1126/science.79.2036.16.b)]
 
-In the panel on the left, growth of both species is suppressed, but _P. caudatum_ actually goes extinct!
+In the panel on the **left**, growth of both species is suppressed, but _P. caudatum_ actually goes extinct!
 
-The pair on the right appear to be able to coexist, albeit at lower densities than when grown alone.
+The pair on the **right** appear to be able to coexist, albeit at lower densities than when grown alone.
 
 ]
+
+--
 
 .pull-right[
 
-**Explain why i.t.o. the species resource requirements.**
+#### Explanation
 
-How can we determine which species can coexist?
+**Left:** _P. caudatum_ and _P. aurelia_ both feed on bacteria, but _P. aurelia_ grows 6 times faster than _P. caudatum_, resulting in its **competitive exclusion**.
 
-How do we quantify the effect of interspecific competition on population growth? 
+<br>
 
+**Right:** While _P. caudatum_ out-competes _P. bursaria_ for bacteria, _P. bursaria_ can survive on yeast in the lower, less oxygenated part of the test tube, because it contains tiny green algae that provide it with oxygen. This is an example of **resource partitioning**.
+
+.footnote[[**Gause 1934**](http://dx.doi.org/10.1126/science.79.2036.16.b)]
 ]
+
+---
+
+.pull-left[
+### Resource partitioning
+
+There are many examples in nature of species that are able to coexist in a community, because they partition their resources.
+
+Many of these examples are from birds, such as [**Robert MacArthur's 1958 study**](http://dx.doi.org/10.2307/1931600) of warblers in the genus _Dendroica_ in the conifer forests of northeastern USA. Here he concluded
+
+>_"There are differences of feeding position, behavior, and nesting date which reduce competition."_
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '75%'}
+knitr::include_graphics("images/bird_apartment.jpg")
+```
+
+.footnote[The Atlas of World Wildlife (not MacArthur's warblers...)]
+]
+
+---
+
+### Competitive Exclusion
+
+The **competitive exclusion principle** is often attributed to Gause, and sometimes called Gause's law, but there were earlier observations by Grinnell, Darwin and others, e.g.
+
+>_Two species of approximately the same food habits are not likely to remain long evenly balanced in numbers in the same region. One will crowd out the other._ - [**Grinnell 1904**](https://doi.org/10.2307/4070199)
+
+--
+
+<br>
+
+Unequivocal examples of competitive exclusion are rare, and can only be demonstrated with experiments such as Gause's. These experiments are near-impossible for organisms with longer lifespans.
+
+--
+
+<br>
+
+Why would we need experiments? Why would field observations not be good enough?
+
+---
+
+### The Ghost of Competition Past
+
+```{r echo = F, fig.align = 'center', out.width = '75%'}
+knitr::include_graphics("images/Connell_1980_Ghost.png")
+```
+
+In nature, while interspecific competition may be common, where competitive exclusion has occurred it cannot be observed - only one competitor would remain.
+
+While similar species occurring in sympatry may suggest that competitive exclusion has occurred, there are other potential explanations like dispersal limitation that prevents them accessing the same physical space.
+
+The criteria required to demonstrate that competitive exclusion has occurred, or that species have coevolved due to competition (e.g. resource partitioning or character displacement) are onerous! - see [**Connell 1980**](http://dx.doi.org/10.2307/3544421).
+
+---
+
+
+class: center, middle
+
+### How can we determine which species can coexist?
+
+### How do we quantify the effect of interspecific competition on population growth? 
 
 ---
 
