@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>3. Geographic distributions and Niche modelling</title>
+    <title>3. Geographic Distributions and Niche modelling</title>
     <meta charset="utf-8" />
     <meta name="author" content="Jasper Slingsby, BIO2014F" />
-    <meta name="date" content="2024-04-18" />
+    <meta name="date" content="2024-04-21" />
     <script src="3_GeographicNiche_files/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom styles.css" type="text/css" />
@@ -14,13 +14,13 @@
 class: center, middle, inverse, title-slide
 
 .title[
-# 3. Geographic distributions and Niche modelling
+# 3. Geographic Distributions and Niche modelling
 ]
 .author[
 ### Jasper Slingsby, BIO2014F
 ]
 .date[
-### 2024-04-18
+### 2024-04-21
 ]
 
 ---
@@ -79,7 +79,7 @@ This both aids our ability to think about the niche, but also allows us to expli
 .pull-left[
 Also referred to as Ecological Niche Models.
 
-Utilise the concepts proposed by Grinnell and Hutchinson to predict the geographic distribution (or range) of species.
+Utilise concepts proposed by Grinnell and Hutchinson to predict the geographic distribution (or range) of species.
 
 SDMs propose that a species' distribution can be predicted based on the environmental conditions at localities where they have been observed.
 
@@ -125,6 +125,27 @@ SDMs can predict the present distribution of a species if it is poorly known, bu
 
 ---
 
+.pull-left[
+
+### What are SDMs used for?
+
+Projected species distributions are used in many ways, including in conservation. Our National Screening Tool for environmental impact authorizations for developments includes modelled distributions of animals. Sites where sensitive species occur are required to do more thorough site inspection studies.
+
+&lt;img src="images/GoldenMole.jpeg" width="100%" style="display: block; margin: auto;" /&gt;
+.footnote[Cape Golden Mole, [**JP le Roux, iNaturalist**](https://www.inaturalist.org/observations/124849922)]
+]
+
+.pull-right[
+
+&lt;img src="images/DFFE_ScreeningTool.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+&lt;img src="images/Cowan2021.png" width="70%" style="display: block; margin: auto;" /&gt;
+
+.footnote[Golden mole distributions, [**Cowan et al. 2021**](http://dx.doi.org/10.1016/j.jnc.2021.126044)]
+]
+
+---
+
 ### What are SDMs used for?
 
 .pull-left[
@@ -134,6 +155,10 @@ SDMs can predict the present distribution of a species if it is poorly known, bu
 &gt; _"A search of articles in peer-reviewed journals over the past 20 years found more than 6000 studies using or mentioning one of the most common classes of biodiversity modeling: species distribution models (SDMs)."_ 
 
 [**Araújo et al. 2019**](http://dx.doi.org/10.1126/sciadv.aat4858)
+
+&lt;br&gt;
+
+They are clearly very useful in many fields!!!
 ]
 
 .pull-right[
@@ -154,28 +179,34 @@ class: center, middle
 
 ---
 
-### Statistical models vs reality?
+### 1. Statistical models vs reality?
 
-Statistical models are necessarily simplifications of reality, and their predictions always come with some error (i.e. there is uncertainty). 
+_Statistical models are necessarily simplifications of reality, and their predictions always come with some error (i.e. there is uncertainty)._
+
+--
 
 Sources of error in SDMs:
 
 - the choice of variables included in the model 
     - have all of the most important determinants of a species distribution been included?
+--
 - biases in the occurrence data 
     - easy-to-access areas are usually overrepresented (e.g. near roads)
+--
 - quality of the occurrence and environmental data...
     - GIGO (garbage in - garbage out)
+--
 - the type and structure of the statistical model...
     - continuous (abundance), discrete (presence/absence), frequentist vs Bayesian, etc
 
-Ideally one quantifies and report the uncertainty for your model, but that is a topic for [**BIO3019S**](https://science.uct.ac.za/department-biological-sciences/undergraduate-study/third-year-courses)...
+--
+
+Ideally one quantifies and reports the uncertainty for your model, but that is a topic for [**BIO3019S**](https://science.uct.ac.za/department-biological-sciences/undergraduate-study/third-year-courses)...
 
 ---
 
-### SDMs and the Hutchinsonian Niche?
-
 .pull-left[
+### 2. SDMs and the realised niche?
 
 Hutchinson made a distinction between the _fundamental_ versus the _realised_ niche - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
 
@@ -184,25 +215,29 @@ Hutchinson made a distinction between the _fundamental_ versus the _realised_ ni
 
 &lt;br&gt;
 
-Which do SDMs represent?
+Which do SDMs represent? Why is this a problem?
 
 ]
 
 .pull-right[
 &lt;img src="images/Fundamental vs Realised Niche_Escobar et al 2017.jpg" width="100%" style="display: block; margin: auto;" /&gt;
-
-.footnote[Figure from [**Escobar et al 2017**](https://doi.org/10.3389/fvets.2017.00105)]
+Figure from [**Escobar et al 2017**](https://doi.org/10.3389/fvets.2017.00105)
 ]
+
+--
+.footnote[Answer: The realised niche, because the model is trained on where the species actually occurred. This can be a problem, because the model doesn't usually include spatial information about factors that determine the realised niche (competition, etc), so themodelled distribution is neither the fundamental nor the realised niche... ]
 
 ---
 
-### SDMs and the assumption of equilibrium?
+### 3. SDMs and the assumption of equilibrium?
 
-&lt;img src="images/brown_carnaval_niches.png" width="80%" style="display: block; margin: auto;" /&gt;
+&lt;img src="images/brown_carnaval_niches.png" width="70%" style="display: block; margin: auto;" /&gt;
 
 A) If a species has an equilibrium distribution, it is occupying all of the potentially suitable habitats in the world (the potential niche is completely filled). 
 
-B) If a species is in a non-equilibrium distribution, its potential niche is not fully occupied due to dispersal constraints or seasonal or long-term dynamism of habitats.
+B) If a species is in a non-equilibrium distribution, its potential niche is not fully occupied due to inaccessible habitat due to dispersal (movement) constraints: distance or barriers to dispersal, inability to recolonise habitats affected by seasonality or long-term dynamism.
+
+Species rarely occupy their full potential niche!
 
 .pull-right[
 .footnote[[**Brown and Carnaval 2019**](http://dx.doi.org/10.21425/F5FBG44158)]
@@ -211,7 +246,7 @@ B) If a species is in a non-equilibrium distribution, its potential niche is not
 
 ---
 
-### Invasive species and the assumption of equilibrium
+### e.g.Invasive species and the assumption of equilibrium
 
 &lt;img src="images/tingley2014_SDM_projected.jpeg" width="70%" style="display: block; margin: auto;" /&gt;
 
@@ -229,7 +264,7 @@ Native (right): failed to predict invasive populations in drier and cooler regio
 
 ---
 
-### Invasive species and the assumption of equilibrium
+### e.g. Invasive species and the assumption of equilibrium
 
 Why the difference between the native and invasive realised niches of the cane toad? - [**Tingley et al. 2014**](https://doi.org/10.1073/pnas.1405766111)
 
@@ -248,7 +283,7 @@ Difference in biotic interactions experienced on each continent?
 
 ---
 
-### Invasive species and the assumption of equilibrium
+### e.g. Invasive species and the assumption of equilibrium
 
 Why the difference between the native and invasive realised niches of the cane toad? - [**Tingley et al. 2014**](https://doi.org/10.1073/pnas.1405766111)
 
@@ -268,6 +303,10 @@ Difference in biotic interactions experienced on each continent?
 &gt;*"One possibility is that the presence of a closely related species (R. schneideri) in cooler and drier regions of Southern Brazil may be preventing R. marina from colonizing suitable environments south of its present range.* 
 *...these two species hybridize..., and even low rates of interspecific hybridization can enforce stable range boundaries"*
 ]
+
+--
+
+.footnote[**This example highlights that acknowledging the issues or assumptions of SDMs can be very useful for learning about the species and testing hypotheses. The issues are only a problem if not acknowledged and accounted for in some way!**]
 
 ---
 ### A simplified summary of how the approaches fit together
@@ -320,11 +359,13 @@ class: middle
 
 ## Take-home
 
-&gt;**
+&gt;*One of the most common applications of the concept of the niche is Species Distribution Modelling (also known as Ecological Niche Modelling).*
 
-&gt;**
+&gt;*While SDMs can be very useful, they have many issues and assumptions that need to be taken into account.*
 
-&gt;**
+&gt;*Acknowledging the issues or assumptions of SDMs can actually be very useful for learning about species and testing hypotheses.*
+
+&gt;_**Proviso:** There are many ways to build SDMs and it is a rapidly moving field. There are methods to address some of the issues I highlight, but they are less commonly used and since I am covering SDMs in one lecture for this course I'm not going to go there..._
 
 ---
 class: center, middle

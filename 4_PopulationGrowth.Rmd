@@ -237,6 +237,7 @@ Using calculus, we can express growth as an instantaneous rate as $dN/dt$, the r
 
 Since our example is an exponential function, the slope of this curve is given by  $dN/dt = rN$
 
+So: At $t_0$ the slope = 2x2 = 4. At $t_3$ the slope = 2x16 = 32. Etc
 ]
 
 .pull-right[
@@ -270,7 +271,7 @@ data.frame(N = c(2,4,8,16,32),
 knitr::include_graphics("images/Branch1975_F3.png")
 ```
 
-Resources available to individuals typically shrink as population size and density increase. Competition between individuals limits growth and reproductive output (i.e. per-capita reproductive rate ( $r$ )).
+Resources available to individuals typically shrink as population size and density increase. Competition between individuals limits growth and reproductive output.
 
 .footnote[[**Branch 1975**](http://dx.doi.org/10.1111/geb.13048)]
 
@@ -793,6 +794,26 @@ They fed their empirical data into population models and projected population gr
 
 Note that generations and fires are synonymous, because serotinous Proteaceae mostly only recruit after fire.
 
+
+.footnote[[**Bond et al 1995**](http://dx.doi.org/10.1080/11956860.1995.11682291)]
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/Bond1995_F5.png")
+```
+]
+
+---
+
+.pull-left[
+
+### Protea density-dependence 
+
+They fed their empirical data into population models and projected population growth over multiple generations.
+
+Note that generations and fires are synonymous, because serotinous Proteaceae mostly only recruit after fire.
+
 Decreasing the starting population size ( $N_0$ ), which would reduce the initial effect of density on population growth, increased the amplitude of population fluctuations, creating risk of total population crashes.
 
 This effect was stronger in _P. neriifolia_, because its cone production (fecundity) was more sensitive to population density.
@@ -805,17 +826,18 @@ This effect was stronger in _P. neriifolia_, because its cone production (fecund
 knitr::include_graphics("images/Bond1995_F5.png")
 ```
 ]
+
 ---
 
 class: middle
 
 ## Take-home
 
->**
+>*If population growth were density-independent, it would be exponential...*
 
->**
+>*Most species exhibit density-dependent population growth due to intraspecific competition and other density-dependent factors (e.g. disease transmission).*
 
->**
+>*Density-dependence creates an endogenous control on populations and has big implications for their size and stability.*
 
 ---
 class: center, middle
