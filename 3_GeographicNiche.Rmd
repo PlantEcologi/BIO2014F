@@ -231,7 +231,7 @@ class: center, middle
 
 ### 1. Statistical models vs reality?
 
-_Statistical models are necessarily simplifications of reality, and their predictions always come with some error (i.e. there is uncertainty)._
+_Statistical models are simplifications of reality, and their predictions always come with some error (i.e. uncertainty)._
 
 --
 
@@ -239,9 +239,10 @@ Sources of error in SDMs:
 
 - the choice of variables included in the model 
     - have all of the most important determinants of a species distribution been included?
+    - are all the variables independent? Correlation among variables (autocorrelation) creates bias
 --
 - biases in the occurrence data 
-    - easy-to-access areas are usually overrepresented (e.g. near roads)
+    - easy-to-access areas are usually over-represented (e.g. near roads)
 --
 - quality of the occurrence and environmental data...
     - GIGO (garbage in - garbage out)
@@ -250,6 +251,10 @@ Sources of error in SDMs:
     - continuous (abundance), discrete (presence/absence), frequentist vs Bayesian, etc
 
 --
+
+<br>
+
+There are ways to account for some of these issues, if you are aware of them.
 
 Ideally one quantifies and reports the uncertainty for your model, but that is a topic for [**BIO3019S**](https://science.uct.ac.za/department-biological-sciences/undergraduate-study/third-year-courses)...
 
@@ -277,7 +282,7 @@ Figure from [**Escobar et al 2017**](https://doi.org/10.3389/fvets.2017.00105)
 ]
 
 --
-.footnote[Answer: The realised niche, because the model is trained on where the species actually occurred. This can be a problem, because the model doesn't usually include spatial information about factors that determine the realised niche (competition, etc), so themodelled distribution is neither the fundamental nor the realised niche... ]
+.footnote[Answer: The realised niche, because the model is trained on where the species actually occurred. This can be a problem, because the model doesn't usually include spatial information about factors that determine the realised niche (competition, etc), so the predicted/projected distribution may be neither the fundamental nor the realised niche... ]
 
 ---
 
@@ -289,18 +294,27 @@ knitr::include_graphics("images/brown_carnaval_niches.png")
 
 A) If a species has an equilibrium distribution, it is occupying all of the potentially suitable habitats in the world (the potential niche is completely filled). 
 
-B) If a species is in a non-equilibrium distribution, its potential niche is not fully occupied due to inaccessible habitat due to dispersal (movement) constraints: distance or barriers to dispersal, inability to recolonise habitats affected by seasonality or long-term dynamism.
+B) If a species is in a non-equilibrium distribution, its potential niche is not fully occupied due to inaccessible habitat due to dispersal (movement) constraints: distance or barriers to dispersal, inability to recolonise habitats affected by seasonal or long-term dynamism.
 
 Species rarely occupy their full potential niche!
 
 .pull-right[
-.footnote[[**Brown and Carnaval 2019**](http://dx.doi.org/10.21425/F5FBG44158)]
+.footnote[Figure from [**Brown and Carnaval 2019**](http://dx.doi.org/10.21425/F5FBG44158)]
 ]
-
 
 ---
 
-### e.g.Invasive species and the assumption of equilibrium
+### A simplified summary of how the approaches fit together
+
+```{r echo = F, fig.align = 'center', out.width = '60%'}
+knitr::include_graphics("images/Niches_Escobar and Craft.jpg")
+```
+
+.footnote[[**Escobar and Craft 2016**](https://doi.org/10.3389/fmicb.2016.01174)]
+
+---
+
+### e.g. Invasive species and the assumption of equilibrium
 
 ```{r echo = F, fig.align = 'center', out.width = '70%'}
 knitr::include_graphics("images/tingley2014_SDM_projected.jpeg")
@@ -348,7 +362,7 @@ Why the difference between the native and invasive realised niches of the cane t
 
 Dispersal limitation or absence of drier, cooler climate in South America?
 
->*"...our findings demonstrate that novel climates colonized by R. marina in Australia were available, but unoccupied, in the species’ native range...*
+>*"...our findings demonstrate that novel climates colonized by R. marina in Australia were available, but unoccupied, in the species’ native range..."*
 ]
 
 .pull-right[
@@ -363,15 +377,6 @@ Difference in biotic interactions experienced on each continent?
 --
 
 .footnote[**This example highlights that acknowledging the issues or assumptions of SDMs can be very useful for learning about the species and testing hypotheses. The issues are only a problem if not acknowledged and accounted for in some way!**]
-
----
-### A simplified summary of how the approaches fit together
-
-```{r echo = F, fig.align = 'center', out.width = '60%'}
-knitr::include_graphics("images/Niches_Escobar and Craft.jpg")
-```
-
-.footnote[[**Escobar and Craft 2016**](https://doi.org/10.3389/fmicb.2016.01174)]
 
 ---
 
