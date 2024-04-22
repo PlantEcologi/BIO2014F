@@ -93,6 +93,12 @@ class: center, middle
 
 ---
 
+class: center, middle
+
+### It means maintaining population growth...
+
+---
+
 ### Population growth curve
 
 .pull-left[
@@ -129,9 +135,7 @@ data.frame(N = c(2),
 Consider growth of a population, starting with 2 individuals at t = 0. 
 - Assume a per-capita reproductive rate, $r$ = 2
 
-> **Note:**
-
-> _The per-capita reproductive rate ( $r$ ) is the number of reproductively mature individuals contributed per individual from one generation to the next._
+> **Note:** _The per-capita reproductive rate ( $r$ ) is the number of reproductively mature individuals contributed per individual from one generation to the next. Population growth is positive where $r \geq 1$_.
 
 > _It is a fundamental biological parameter, determined by things like the number of eggs/seeds produced, the hatching/germination success of eggs/seeds, and the success with which hatchlings/germinants survive to reproductive maturity._
 
@@ -236,8 +240,6 @@ _Growth is exponential!_
 Using calculus, we can express growth as an instantaneous rate as $dN/dt$, the rate of change in number of organisms at a particular instant in time.
 
 Since our example is an exponential function, the slope of this curve is given by  $dN/dt = rN$
-
-So: At $t_0$ the slope = 2x2 = 4. At $t_3$ the slope = 2x16 = 32. Etc
 ]
 
 .pull-right[
@@ -790,7 +792,33 @@ knitr::include_graphics("images/Bond1995_F1_4.png")
 
 ### Protea density-dependence 
 
-They fed their empirical data into population models and projected population growth over multiple generations.
+They fed their empirical data into demographic models and projected population growth over multiple generations.
+
+Note that generations and fires are synonymous, because serotinous Proteaceae mostly only recruit after fire.
+
+
+.footnote[[**Bond et al 1995**](http://dx.doi.org/10.1080/11956860.1995.11682291)]
+]
+
+.pull-right[
+
+<br>
+
+<br>
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/treurnicht2021.jpg")
+```
+.footnote[Figure from [**Treurnicht et al 2021**](http://dx.doi.org/10.1111/1365-2664.13882). Ignore the harvesting...]
+]
+
+---
+
+.pull-left[
+
+### Protea density-dependence 
+
+They fed their empirical data into demographic models and projected population growth over multiple generations.
 
 Note that generations and fires are synonymous, because serotinous Proteaceae mostly only recruit after fire.
 
@@ -810,7 +838,7 @@ knitr::include_graphics("images/Bond1995_F5.png")
 
 ### Protea density-dependence 
 
-They fed their empirical data into population models and projected population growth over multiple generations.
+They fed their empirical data into demographic models and projected population growth over multiple generations.
 
 Note that generations and fires are synonymous, because serotinous Proteaceae mostly only recruit after fire.
 
@@ -839,9 +867,9 @@ G Evelyn Hutchinson proposed that _the niche is an n-dimensional hypervolume wit
 
 Does the occurrence of a species at a locality mean it is able to maintain a viable population there...?
 
-<br>
-
 > No! We need estimates of their population growth rate ( $r$ ).
+
+<br>
 
 We can estimate demographic parameters required (birth, death and dispersal rates) to estimate the population growth rate ( $r$ ) using demographic models.
 
@@ -862,13 +890,11 @@ knitr::include_graphics("images/treurnicht2020_hutchinson.jpg")
 
 .pull-left[
 
+We can build SDMs based on demographic models that estimate population growth based on field data collected across different environmental conditions.
+
 ```{r echo = F, fig.align = 'center', out.width = '100%'}
 knitr::include_graphics("images/Schurr2012.png")
 ```
-
-We can build SDMs based on demographic models that estimate population growth based on environmental conditions.
-
-<br>
 
 These can tell us where species should be able to maintain a viable population!
 
@@ -884,6 +910,18 @@ knitr::include_graphics("images/Schurr2012_F1.webp")
 
 ---
 
+### How does this relate to SDMs?
+
+Interestingly, positive population growth can be maintained using very different strategies.
+
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/protearates.jpg")
+```
+
+Here seeding vs sprouting serotinous Proteaceae show classic differentiation on the $r$ (invest in recruitment) vs $K$ (invest in survival) life history strategy spectrum [**(Treurnicht et al. 2020)**](http://dx.doi.org/10.1111/geb.13048).
+
+---
+
 class: middle
 
 ## Take-home
@@ -893,6 +931,10 @@ class: middle
 >*Most species exhibit density-dependent population growth due to intraspecific competition and other density-dependent factors (e.g. disease transmission), thus self-regulating their population size.*
 
 >*Density-dependence creates an endogenous control on populations and has big implications for their size and stability.*
+
+>*One needs estimates of population growth rates to know whether populations can be maintained and define the environmental conditions of the Hutchinsonian niche. This can be done if you can estimate birth, death and dispersal rates.*
+
+>*Newer SDMs can include a demographic modelling component to map species distributions based on the Hutchinsonion niche.*
 
 ---
 class: center, middle
