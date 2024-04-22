@@ -203,33 +203,24 @@ The pair on the **right** appear to be able to coexist, albeit at lower densitie
 
 <br>
 
-**Right:** While _P. caudatum_ out-competes _P. bursaria_ for bacteria, _P. bursaria_ can survive on yeast in the lower, less oxygenated part of the test tube, because it contains tiny green algae that provide it with oxygen. This is an example of **resource partitioning**.
+**Right:** While _P. caudatum_ out-competes _P. bursaria_ for bacteria, _P. bursaria_ can survive on yeast in the lower, less oxygenated part of the test tube, because it contains tiny green algae that provide it with oxygen. This is an example of **resource (or niche) partitioning**.
 
 .footnote[[**Gause 1934**](http://dx.doi.org/10.1126/science.79.2036.16.b)]
 ]
 
 ---
 
-### The potential outcomes of competition
-
-1. Competitive exclusion
-  - and extinction of one competitor
-  - spatial segregation of competitors (i.e. the species do not coexist locally, but occur in sympatry)
-
-2. Resource partitioning
-
-3. Character displacement
-
----
-
 .pull-left[
-### Resource partitioning
+### Niche/Resource partitioning
 
 There are many examples in nature of species that are able to coexist in a community, because they partition their resources.
 
-Many of these examples are from birds, such as [**Robert MacArthur's 1958 study**](http://dx.doi.org/10.2307/1931600) of warblers in the genus _Dendroica_ in the conifer forests of northeastern USA. Here he concluded
+Many of these examples are from birds, such as [**Robert MacArthur's 1958 study**](http://dx.doi.org/10.2307/1931600) of warblers in the genus _Dendroica_ in the conifer forests of northeastern USA. Here he concluded:
 
 >_"There are differences of feeding position, behavior, and nesting date which reduce competition."_
+
+These are niche differences, but by which definition of the niche?
+
 ]
 
 .pull-right[
@@ -237,9 +228,34 @@ Many of these examples are from birds, such as [**Robert MacArthur's 1958 study*
 knitr::include_graphics("images/bird_apartment.jpg")
 ```
 
-.footnote[The Atlas of World Wildlife (not MacArthur's warblers...)]
+.footnote[Atlas of World Wildlife 1973 (not MacArthur's warblers...)]
 ]
 
+---
+
+.pull-left[
+### Niche/Resource partitioning
+
+There are many examples in nature of species that are able to coexist in a community, because they partition their resources.
+
+Many of these examples are from birds, such as [**Robert MacArthur's 1958 study**](http://dx.doi.org/10.2307/1931600) of warblers in the genus _Dendroica_ in the conifer forests of northeastern USA. Here he concluded:
+
+>_"There are differences of feeding position, behavior, and nesting date which reduce competition."_
+
+These are niche differences, but by which definition of the niche?
+
+> The Eltonian Niche (resources)
+
+One can also observe niche partitioning (or niche shifts) in the Grinnellian niche
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '75%'}
+knitr::include_graphics("images/bird_apartment.jpg")
+```
+
+.footnote[Atlas of World Wildlife 1973 (not MacArthur's warblers...)]
+]
 ---
 
 .pull-left[
@@ -248,6 +264,8 @@ knitr::include_graphics("images/bird_apartment.jpg")
 >_"Two closely related species have overlapping ranges. In the parts of the ranges where one species occurs alone, the populations of that species are similar to the other species and  may even be very difficult to distinguish from it. In the area of overlap, where the two species occur together, the populations are more divergent and easily distinguished, i.e., they "displace" one another in one or more characters. The characters involved can be morphological, ecological, behavioral, or physiological; they are assumed to be genetically based."_
 
 [*Brown and Hutchinson 1956*](http://dx.doi.org/10.2307/2411924)
+
+This is the process by which niche partitioning occurs.
 ]
 
 .pull-right[
@@ -271,7 +289,7 @@ The **competitive exclusion principle** is often attributed to Gause, and someti
 
 <br>
 
-Unequivocal examples of competitive exclusion are rare, and can only be demonstrated with experiments such as Gause's. These experiments are near-impossible for organisms with longer lifespans.
+Unequivocal examples of competitive exclusion are rare, and can only really be demonstrated with experiments such as Gause's. These experiments are near-impossible for organisms with longer lifespans.
 
 --
 
@@ -281,13 +299,15 @@ Why would we need experiments? Why would field observations not be good enough?
 
 ---
 
-### The Ghost of Competition Past
+### Competitive exclusion and the Ghost of Competition Past
 
-```{r echo = F, fig.align = 'center', out.width = '75%'}
+```{r echo = F, fig.align = 'center', out.width = '70%'}
 knitr::include_graphics("images/Connell_1980_Ghost.png")
 ```
 
-In nature, while interspecific competition may be common, where competitive exclusion has occurred it cannot be observed - only one competitor would remain.
+In nature, while interspecific competition may be common, where competitive exclusion has occurred it cannot be observed as only one competitor would remain.
+
+- i.e. the loser is driven to extinction or there is spatial segregation of competitors (i.e. the species do not coexist locally, but occur in sympatry)
 
 While similar species occurring in sympatry may suggest that competitive exclusion has occurred, there are other potential explanations like dispersal limitation that prevents them accessing the same physical space.
 
@@ -295,10 +315,156 @@ The criteria required to demonstrate that competitive exclusion has occurred, or
 
 ---
 
+class: center, middle
+
+### How can we determine if/when species can coexist?
+
+---
 
 class: center, middle
 
-### How can we determine which species can coexist?
+### How about both species maintaining population growth as a criterion?
+
+---
+
+class: center, middle
+
+### How do we quantify the effect of interspecific competition on population growth? 
+
+---
+
+.pull-left[
+
+### Exponential growth
+
+$dN/dt = rN$
+
+Population growth rate, $r$, doesn't change with population size
+
+- i.e. no competition
+
+```{r, echo = F, out.width="80%", fig.height = 6}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16,32), 
+           t = c(0,1,2,3,4)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,5) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+
+]
+
+.pull-right[
+
+### Logistic growth
+
+$dN/dt = rN (K – N)/K$
+
+Population growth rate, $r$, gets small as the population approaches carrying capacity, $K$
+
+- i.e. _**intraspecific competition!**_
+
+```{r, echo = F, out.width="80%", fig.height = 6}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16,24,28,30,30,30), 
+           t = c(0,1,2,3,4,5,6,7,8)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,10) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold")) +
+  geom_hline(yintercept = 30, colour = "blue", linetype = 2) +
+  geom_text(aes(x = 0, y = 32, label = "K"), colour = "blue", size = 10)
+
+```
+]
+
+--
+
+.footnote[_But what about int**er**specific competition? (i.e. between species)_]
+
+---
+
+### Population growth with intra- and interspecific competition
+
+Assuming we have two species, 1 and 2. The population growth of species 1 can be modelled as:
+
+<br>
+
+$dN_1/dt = r_1 N_1(K_1 – {N_1 + \alpha_{12} N_2})/K_1$
+
+<br>
+
+This is the logistic curve with a new term, $\alpha_{12} N_2$, to account for the competitive effect of species 2 on species 1. 
+
+- $N_2$ gives the population size of species 2
+- $\alpha_{12}$ is the per-capita competitive effect of species 2 on species 1 relative to intraspecific competition
+
+--
+
+<br>
+
+Similarly, the population growth of species 2 can be modelled as:   
+
+$dN_2/dt = r_2 N_2(K_2 – {N_2 + \alpha_{21} N_1})/K_2$
+
+.footnote[These are the Lotka-Volterra competition equations, independently developed by Alfred Lotka and Vito Volterra in the 1920s.]
+
+---
+
+### What is carrying capacity ( $K$ ) when multiple species are present?
+
+$K$ = the maximum population that the available resources can support, and at which growth drops to zero
+
+$K$ for each species is constrained not only by density-dependent intraspecific competition, but also by the second species drawing from the same resource pool...
+
+Instead of being a single number, $K$ is now a linear function expressed in terms of the population sizes of the two species, $N_1$ and $N_2$.
+
+
+this is termed a zero net growth isocline (ZNGI)
+
+---
+
+### Limiting similarity and species coexistence
+
+.pull-left[
+```{r echo = F, fig.align = 'center', out.width = '90%'}
+knitr::include_graphics("images/MacArthur_Levins_1967_F1.png")
+```
+]
+
+.pull-right[
+
+> _"a community can retain all $n$ species if any one of them can increase when rare"_
+
+- [**MacArthur and Levins 1967**](https://doi.org/10.1086/282505)
+
+This is also called the **Rare Species Advantage** and occurs when intraspecific competition is stronger than interspecific competition.
+
+]
+
+```{r echo = F, fig.align = 'center', out.width = '65%'}
+knitr::include_graphics("images/MacArthur_Levins_1967.png")
+```
+
+---
+
+class: center, middle
 
 ### How do we quantify the effect of interspecific competition on population growth? 
 
@@ -1080,6 +1246,8 @@ class: middle
 >**
 
 >**
+
+Check out this [**Crash Course** in community ecoogy](https://www.youtube.com/watch?v=GxE1SSqbSn4) for a rapid recap of the basics.
 
 ---
 class: center, middle
