@@ -210,6 +210,18 @@ The pair on the **right** appear to be able to coexist, albeit at lower densitie
 
 ---
 
+### The potential outcomes of competition
+
+1. Competitive exclusion
+  - and extinction of one competitor
+  - spatial segregation of competitors (i.e. the species do not coexist locally, but occur in sympatry)
+
+2. Resource partitioning
+
+3. Character displacement
+
+---
+
 .pull-left[
 ### Resource partitioning
 
@@ -226,6 +238,25 @@ knitr::include_graphics("images/bird_apartment.jpg")
 ```
 
 .footnote[The Atlas of World Wildlife (not MacArthur's warblers...)]
+]
+
+---
+
+.pull-left[
+### Character Displacement
+
+>_"Two closely related species have overlapping ranges. In the parts of the ranges where one species occurs alone, the populations of that species are similar to the other species and  may even be very difficult to distinguish from it. In the area of overlap, where the two species occur together, the populations are more divergent and easily distinguished, i.e., they "displace" one another in one or more characters. The characters involved can be morphological, ecological, behavioral, or physiological; they are assumed to be genetically based."_
+
+[*Brown and Hutchinson 1956*](http://dx.doi.org/10.2307/2411924)
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '75%'}
+knitr::include_graphics("images/Brown_Hutchinson_1956_F2.png")
+```
+
+Size and shape of the bill and facial stripe in Sitta neumayer and S. tephronota. A and B are collections of the respective species where they occur alone. D and C were collected where they co-occur.
+
 ]
 
 ---
