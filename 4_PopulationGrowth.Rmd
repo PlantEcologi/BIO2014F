@@ -273,7 +273,7 @@ knitr::include_graphics("images/Branch1975_F3.png")
 
 Resources available to individuals typically shrink as population size and density increase. Competition between individuals limits growth and reproductive output.
 
-.footnote[[**Branch 1975**](http://dx.doi.org/10.1111/geb.13048)]
+.footnote[A study of the Pear Limpet, _Scutellastra cochlear_, by [**Branch 1975**](http://dx.doi.org/10.1111/geb.13048)]
 
 ]
 
@@ -829,13 +829,68 @@ knitr::include_graphics("images/Bond1995_F5.png")
 
 ---
 
+### How does this relate to the original question at the start of the lecture?
+
+#### The Hutchinsonian Niche
+
+.pull-left[
+
+G Evelyn Hutchinson proposed that _the niche is an n-dimensional hypervolume within which a species is **able to maintain a viable population**_ - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
+
+Does the occurrence of a species at a locality mean it is able to maintain a viable population there...?
+
+<br>
+
+> No! We need estimates of their population growth rate ( $r$ ).
+
+We can estimate demographic parameters required (birth, death and dispersal rates) to estimate the population growth rate ( $r$ ) using demographic models.
+
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/treurnicht2020_hutchinson.jpg")
+```
+
+.footnote[Figure from [**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048)]
+]
+
+
+---
+
+### How does this relate to SDMs?
+
+.pull-left[
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Schurr2012.png")
+```
+
+We can build SDMs based on demographic models that estimate population growth based on environmental conditions.
+
+<br>
+
+These can tell us where species should be able to maintain a viable population!
+
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Schurr2012_F1.webp")
+```
+
+.footnote[[**Schurr et al. 2012**](http://dx.doi.org/10.1111/j.1365-2699.2012.02737.x)]
+]
+
+---
+
 class: middle
 
 ## Take-home
 
 >*If population growth were density-independent, it would be exponential...*
 
->*Most species exhibit density-dependent population growth due to intraspecific competition and other density-dependent factors (e.g. disease transmission).*
+>*Most species exhibit density-dependent population growth due to intraspecific competition and other density-dependent factors (e.g. disease transmission), thus self-regulating their population size.*
 
 >*Density-dependence creates an endogenous control on populations and has big implications for their size and stability.*
 
