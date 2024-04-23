@@ -132,7 +132,9 @@ The pair on the **right** appear to be able to coexist, albeit at lower densitie
 
 **Left:** _P. caudatum_ and _P. aurelia_ both feed on bacteria, but _P. aurelia_ grows 6 times faster than _P. caudatum_, resulting in its **competitive exclusion**.
 
-**Right:** While _P. caudatum_ out-competes _P. bursaria_ for bacteria, _P. bursaria_ can survive on yeast in the lower, less oxygenated part of the test tube, because it contains tiny green algae that provide it with oxygen. This is an example of **resource (or niche) partitioning**.
+**Right:** While _P. caudatum_ out-competes _P. bursaria_ for bacteria, _P. bursaria_ can survive on yeast in the lower, less oxygenated part of the test tube, because it contains tiny green algae that provide it with oxygen. We call this **resource (or niche) partitioning**.
+
+Most competitive interactions result in one of these two outcomes.
 
 .footnote[[**Gause 1934**](http://dx.doi.org/10.1126/science.79.2036.16.b)]
 ]
@@ -171,7 +173,7 @@ Many of these examples are from birds, such as [**Robert MacArthur's 1958 study*
 
 These are niche differences, but by which definition of the niche?
 
-&gt; The Eltonian Niche (focus on resources)
+&gt; The Eltonian Niche ( `\(\because\)` focus is resources)
 
 One can also observe niche partitioning (or niche shifts) in the Grinnellian niche.
 ]
@@ -186,7 +188,7 @@ One can also observe niche partitioning (or niche shifts) in the Grinnellian nic
 .pull-left[
 ### Character Displacement
 
-The process by which niche partitioning occurs.
+A process by which niche partitioning can occur.
 
 _"the divergence shown when two partly allopatric species of comparable niche requirements become sympatric in part of their range"_ - [**Hutchinson 1959**](https://www.jstor.org/stable/2458768)
 
@@ -245,7 +247,7 @@ class: center, middle
 
 class: center, middle
 
-### How about both species maintaining population growth as a criterion?
+### One criterion is that both species need to maintain viable populations.
 
 ---
 
@@ -302,7 +304,7 @@ Assuming we have two species, 1 and 2. The population growth of species 1 can be
 This is the logistic curve with a new term, `\(\mathbf{\alpha_{12} N_2}\)`, to account for the competitive effect of species 2 on species 1. 
 
 - `\(N_2\)` gives the population size of species 2
-- `\(\alpha_{12}\)` is the per-capita competitive effect of species 2 on species 1 relative to intraspecific competition
+- `\(\alpha_{12}\)` is the per-capita competitive effect of species 2 on species 1. It is called **the competition coefficient**.
 ]
 
 --
@@ -312,6 +314,8 @@ This is the logistic curve with a new term, `\(\mathbf{\alpha_{12} N_2}\)`, to a
 &lt;br&gt;
 
 **What do the values of** `\(\alpha_{12}\)` **mean?**
+
+It is expressed relative to intraspecific competition (i.e. the effect of species 1 on species 1), so:
 
 - if `\(= 1\)` then the effect of species 2 on species 1 is the same as the effect of species 1 on species 1
   - the equation would essentially reduce to the logistic growth curve and you could treat all individuals as one species
@@ -348,7 +352,21 @@ Similarly, the population growth of species 2 can be modelled as:
 
 `\(K\)` = the maximum population that available resources can support, and growth drops to zero.
 
-`\(K\)` for each species is constrained not only by density-dependent intraspecific competition, but also by the second species drawing from the same resource pool (interspecific competition)...
+`\(K\)` for each species is now constrained not only by density-dependent intraspecific competition, but also by the second species drawing from the same resource pool (interspecific competition)...
+]
+
+.pull-right[
+]
+
+---
+
+### What is carrying capacity ( `\(K\)` ) when multiple species are present?
+
+.pull-left[
+
+`\(K\)` = the maximum population that available resources can support, and growth drops to zero.
+
+`\(K\)` for each species is now constrained not only by density-dependent intraspecific competition, but also by the second species drawing from the same resource pool (interspecific competition)...
 
 Instead of being a single number, `\(K\)` is now a linear function expressed in terms of the population sizes of the two species, `\(N_1\)` and `\(N_2\)`.
   - The relationship is negative, because as one increases the other must decrease...
@@ -361,6 +379,7 @@ Instead of being a single number, `\(K\)` is now a linear function expressed in 
 
 This is termed a zero net growth isocline (ZNGI)
 ]
+
 ---
 
 ### What is carrying capacity ( `\(K\)` ) when multiple species are present?
@@ -369,13 +388,55 @@ This is termed a zero net growth isocline (ZNGI)
 
 Focusing on species 1, pop growth will drop to zero:
 
-**Firstly**, when `\(N2\)` is negligible but `\(N1 = K1\)` (i.e. species 1 reaches its carrying capacity). This is represented by the red dot. 
+**Firstly**, when `\(N_2\)` is negligible but `\(N_1 = K_1\)` (i.e. species 1 reaches its carrying capacity). This is represented by the red dot. 
 
-**Secondly**, when `\(N1\)` is negligible but `\(N2\)` is so large that species 2 is using up all the resources. This is by the blue dot.
+]
 
-- Notice that the size of `\(N2\)` at this point depends on `\(\alpha_{12}\)`. `\(K1\)` is reached at lower `\(N2\)` when `\(\alpha_{12}\)` is large (species 2 has a strong competitive effect).
+.pull-right[
 
-**Lastly**, there is a series of intermediate combinations of `\(N1\)` and `\(N2\)` that also result in complete use of the available resources and halt population growth. These are represented by the dashed line.
+&lt;img src="images/ZNGI_2.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+The zero net growth isocline (ZNGI) of species 1
+]
+
+---
+
+### What is carrying capacity ( `\(K\)` ) when multiple species are present?
+
+.pull-left[
+
+Focusing on species 1, pop growth will drop to zero:
+
+**Firstly**, when `\(N_2\)` is negligible but `\(N_1 = K_1\)` (i.e. species 1 reaches its carrying capacity). This is represented by the red dot. 
+
+**Secondly**, when `\(N_1\)` is negligible but `\(N_2\)` is so large that species 2 is using up all the resources. This is represented by the blue dot.
+
+- Notice that the size of `\(N_2\)` at this point depends on `\(\alpha_{12}\)`. `\(K_1\)` is reached at lower `\(N_2\)` when `\(\alpha_{12}\)` is large (species 2 has a strong competitive effect).
+
+]
+
+.pull-right[
+
+&lt;img src="images/ZNGI_2.png" width="80%" style="display: block; margin: auto;" /&gt;
+
+The zero net growth isocline (ZNGI) of species 1
+]
+
+---
+
+### What is carrying capacity ( `\(K\)` ) when multiple species are present?
+
+.pull-left[
+
+Focusing on species 1, pop growth will drop to zero:
+
+**Firstly**, when `\(N_2\)` is negligible but `\(N_1 = K_1\)` (i.e. species 1 reaches its carrying capacity). This is represented by the red dot. 
+
+**Secondly**, when `\(N_1\)` is negligible but `\(N_2\)` is so large that species 2 is using up all the resources. This is represented by the blue dot.
+
+- Notice that the size of `\(N_2\)` at this point depends on `\(\alpha_{12}\)`. `\(K_1\)` is reached at lower `\(N_2\)` when `\(\alpha_{12}\)` is large (species 2 has a strong competitive effect).
+
+**Lastly**, there is a series of intermediate combinations of `\(N_1\)` and `\(N_2\)` that also result in complete use of the available resources and halt population growth. These are represented by the dashed line.
 ]
 
 .pull-right[
@@ -504,11 +565,19 @@ class: middle
 
 ## Take-home
 
-&gt;**
+&gt;*Gause's microcosm experiments on _Paramecium_ taught us much about competition.*
 
-&gt;**
+&gt;*The main outcomes of competition are competitive exclusion or niche/resource partitioning. The latter often occurring via character displacement.*
 
-&gt;**
+&gt;*Studying the outcomes of competition is difficult, because the interactions are typically over and we only see the "ghost of competition past".*
+
+&gt;*The Lotka-Volterra competition equations allow us to estimate the zero net growth isocline (ZNGI) for each species, which allows us to predict the outcome of interspecific competition.*
+
+&gt;*For stable coexistence of species to occur, intraspecific competition must be greater than interspecific competition, because this gives rare species an advantage and allows them to recover.*
+
+&gt;*MacArthur and Levins suggested that there is a limit to the similarity of coexisting species, such that* 
+  - *(a) rare species advantage only happens where species show some degree of niche differentiation, and*
+  - *(b) the number of species that can coexist in a particular environment is proportional to the range of conditions or resources available divided by the niche breadth of the species.*
 
 Check out this [**Crash Course** in community ecoogy](https://www.youtube.com/watch?v=GxE1SSqbSn4) for a rapid recap of the basics.
 
