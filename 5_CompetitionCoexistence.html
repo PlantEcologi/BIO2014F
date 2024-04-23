@@ -4,7 +4,7 @@
     <title>4. Interspecific Competition and Coexistence</title>
     <meta charset="utf-8" />
     <meta name="author" content="Jasper Slingsby, BIO2014F" />
-    <meta name="date" content="2024-04-22" />
+    <meta name="date" content="2024-04-23" />
     <script src="5_CompetitionCoexistence_files/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom styles.css" type="text/css" />
@@ -20,7 +20,7 @@ class: center, middle, inverse, title-slide
 ### Jasper Slingsby, BIO2014F
 ]
 .date[
-### 2024-04-22
+### 2024-04-23
 ]
 
 ---
@@ -70,13 +70,16 @@ Population growth rate, `\(r\)`, gets small as the population approaches carryin
 
 ### Experiments with _Paramecium_
 
-&lt;br&gt;
-
-Georgyi Frantsevitch Gause's experiments with species of the unicellular cilliate genus _Paramecium_ taught us a lot about intra- and interspecific competition.
+Georgyi Frantsevitch Gause's microcosm experiments with species of the unicellular cilliate genus _Paramecium_ taught us a lot about intra- and interspecific competition.
 
 &lt;br&gt;
 
-He cultured them in test tubes supplied with an oatmeal medium, which promotes the growth of bacteria in the upper, oxygenated part of the test tube, and yeast in the lower, de-oxygenated part of the test tube.
+Microcosms are artificial, simplified ecosystems that are used to simulate the behaviour of natural ecosystems under controlled conditions.
+
+&lt;br&gt;
+
+Gause's microcosms were test tubes supplied with an oatmeal medium, which promotes the growth of bacteria in the upper, oxygenated part of the test tube, and yeast in the lower, de-oxygenated part.
+
 ]
 
 .pull-right[
@@ -93,14 +96,14 @@ He cultured them in test tubes supplied with an oatmeal medium, which promotes t
 
 ### Experiments with _Paramecium_ spp
 
-_Paramecium_ species cultured separately, demonstrating **_intraspecific_** competition.
+_Paramecium_ species cultured separately demonstrated **_intraspecific_** competition.
 
 &lt;img src="images/paramecium_separate.png" width="60%" style="display: block; margin: auto;" /&gt;
 
 .footnote[[**Gause 1934**](http://dx.doi.org/10.1126/science.79.2036.16.b)]
 --
 
-_Paramecium_ species cultured together, demonstrating **_interspecific_** competition.
+Here _Paramecium_ species cultured together, demonstrate **_interspecific_** competition...
 
 &lt;img src="images/paramecium_together.png" width="40%" style="display: block; margin: auto;" /&gt;
 
@@ -128,8 +131,6 @@ The pair on the **right** appear to be able to coexist, albeit at lower densitie
 #### Explanation
 
 **Left:** _P. caudatum_ and _P. aurelia_ both feed on bacteria, but _P. aurelia_ grows 6 times faster than _P. caudatum_, resulting in its **competitive exclusion**.
-
-&lt;br&gt;
 
 **Right:** While _P. caudatum_ out-competes _P. bursaria_ for bacteria, _P. bursaria_ can survive on yeast in the lower, less oxygenated part of the test tube, because it contains tiny green algae that provide it with oxygen. This is an example of **resource (or niche) partitioning**.
 
@@ -170,9 +171,9 @@ Many of these examples are from birds, such as [**Robert MacArthur's 1958 study*
 
 These are niche differences, but by which definition of the niche?
 
-&gt; The Eltonian Niche (resources)
+&gt; The Eltonian Niche (focus on resources)
 
-One can also observe niche partitioning (or niche shifts) in the Grinnellian niche
+One can also observe niche partitioning (or niche shifts) in the Grinnellian niche.
 ]
 
 .pull-right[
@@ -185,17 +186,18 @@ One can also observe niche partitioning (or niche shifts) in the Grinnellian nic
 .pull-left[
 ### Character Displacement
 
-&gt;_"Two closely related species have overlapping ranges. In the parts of the ranges where one species occurs alone, the populations of that species are similar to the other species and  may even be very difficult to distinguish from it. In the area of overlap, where the two species occur together, the populations are more divergent and easily distinguished, i.e., they "displace" one another in one or more characters. The characters involved can be morphological, ecological, behavioral, or physiological; they are assumed to be genetically based."_
+The process by which niche partitioning occurs.
 
-[*Brown and Hutchinson 1956*](http://dx.doi.org/10.2307/2411924)
+_"the divergence shown when two partly allopatric species of comparable niche requirements become sympatric in part of their range"_ - [**Hutchinson 1959**](https://www.jstor.org/stable/2458768)
 
-This is the process by which niche partitioning occurs.
+_"Two closely related species have overlapping ranges. In the parts of the ranges where one species occurs alone, the populations of that species are similar to the other species and  may even be very difficult to distinguish from it. In the area of overlap, where the two species occur together, the populations are more divergent and easily distinguished, i.e., they "displace" one another in one or more characters. The characters involved can be morphological, ecological, behavioral, or physiological; they are assumed to be genetically based."_ - [**Brown and Hutchinson 1956**](http://dx.doi.org/10.2307/2411924)
+
 ]
 
 .pull-right[
 &lt;img src="images/Brown_Hutchinson_1956_F2.png" width="75%" style="display: block; margin: auto;" /&gt;
 
-Size and shape of the bill and facial stripe in Sitta neumayer and S. tephronota. A and B are collections of the respective species where they occur alone. D and C were collected where they co-occur.
+Size and shape of the bill and facial stripe in _Sitta neumayer_ and _S. tephronota_. A and B are collections of the respective species where they occur alone. D and C were collected where they co-occur.
 
 ]
 
@@ -292,14 +294,17 @@ Assuming we have two species, 1 and 2. The population growth of species 1 can be
 
 &lt;br&gt;
 
-`\(dN_1/dt = r_1 N_1(K_1 – {N_1 + \alpha_{12} N_2})/K_1\)`
+`\(dN_1/dt = r_1 N_1(K_1 – {N_1 \mathbf{+ \alpha_{12} N_2}})/K_1\)`
 
 &lt;br&gt;
 
-This is the logistic curve with a new term, `\(\alpha_{12} N_2\)`, to account for the competitive effect of species 2 on species 1. 
+This is the logistic curve with a new term, `\(\mathbf{\alpha_{12} N_2}\)`, to account for the competitive effect of species 2 on species 1. 
 
 - `\(N_2\)` gives the population size of species 2
 - `\(\alpha_{12}\)` is the per-capita competitive effect of species 2 on species 1 relative to intraspecific competition
+    - if `\(\alpha_{12} = 1\)` then the effect of species 2 on species 1 is the same as the effect of species 1 on species 1. In this case the equation would essentially reduce to the logistic growth curve and you could treat all individuals as of one species
+    - if `\(\alpha_{12} &gt; 1\)` then
+    - if `\(\alpha_{12} &lt; 1\)` then
 
 --
 
