@@ -4,7 +4,7 @@
     <title>4. Population Growth and Intraspecific Competition</title>
     <meta charset="utf-8" />
     <meta name="author" content="Jasper Slingsby, BIO2014F" />
-    <meta name="date" content="2024-04-22" />
+    <meta name="date" content="2024-04-23" />
     <script src="4_PopulationGrowth_files/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom styles.css" type="text/css" />
@@ -20,7 +20,7 @@ class: center, middle, inverse, title-slide
 ### Jasper Slingsby, BIO2014F
 ]
 .date[
-### 2024-04-22
+### 2024-04-23
 ]
 
 ---
@@ -67,6 +67,14 @@ class: center, middle
 
 ---
 
+class: center, middle
+
+### But that's not easy... 
+
+### Especially where there is competition for resources...
+
+---
+
 ### Population growth curve
 
 .pull-left[
@@ -87,9 +95,11 @@ Consider growth of a population, starting with 2 individuals at t = 0.
 Consider growth of a population, starting with 2 individuals at t = 0. 
 - Assume a per-capita reproductive rate, `\(r\)` = 2
 
-&gt; **Note:** _The per-capita reproductive rate ( `\(r\)` ) is the number of reproductively mature individuals contributed per individual from one generation to the next. Population growth is positive where `\(r \geq 1\)`_.
+**Note:** _The per-capita reproductive rate ( `\(r\)` ) is the number of reproductively mature individuals contributed per individual from one generation to the next. Population growth is positive where `\(r &gt; 0\)`_.
 
-&gt; _It is a fundamental biological parameter, determined by things like the number of eggs/seeds produced, the hatching/germination success of eggs/seeds, and the success with which hatchlings/germinants survive to reproductive maturity._
+_It is a fundamental biological parameter, determined by things like the number of eggs/seeds produced, the hatching/germination success of eggs/seeds, and the success with which hatchlings/germinants survive to reproductive maturity._
+
+_It is the birth rate minus the death rate._
 
 ]
 
@@ -119,6 +129,20 @@ Consider growth of a population, starting with 2 individuals at t = 0.
 Consider growth of a population, starting with 2 individuals at t = 0. 
 - Assume a per-capita reproductive rate, `\(r\)` = 2
 
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-5-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+Consider growth of a population, starting with 2 individuals at t = 0. 
+- Assume a per-capita reproductive rate, `\(r\)` = 2
+
 &lt;br&gt;
 
 _Growth is exponential!_
@@ -126,7 +150,7 @@ _Growth is exponential!_
 ]
 
 .pull-right[
-&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-5-1.png" width="100%" height="100%" /&gt;
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-6-1.png" width="100%" height="100%" /&gt;
 ]
 
 ---
@@ -147,7 +171,7 @@ Since our example is an exponential function, the slope of this curve is given b
 ]
 
 .pull-right[
-&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-6-1.png" width="100%" height="100%" /&gt;
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-7-1.png" width="100%" height="100%" /&gt;
 ]
 
 ---
@@ -157,9 +181,11 @@ Since our example is an exponential function, the slope of this curve is given b
 ### Is growth always exponential?
 
 
-&lt;img src="images/Branch1975_F3.png" width="80%" style="display: block; margin: auto;" /&gt;
+&lt;img src="images/Branch1975_F3.png" width="75%" style="display: block; margin: auto;" /&gt;
 
-Resources available to individuals typically shrink as population size and density increase. Competition between individuals limits growth and reproductive output.
+Resources available to individuals typically shrink as population size and density increase. 
+
+Competition between individuals limits growth and reproductive output.
 
 .footnote[A study of the Pear Limpet, _Scutellastra cochlear_, by [**Branch 1975**](http://dx.doi.org/10.1111/geb.13048)]
 
@@ -185,20 +211,6 @@ What does our curve look like once we include **density-dependent** effects like
 ]
 
 .pull-right[
-&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-10-1.png" width="100%" height="100%" /&gt;
-]
-
----
-
-### Population growth curve
-
-.pull-left[
-What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
-
-It probably starts out much the same while resources are abundant...
-]
-
-.pull-right[
 &lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-11-1.png" width="100%" height="100%" /&gt;
 ]
 
@@ -209,8 +221,7 @@ It probably starts out much the same while resources are abundant...
 .pull-left[
 What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
 
-It probably starts out much the same while resources are abundant...
-
+It starts out much the same while resources are abundant...
 ]
 
 .pull-right[
@@ -224,7 +235,7 @@ It probably starts out much the same while resources are abundant...
 .pull-left[
 What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
 
-It probably starts out much the same while resources are abundant...
+It starts out much the same while resources are abundant...
 
 ]
 
@@ -239,9 +250,8 @@ It probably starts out much the same while resources are abundant...
 .pull-left[
 What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
 
-It probably starts out much the same while resources are abundant...
+It starts out much the same while resources are abundant...
 
-...but slows as resources become limiting...
 ]
 
 .pull-right[
@@ -255,7 +265,7 @@ It probably starts out much the same while resources are abundant...
 .pull-left[
 What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
 
-It probably starts out much the same while resources are abundant...
+It starts out much the same while resources are abundant...
 
 ...but slows as resources become limiting...
 ]
@@ -271,11 +281,9 @@ It probably starts out much the same while resources are abundant...
 .pull-left[
 What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
 
-It probably starts out much the same while resources are abundant...
+It starts out much the same while resources are abundant...
 
 ...but slows as resources become limiting...
-
-...and eventually flattens out...
 ]
 
 .pull-right[
@@ -289,15 +297,11 @@ It probably starts out much the same while resources are abundant...
 .pull-left[
 What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
 
-It probably starts out much the same while resources are abundant...
+It starts out much the same while resources are abundant...
 
 ...but slows as resources become limiting...
 
 ...and eventually flattens out...
-
-Any thoughts on the equation to fit this curve?
-
-`\(dN/dt = ?\)`
 ]
 
 .pull-right[
@@ -311,7 +315,29 @@ Any thoughts on the equation to fit this curve?
 .pull-left[
 What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
 
-It probably starts out much the same while resources are abundant...
+It starts out much the same while resources are abundant...
+
+...but slows as resources become limiting...
+
+...and eventually flattens out...
+
+Any thoughts on the equation to fit this curve?
+
+`\(dN/dt = ?\)`
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-18-1.png" width="100%" height="100%" /&gt;
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+
+It starts out much the same while resources are abundant...
 
 ...but slows as resources become limiting...
 
@@ -325,7 +351,7 @@ A logistic function, or what we call the logistic growth curve.
 ]
 
 .pull-right[
-&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-18-1.png" width="100%" height="100%" /&gt;
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-19-1.png" width="100%" height="100%" /&gt;
 ]
 
 ---
@@ -343,7 +369,7 @@ We know `\(N\)`, `\(t\)` and `\(r\)`, but what is `\(K\)`?
 ]
 
 .pull-right[
-&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-19-1.png" width="100%" height="100%" /&gt;
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-20-1.png" width="100%" height="100%" /&gt;
 ]
 
 ---
@@ -365,7 +391,7 @@ Familiar?
 ]
 
 .pull-right[
-&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-20-1.png" width="100%" height="100%" /&gt;
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-21-1.png" width="100%" height="100%" /&gt;
 ]
 
 ---
@@ -376,6 +402,27 @@ Familiar?
 
 ---
 
+### Population growth curve
+
+.pull-left[
+The population growth curve including **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species) is a logistic function, flattening out as resources become limiting.
+
+`\(dN/dt = rN (K – N)/K\)`
+
+&lt;br&gt;
+
+`\(K\)` = carrying capacity
+
+**Note:** _Where `\(N\)` is small, the logistic growth curve approximates the exponential growth curve `\((rN)\)`, because `\((K – N)/K\)` is close to 1._
+
+_It begins to deviate as `\(N\)` increases._
+]
+
+.pull-right[
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-23-1.png" width="100%" height="100%" /&gt;
+]
+---
+
 .pull-left[
 
 ### Exponential growth
@@ -384,7 +431,7 @@ Familiar?
 
 Population growth rate, `\(r\)`, doesn't change with population size
 
-&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-22-1.png" width="80%" /&gt;
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-24-1.png" width="80%" /&gt;
 
 .footnote[Density independent population growth]
 ]
@@ -397,7 +444,7 @@ Population growth rate, `\(r\)`, doesn't change with population size
 
 Population growth rate, `\(r\)`, gets small as the population approaches carrying capacity, `\(K\)`
 
-&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-23-1.png" width="80%" /&gt;
+&lt;img src="4_PopulationGrowth_files/figure-html/unnamed-chunk-25-1.png" width="80%" /&gt;
 
 .footnote[Density independent population growth]
 ]

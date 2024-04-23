@@ -99,6 +99,14 @@ class: center, middle
 
 ---
 
+class: center, middle
+
+### But that's not easy... 
+
+### Especially where there is competition for resources...
+
+---
+
 ### Population growth curve
 
 .pull-left[
@@ -135,9 +143,41 @@ data.frame(N = c(2),
 Consider growth of a population, starting with 2 individuals at t = 0. 
 - Assume a per-capita reproductive rate, $r$ = 2
 
-> **Note:** _The per-capita reproductive rate ( $r$ ) is the number of reproductively mature individuals contributed per individual from one generation to the next. Population growth is positive where $r \geq 1$_.
+**Note:** _The per-capita reproductive rate ( $r$ ) is the number of reproductively mature individuals contributed per individual from one generation to the next. Population growth is positive where $r > 0$_.
 
-> _It is a fundamental biological parameter, determined by things like the number of eggs/seeds produced, the hatching/germination success of eggs/seeds, and the success with which hatchlings/germinants survive to reproductive maturity._
+_It is a fundamental biological parameter, determined by things like the number of eggs/seeds produced, the hatching/germination success of eggs/seeds, and the success with which hatchlings/germinants survive to reproductive maturity._
+
+_It is the birth rate minus the death rate._
+
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2), 
+           t = c(0)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,5) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold"))
+
+```
+]
+
+---
+
+### Population growth curve
+
+.pull-left[
+Consider growth of a population, starting with 2 individuals at t = 0. 
+- Assume a per-capita reproductive rate, $r$ = 2
 
 ]
 
@@ -269,11 +309,13 @@ data.frame(N = c(2,4,8,16,32),
 ### Is growth always exponential?
 
 
-```{r echo = F, fig.align = 'center', out.width = '80%'}
+```{r echo = F, fig.align = 'center', out.width = '75%'}
 knitr::include_graphics("images/Branch1975_F3.png")
 ```
 
-Resources available to individuals typically shrink as population size and density increase. Competition between individuals limits growth and reproductive output.
+Resources available to individuals typically shrink as population size and density increase. 
+
+Competition between individuals limits growth and reproductive output.
 
 .footnote[A study of the Pear Limpet, _Scutellastra cochlear_, by [**Branch 1975**](http://dx.doi.org/10.1111/geb.13048)]
 
@@ -329,7 +371,7 @@ data.frame(N = c(2),
 .pull-left[
 What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
 
-It probably starts out much the same while resources are abundant...
+It starts out much the same while resources are abundant...
 ]
 
 .pull-right[
@@ -359,7 +401,7 @@ data.frame(N = c(2,4),
 .pull-left[
 What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
 
-It probably starts out much the same while resources are abundant...
+It starts out much the same while resources are abundant...
 
 ]
 
@@ -390,7 +432,7 @@ data.frame(N = c(2,4,8,16),
 .pull-left[
 What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
 
-It probably starts out much the same while resources are abundant...
+It starts out much the same while resources are abundant...
 
 ]
 
@@ -421,7 +463,7 @@ data.frame(N = c(2,4,8,16,24),
 .pull-left[
 What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
 
-It probably starts out much the same while resources are abundant...
+It starts out much the same while resources are abundant...
 
 ...but slows as resources become limiting...
 ]
@@ -453,7 +495,7 @@ data.frame(N = c(2,4,8,16,24,28),
 .pull-left[
 What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
 
-It probably starts out much the same while resources are abundant...
+It starts out much the same while resources are abundant...
 
 ...but slows as resources become limiting...
 ]
@@ -485,7 +527,7 @@ data.frame(N = c(2,4,8,16,24,28,30),
 .pull-left[
 What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
 
-It probably starts out much the same while resources are abundant...
+It starts out much the same while resources are abundant...
 
 ...but slows as resources become limiting...
 
@@ -519,7 +561,7 @@ data.frame(N = c(2,4,8,16,24,28,30,30,30),
 .pull-left[
 What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
 
-It probably starts out much the same while resources are abundant...
+It starts out much the same while resources are abundant...
 
 ...but slows as resources become limiting...
 
@@ -557,7 +599,7 @@ data.frame(N = c(2,4,8,16,24,28,30,30,30),
 .pull-left[
 What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
 
-It probably starts out much the same while resources are abundant...
+It starts out much the same while resources are abundant...
 
 ...but slows as resources become limiting...
 
@@ -672,6 +714,45 @@ knitr::include_graphics("images/terry_rvsK.png")
 
 .footnote[Terry Hedderson's lecture on life history models]
 
+---
+
+### Population growth curve
+
+.pull-left[
+The population growth curve including **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species) is a logistic function, flattening out as resources become limiting.
+
+$dN/dt = rN (K – N)/K$
+
+<br>
+
+$K$ = carrying capacity
+
+**Note:** _Where $N$ is small, the logistic growth curve approximates the exponential growth curve $(rN)$, because $(K – N)/K$ is close to 1._
+
+_It begins to deviate as $N$ increases._
+]
+
+.pull-right[
+```{r, echo = F, out.height="100%", out.width="100%", fig.height = 8}
+library(tidyverse)
+
+data.frame(N = c(2,4,8,16,24,28,30,30,30), 
+           t = c(0,1,2,3,4,5,6,7,8)) %>%
+  ggplot(aes(x = t, y = N)) +
+  geom_line() +
+  geom_point(size = 5) +
+  ylim(0,35) +
+  xlim(0,10) +
+  ylab("Number of Individuals (N)") +
+  xlab("Time or generations (t)") +
+  theme_bw() +
+  theme(axis.text=element_text(size=20),
+        axis.title=element_text(size=24,face="bold")) +
+  geom_hline(yintercept = 30, colour = "blue", linetype = 2) +
+  geom_text(aes(x = 0, y = 32, label = "K"), colour = "blue", size = 10)
+
+```
+]
 ---
 
 .pull-left[
