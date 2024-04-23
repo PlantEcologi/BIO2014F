@@ -1,5 +1,5 @@
 ---
-title: "5. Interspecific Competition and Coexistence"
+title: "6. Community Assembly"
 subtitle: ""  
 author: 
   - "Jasper Slingsby, BIO2014F"
@@ -62,6 +62,93 @@ library(kableExtra)
 ```{r xaringan-tile-view, echo=FALSE}
 # xaringanExtra::use_tile_view()
 ```
+
+class: center, middle
+
+###A quick recap...
+
+---
+
+### 1. The Grinnellian and Hutchinsonian Niche
+
+.pull-left[
+
+<br>
+
+The occurrence of species at a locality is predominantly determined by its ability to maintain a viable population (i.e. positive per-capita reproductive rate) in the prevailing environmental conditions... $^1$
+
+<br>
+
+<br>
+
+<br>
+
+$^1$Or nearby and then disperse there..., but we'll ignore this for now...
+
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/treurnicht2020_hutchinson.jpg")
+```
+
+.footnote[Figure from [**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048)]
+]
+
+---
+
+### 2. Species Coexistence and Competition
+
+.pull-left[
+```{r echo = F, fig.align = 'center', out.width = '90%'}
+knitr::include_graphics("images/MacArthur_Levins_1967_F1.png")
+```
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/MacArthur_Levins_1967.png")
+```
+
+.footnote[[**MacArthur and Levins 1967**](https://doi.org/10.1086/282505)]
+]
+
+.pull-right[
+
+<br>
+
+<br>
+
+Within a particular environment, there is a limit to the number (and similarity) of species that can be accommodated. It is proportional to the range of conditions or resources available divided by the niche breadth of the species.
+
+]
+
+
+---
+
+class: center, middle
+
+### What do these two observations mean for how species assemble into the communities that we observe in nature?
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/fynbos_community.jpg")
+```
+
+---
+
+.pull-left[
+
+### Community Assembly
+
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '90%'}
+knitr::include_graphics("images/HillRidLambers2012_F1.gif")
+```
+
+.footnote[[**HillRisLambers et al. 2012**](http://dx.doi.org/10.1146/annurev-ecolsys-110411-160411)]
+]
+
+---
 
 .pull-left[
 
