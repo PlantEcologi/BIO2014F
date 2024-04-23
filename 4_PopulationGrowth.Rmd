@@ -812,7 +812,7 @@ data.frame(N = c(2,4,8,16,24,28,30,30,30),
 
 ```
 
-.footnote[Density independent population growth]
+.footnote[Density dependent population growth]
 ]
 
 ---
