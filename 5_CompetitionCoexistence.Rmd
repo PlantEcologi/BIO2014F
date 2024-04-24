@@ -204,7 +204,7 @@ The pair on the **right** appear to be able to coexist, albeit at lower densitie
 
 **Left:** _P. caudatum_ and _P. aurelia_ both feed on bacteria, but _P. aurelia_ grows 6 times faster than _P. caudatum_, resulting in its **competitive exclusion**.
 
-**Right:** While _P. caudatum_ out-competes _P. bursaria_ for bacteria, _P. bursaria_ can survive on yeast in the lower, less oxygenated part of the test tube, because it contains tiny green algae that provide it with oxygen. We call this **resource (or niche) partitioning**.
+**Right:** While _P. caudatum_ out-competes _P. bursaria_ for bacteria, _P. bursaria_ can also survive on yeast in the lower, less oxygenated part of the test tube, because it contains tiny green algae that provide it with oxygen. We call this **resource (or niche) partitioning**.
 
 Most competitive interactions result in one of these two outcomes.
 
@@ -278,6 +278,33 @@ knitr::include_graphics("images/Brown_Hutchinson_1956_F2.png")
 ```
 
 Size and shape of the bill and facial stripe in _Sitta neumayer_ and _S. tephronota_. A and B are collections of the respective species where they occur alone. D and C were collected where they co-occur.
+
+]
+
+---
+
+### Character Displacement
+
+.pull-left[
+
+A process by which niche partitioning can occur.
+
+```{r echo = F, fig.align = 'center', out.width = '75%'}
+knitr::include_graphics("images/Britton2010_F1.png")
+```
+
+[**Britton et al. 2010**](http://dx.doi.org/10.1016/j.ympev.2014.03.024) studied the sedge species _Tetraria triangularis_ across its range.
+
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Britton2010_GraphicalAbstract.png")
+```
+
+They found that while populations on different peaks had been genetically isolated for millions of years and had evolved into different haplotypes, they were nearly morphologically and ecologically identical.
+
+Where secondary dispersal resulted in haplotypes co-occurring, they showed morphological and habitat divergence.
 
 ]
 
@@ -425,8 +452,6 @@ This is the logistic curve with a new term, $\mathbf{\alpha_{12} N_2}$, to accou
 
 .pull-right[
 
-<br>
-
 **What do the values of** $\alpha_{12}$ **mean?**
 
 It is expressed relative to intraspecific competition (i.e. the effect of species 1 on species 1), so:
@@ -493,7 +518,7 @@ Instead of being a single number, $K$ is now a linear function expressed in term
 knitr::include_graphics("images/ZNGI_0.png")
 ```
 
-This is termed a zero net growth isocline (ZNGI)
+This is termed a zero net growth isocline (ZNGI) and you derive separate ones for each species.
 ]
 
 ---
@@ -502,7 +527,7 @@ This is termed a zero net growth isocline (ZNGI)
 
 .pull-left[
 
-Focusing on species 1, pop growth will drop to zero:
+Focusing on species 1, popln growth will drop to zero:
 
 **Firstly**, when $N_2$ is negligible but $N_1 = K_1$ (i.e. species 1 reaches its carrying capacity). This is represented by the red dot. 
 
@@ -523,7 +548,7 @@ The zero net growth isocline (ZNGI) of species 1
 
 .pull-left[
 
-Focusing on species 1, pop growth will drop to zero:
+Focusing on species 1, popln growth will drop to zero:
 
 **Firstly**, when $N_2$ is negligible but $N_1 = K_1$ (i.e. species 1 reaches its carrying capacity). This is represented by the red dot. 
 
@@ -548,7 +573,7 @@ The zero net growth isocline (ZNGI) of species 1
 
 .pull-left[
 
-Focusing on species 1, pop growth will drop to zero:
+Focusing on species 1, popln growth will drop to zero:
 
 **Firstly**, when $N_2$ is negligible but $N_1 = K_1$ (i.e. species 1 reaches its carrying capacity). This is represented by the red dot. 
 
@@ -585,7 +610,7 @@ This can occur when:
 - Two trivial scenarios not worth mentioning, $(r = 0$ or $N_1 = 0)$
 - $N_2$ is close to 0 and $N_1 = K_1$ (the red dot)
 - $N_1$ is close to 0 and $N_2 = K_1/\alpha_{12}$ (the blue dot)
-- $N_1 = K_1 - \alpha_{12} N_2$ (the dashed line)
+- $N_1 = K_1 - \alpha_{12} N_2$ (many combinations represented by the dashed line)
 
 Together this gives the zero net growth isocline (ZNGI) of species 1.
 ]
