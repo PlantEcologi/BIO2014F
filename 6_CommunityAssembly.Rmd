@@ -289,7 +289,7 @@ knitr::include_graphics("images/Tony_CA4.png")
 .pull-left[
 As an example, here's a patch of Peninsula Granite Fynbos behind Kirstenbosch Gardens where fire has been excluded and forest species are invading.
 
-Eventually, the less flammable forest species will exclude fire, and the necessary cues for most Fynbos species to recruit. They're also altering the soils and light environment, shifting the environmental filter for new species and selecting forest species.
+Eventually, the less flammable forest species will exclude fire, and the necessary cues for most Fynbos species to recruit. They're also altering the soils and light environment, shifting the environmental filter for new species and selecting for forest species.
 
 ```{r echo = F, fig.align = 'center', out.width = '100%'}
 knitr::include_graphics("images/Cramer2019_F4.png")
@@ -307,7 +307,9 @@ knitr::include_graphics("images/forest_invasion.jpeg")
 
 ---
 
-### Communities as "superorganisms" vs coincidental associations
+### Communities as "superorganisms" vs coincidental associations?
+
+--
 
 .pull-left[
 ```{r echo = F, fig.align = 'center', out.width = '40%'}
@@ -316,6 +318,8 @@ knitr::include_graphics("images/Clements.jpg")
 
 _"The developmental study of vegetation necessarily rests upon the assumption that the unit or climax formation is an organic entity. **As an organism the formation arises, grows, matures, and dies.** Furthermore, each climax formation is able to reproduce itself, repeating with essential fidelity the stages of its development."_ — [**Frederic Clements 1916**](https://ia601309.us.archive.org/1/items/cu31924000531818/cu31924000531818.pdf)
 ]
+
+--
 
 .pull-right[
 ```{r echo = F, fig.align = 'center', out.width = '40%'}
@@ -329,7 +333,7 @@ i.e. Species largely respond to the environment individualistically
 
 ---
 
-### Communities as "superorganisms" vs coincidental associations
+### Communities as "superorganisms" vs coincidental associations?
 
 .pull-left[
 
@@ -352,7 +356,7 @@ knitr::include_graphics("images/forest_invasion.jpeg")
 
 ---
 
-### Communities as "superorganisms" vs coincidental associations
+### Communities as "superorganisms" vs coincidental associations?
 
 .pull-left[
 
@@ -376,18 +380,22 @@ class: center, middle
 
 ---
 
-Community assembly: Deterministic or Stochastic?
+### Community assembly: Deterministic or Stochastic?
 
 .pull-left[
-Slides 9 - 12 suggest that community assembly is a deterministic process - i.e. one whose behaviour is entirely determined by its initial state and inputs, and which is not random or stochastic. The outcome should be predictable.
+Slides 9 - 12 suggest that community assembly is a deterministic process... (as we've tried to illustrate here)
+  - i.e. one whose behaviour is entirely determined by its initial state and inputs, and which is not random or stochastic. 
+  - The outcome should be predictable.
 
-While it may be predictable, we haven't worked out quite how yet and there are many mysteries and contrasting theories and concepts: Elton vs Grinnell, Gleason vs Clements, etc
+<br>
+
+While it may be predictable, we haven't worked out quite how to predict it accurately yet and there are many mysteries, contrasting theories and concepts, and consequent raging debates: Eltonians vs Grinnellians, Gleasonians vs Clementsians, etc
 
 ]
 
 .pull-right[
 
-```{r echo = F, fig.align = 'center', out.width = '65%'}
+```{r echo = F, fig.align = 'center', out.width = '100%'}
 knitr::include_graphics("images/Tony_Deterministic.png")
 ```
 
@@ -397,26 +405,13 @@ knitr::include_graphics("images/Tony_Deterministic.png")
 
 ---
 
-class: center, middle
+class: center
 
 ### But wait! It gets worse!!!
 
 --
 
-```{r echo = F, fig.align = 'center', out.width = '65%'}
-knitr::include_graphics("images/StephenHubbell.jpg")
-```
-
-We have yet to meet Stephen Hubbell!
-
-
----
-
-class: center, middle
-
-### But wait! It gets worse!!!
-
-```{r echo = F, fig.align = 'center', out.width = '65%'}
+```{r echo = F, fig.align = 'center', out.width = '50%'}
 knitr::include_graphics("images/DarthSidious.jpeg")
 ```
 
@@ -424,595 +419,128 @@ We have yet to meet Darth Hubbell!
 
 ---
 
-Neutral theory...
+class: center
+
+### But wait! It gets worse!!!
+
+```{r echo = F, fig.align = 'center', out.width = '25%'}
+knitr::include_graphics("images/StephenHubbell.jpg")
+```
+
+We have yet to meet Stephen Hubbell!
 
 ---
 
 .pull-left[
 
-### Community Assembly
+### Neutral Theory - Hubbell 2001
+
+Niche Theory assumes _a priori_ that ecological communities are inherently high-dimensional _sensu_ Hutchinson's (1957) hypervolume.
+
+Neutral Theory takes the opposite approach and asks: _"What is the minimum necessary dimensionality of the theory required to characterize a given ecological community to a desired level of realism and precision?"_
 
 ]
 
 .pull-right[
-```{r echo = F, fig.align = 'center', out.width = '90%'}
-knitr::include_graphics("images/HillRidLambers2012_F1.gif")
+
+```{r echo = F, fig.align = 'center', out.width = '75%'}
+knitr::include_graphics("images/Neutral_Theory_Cover.jpg")
 ```
 
-.footnote[[**HillRisLambers et al. 2012**](http://dx.doi.org/10.1146/annurev-ecolsys-110411-160411)]
 ]
 
 ---
 
 .pull-left[
 
-### Exponential growth
+### Neutral Theory - Hubbell 2001
 
-$dN/dt = rN$
+Niche Theory assumes _a priori_ that ecological communities are inherently high-dimensional _sensu_ Hutchinson's (1957) hypervolume.
 
-Population growth rate, $r$, doesn't change with population size
+Neutral Theory takes the opposite approach and asks: _"What is the minimum necessary dimensionality of the theory required to characterize a given ecological community to a desired level of realism and precision?"_
 
-- i.e. no competition
+The "neutrality assumption" is that species are viewed as functionally equivalent
 
-```{r, echo = F, out.width="80%", fig.height = 6}
-library(tidyverse)
+- Individuals only differ in their species label
+- Species only differ in their relative abundance and have equivalent birth, death, dispersal and reproduction rates 
 
-data.frame(N = c(2,4,8,16,32), 
-           t = c(0,1,2,3,4)) %>%
-  ggplot(aes(x = t, y = N)) +
-  geom_line() +
-  geom_point(size = 5) +
-  ylim(0,35) +
-  xlim(0,5) +
-  ylab("Number of Individuals (N)") +
-  xlab("Time or generations (t)") +
-  theme_bw() +
-  theme(axis.text=element_text(size=20),
-        axis.title=element_text(size=24,face="bold"))
-
-```
-
+Consequently, species' distributions (and co-occurrence) are an outcome of stochastic processes...
 ]
 
 .pull-right[
 
-### Logistic growth
-
-$dN/dt = rN (K – N)/K$
-
-Population growth rate, $r$, gets small as the population approaches carrying capacity, $K$
-
-- i.e. _**intraspecific competition!**_
-
-```{r, echo = F, out.width="80%", fig.height = 6}
-library(tidyverse)
-
-data.frame(N = c(2,4,8,16,24,28,30,30,30), 
-           t = c(0,1,2,3,4,5,6,7,8)) %>%
-  ggplot(aes(x = t, y = N)) +
-  geom_line() +
-  geom_point(size = 5) +
-  ylim(0,35) +
-  xlim(0,10) +
-  ylab("Number of Individuals (N)") +
-  xlab("Time or generations (t)") +
-  theme_bw() +
-  theme(axis.text=element_text(size=20),
-        axis.title=element_text(size=24,face="bold")) +
-  geom_hline(yintercept = 30, colour = "blue", linetype = 2) +
-  geom_text(aes(x = 0, y = 32, label = "K"), colour = "blue", size = 10)
-
+```{r echo = F, fig.align = 'center', out.width = '75%'}
+knitr::include_graphics("images/Neutral_Theory_Cover.jpg")
 ```
+
 ]
 
---
 
-.footnote[_But what about int**er**specific competition? (i.e. between species)_]
+---
+
+### Neutral Theory
+
+```{r echo = F, fig.align = 'center', out.width = '95%'}
+knitr::include_graphics("images/Rosindell_Box1_FI.png")
+```
+
+- $J$ = number of individuals in the community
+- $m$ = probability of a replacement individual immigrating from another community (the metacommunity)
+- $v$ = probability of a replacement individual being a newly evolved species
+
+.footnote[[**Rosindell et al. 2011**](http://dx.doi.org/10.1016/j.tree.2011.03.024)]
 
 ---
 
 .pull-left[
 
-### Experiments with _Paramecium_
-
-Georgyi Frantsevitch Gause's microcosm experiments with species of the unicellular cilliate genus _Paramecium_ taught us a lot about intra- and interspecific competition.
-
-<br>
-
-Microcosms are artificial, simplified ecosystems that are used to simulate the behaviour of natural ecosystems under controlled conditions.
-
-<br>
-
-Gause's microcosms were test tubes supplied with an oatmeal medium, which promotes the growth of bacteria in the upper, oxygenated part of the test tube, and yeast in the lower, de-oxygenated part.
-
-]
-
-.pull-right[
-
-<br>
+### Neutral Theory in the Cape
 
 ```{r echo = F, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("images/Paramecium_aurelia.jpg")
+knitr::include_graphics("images/Latimer2005.png")
 ```
 
-.footnote[image: [**Wikipedia**](https://en.wikipedia.org/wiki/Paramecium#/media/File:Paramecium.jpg)]
+[**Latimer et al. 2005**]() applied Neutral Theory models to datasets from Fynbos and the Amazon forest.
 
-]
+The models were able to accurately predict species rank abundances (a form of the species abundance distribution) in both ecosystems.
 
----
-
-### Experiments with _Paramecium_ spp
-
-_Paramecium_ species cultured separately demonstrated **_intraspecific_** competition.
-
-```{r echo = F, fig.align = 'center', out.width = '60%'}
-knitr::include_graphics("images/paramecium_separate.png")
-```
-
-.footnote[[**Gause 1934**](http://dx.doi.org/10.1126/science.79.2036.16.b)]
---
-
-Here _Paramecium_ species cultured together, demonstrate **_interspecific_** competition...
-
-```{r echo = F, fig.align = 'center', out.width = '40%'}
-knitr::include_graphics("images/paramecium_together.png")
-```
-
----
-
-### Experiments with _Paramecium_ spp
-
-Why the different outcomes between the species mixes?
-
-.pull-left[
-#### Observation
-
-```{r echo = F, fig.align = 'center', out.width = '90%'}
-knitr::include_graphics("images/paramecium_together.png")
-```
-
-In the panel on the **left**, growth of both species is suppressed, but _P. caudatum_ actually goes extinct!
-
-The pair on the **right** appear to be able to coexist, albeit at lower densities than when grown alone.
-
-]
-
---
-
-.pull-right[
-
-#### Explanation
-
-**Left:** _P. caudatum_ and _P. aurelia_ both feed on bacteria, but _P. aurelia_ grows 6 times faster than _P. caudatum_, resulting in its **competitive exclusion**.
-
-**Right:** While _P. caudatum_ out-competes _P. bursaria_ for bacteria, _P. bursaria_ can survive on yeast in the lower, less oxygenated part of the test tube, because it contains tiny green algae that provide it with oxygen. This is an example of **resource (or niche) partitioning**.
-
-.footnote[[**Gause 1934**](http://dx.doi.org/10.1126/science.79.2036.16.b)]
-]
-
----
-
-.pull-left[
-### Niche/Resource partitioning
-
-There are many examples in nature of species that are able to coexist in a community, because they partition their resources.
-
-Many of these examples are from birds, such as [**Robert MacArthur's 1958 study**](http://dx.doi.org/10.2307/1931600) of warblers in the genus _Dendroica_ in the conifer forests of northeastern USA. Here he concluded:
-
->_"There are differences of feeding position, behavior, and nesting date which reduce competition."_
-
-These are niche differences, but by which definition of the niche?
+They were also able to explain the spatial patterns of biodiversity in each ecosystem. 
 
 ]
 
 .pull-right[
-```{r echo = F, fig.align = 'center', out.width = '75%'}
-knitr::include_graphics("images/bird_apartment.jpg")
-```
-
-.footnote[Atlas of World Wildlife 1973 (not MacArthur's warblers...)]
-]
-
----
-
-.pull-left[
-### Niche/Resource partitioning
-
-There are many examples in nature of species that are able to coexist in a community, because they partition their resources.
-
-Many of these examples are from birds, such as [**Robert MacArthur's 1958 study**](http://dx.doi.org/10.2307/1931600) of warblers in the genus _Dendroica_ in the conifer forests of northeastern USA. Here he concluded:
-
->_"There are differences of feeding position, behavior, and nesting date which reduce competition."_
-
-These are niche differences, but by which definition of the niche?
-
-> The Eltonian Niche (focus on resources)
-
-One can also observe niche partitioning (or niche shifts) in the Grinnellian niche.
-]
-
-.pull-right[
-```{r echo = F, fig.align = 'center', out.width = '75%'}
-knitr::include_graphics("images/bird_apartment.jpg")
-```
-
-.footnote[Atlas of World Wildlife 1973 (not MacArthur's warblers...)]
-]
----
-
-.pull-left[
-### Character Displacement
-
-The process by which niche partitioning occurs.
-
-_"the divergence shown when two partly allopatric species of comparable niche requirements become sympatric in part of their range"_ - [**Hutchinson 1959**](https://www.jstor.org/stable/2458768)
-
-_"Two closely related species have overlapping ranges. In the parts of the ranges where one species occurs alone, the populations of that species are similar to the other species and  may even be very difficult to distinguish from it. In the area of overlap, where the two species occur together, the populations are more divergent and easily distinguished, i.e., they "displace" one another in one or more characters. The characters involved can be morphological, ecological, behavioral, or physiological; they are assumed to be genetically based."_ - [**Brown and Hutchinson 1956**](http://dx.doi.org/10.2307/2411924)
-
-]
-
-.pull-right[
-```{r echo = F, fig.align = 'center', out.width = '75%'}
-knitr::include_graphics("images/Brown_Hutchinson_1956_F2.png")
-```
-
-Size and shape of the bill and facial stripe in _Sitta neumayer_ and _S. tephronota_. A and B are collections of the respective species where they occur alone. D and C were collected where they co-occur.
-
-]
-
----
-
-### Competitive Exclusion
-
-The **competitive exclusion principle** is often attributed to Gause, and sometimes called Gause's law, but there were earlier observations by Grinnell, Darwin and others, e.g.
-
->_Two species of approximately the same food habits are not likely to remain long evenly balanced in numbers in the same region. One will crowd out the other._ - [**Grinnell 1904**](https://doi.org/10.2307/4070199)
-
---
-
-<br>
-
-Unequivocal examples of competitive exclusion are rare, and can only really be demonstrated with experiments such as Gause's. These experiments are near-impossible for organisms with longer lifespans.
-
---
-
-<br>
-
-Why would we need experiments? Why would field observations not be good enough?
-
----
-
-### Competitive exclusion and the Ghost of Competition Past
-
-```{r echo = F, fig.align = 'center', out.width = '70%'}
-knitr::include_graphics("images/Connell_1980_Ghost.png")
-```
-
-In nature, while interspecific competition may be common, where competitive exclusion has occurred it cannot be observed as only one competitor would remain.
-
-- i.e. the loser is driven to extinction or there is spatial segregation of competitors (i.e. the species do not coexist locally, but occur in sympatry)
-
-While similar species occurring in sympatry may suggest that competitive exclusion has occurred, there are other potential explanations like dispersal limitation that prevents them accessing the same physical space.
-
-The criteria required to demonstrate that competitive exclusion has occurred, or that species have coevolved due to competition (e.g. resource partitioning or character displacement) are onerous! - see [**Connell 1980**](http://dx.doi.org/10.2307/3544421).
-
----
-
-class: center, middle
-
-### How can we determine if/when species can coexist?
-
----
-
-class: center, middle
-
-### How about both species maintaining population growth as a criterion?
-
----
-
-class: center, middle
-
-### How do we quantify the effect of interspecific competition on population growth? 
-
----
-
-.pull-left[
-
-### Exponential growth
-
-$dN/dt = rN$
-
-Population growth rate, $r$, doesn't change with population size
-
-- i.e. no competition
-
-```{r, echo = F, out.width="80%", fig.height = 6}
-library(tidyverse)
-
-data.frame(N = c(2,4,8,16,32), 
-           t = c(0,1,2,3,4)) %>%
-  ggplot(aes(x = t, y = N)) +
-  geom_line() +
-  geom_point(size = 5) +
-  ylim(0,35) +
-  xlim(0,5) +
-  ylab("Number of Individuals (N)") +
-  xlab("Time or generations (t)") +
-  theme_bw() +
-  theme(axis.text=element_text(size=20),
-        axis.title=element_text(size=24,face="bold"))
-
-```
-
-]
-
-.pull-right[
-
-### Logistic growth
-
-$dN/dt = rN (K – N)/K$
-
-Population growth rate, $r$, gets small as the population approaches carrying capacity, $K$
-
-- i.e. _**intraspecific competition!**_
-
-```{r, echo = F, out.width="80%", fig.height = 6}
-library(tidyverse)
-
-data.frame(N = c(2,4,8,16,24,28,30,30,30), 
-           t = c(0,1,2,3,4,5,6,7,8)) %>%
-  ggplot(aes(x = t, y = N)) +
-  geom_line() +
-  geom_point(size = 5) +
-  ylim(0,35) +
-  xlim(0,10) +
-  ylab("Number of Individuals (N)") +
-  xlab("Time or generations (t)") +
-  theme_bw() +
-  theme(axis.text=element_text(size=20),
-        axis.title=element_text(size=24,face="bold")) +
-  geom_hline(yintercept = 30, colour = "blue", linetype = 2) +
-  geom_text(aes(x = 0, y = 32, label = "K"), colour = "blue", size = 10)
-
-```
-]
-
---
-
-.footnote[_But what about int**er**specific competition? (i.e. between species)_]
-
----
-
-### Population growth with intra- and interspecific competition
-
-.pull-left[
-Assuming we have two species, 1 and 2. The population growth of species 1 can be modelled as:
-
-<br>
-
-$dN_1/dt = r_1 N_1(K_1 – {N_1 \mathbf{+ \alpha_{12} N_2}})/K_1$
-
-<br>
-
-This is the logistic curve with a new term, $\mathbf{\alpha_{12} N_2}$, to account for the competitive effect of species 2 on species 1. 
-
-- $N_2$ gives the population size of species 2
-- $\alpha_{12}$ is the per-capita competitive effect of species 2 on species 1 relative to intraspecific competition
-]
-
---
-
-.pull-right[
-
-<br>
-
-**What do the values of** $\alpha_{12}$ **mean?**
-
-- if $= 1$ then the effect of species 2 on species 1 is the same as the effect of species 1 on species 1
-  - the equation would essentially reduce to the logistic growth curve and you could treat all individuals as one species
-- if $> 1$ the effect of species 2 on species 1 is greater
-- if $< 1$ the effect of species 2 on species 1 is less
-- if $= 0$ there is no effect of species 2 on species 1 and the new term effectively disappears (= 0)
-]
-
----
-
-### Population growth with intra- and interspecific competition
-
-The population growth of species 1 can be modelled as:
-
-<br>
-
-$dN_1/dt = r_1 N_1(K_1 – {N_1 + \alpha_{12} N_2})/K_1$
-
-<br>
-
-Similarly, the population growth of species 2 can be modelled as:   
-
-<br>
-
-$dN_2/dt = r_2 N_2(K_2 – {N_2 + \alpha_{21} N_1})/K_2$
-
-.footnote[These are the Lotka-Volterra competition equations, independently developed by Alfred Lotka and Vito Volterra in the 1920s.]
-
----
-
-### What is carrying capacity ( $K$ ) when multiple species are present?
-
-.pull-left[
-
-$K$ = the maximum population that available resources can support, and growth drops to zero.
-
-$K$ for each species is constrained not only by density-dependent intraspecific competition, but also by the second species drawing from the same resource pool (interspecific competition)...
-
-Instead of being a single number, $K$ is now a linear function expressed in terms of the population sizes of the two species, $N_1$ and $N_2$.
-  - The relationship is negative, because as one increases the other must decrease...
-  - Above the line, resources are limiting and populations decline. Below the line, resources are available for populations to grow.
-]
-
-.pull-right[
-
-```{r echo = F, fig.align = 'center', out.width = '80%'}
-knitr::include_graphics("images/ZNGI_0.png")
-```
-
-This is termed a zero net growth isocline (ZNGI)
-]
----
-
-### What is carrying capacity ( $K$ ) when multiple species are present?
-
-.pull-left[
-
-Focusing on species 1, pop growth will drop to zero:
-
-**Firstly**, when $N2$ is negligible but $N1 = K1$ (i.e. species 1 reaches its carrying capacity). This is represented by the red dot. 
-
-**Secondly**, when $N1$ is negligible but $N2$ is so large that species 2 is using up all the resources. This is by the blue dot.
-
-- Notice that the size of $N2$ at this point depends on $\alpha_{12}$. $K1$ is reached at lower $N2$ when $\alpha_{12}$ is large (species 2 has a strong competitive effect).
-
-**Lastly**, there is a series of intermediate combinations of $N1$ and $N2$ that also result in complete use of the available resources and halt population growth. These are represented by the dashed line.
-]
-
-.pull-right[
-
-```{r echo = F, fig.align = 'center', out.width = '80%'}
-knitr::include_graphics("images/ZNGI_2.png")
-```
-
-The zero net growth isocline (ZNGI) of species 1
-]
-
----
-
-### What is carrying capacity ( $K$ ) when multiple species are present?
-
-.pull-left[
-
-Or mathematically if you prefer?
-
-For population growth of species 1 to drop to zero:
-
-$dN_1/dt = r_1 N_1(K_1 – {N_1 + \alpha_{12} N_2})/K_1 = 0$
-
-This can occur when:
-
-- Two trivial scenarios not worth mentioning, $(r = 0$ or $N_1 = 0)$
-- $N_2$ is close to 0 and $N_1 = K_1$ (the red dot)
-- $N_1$ is close to 0 and $N_2 = K_1/\alpha_{12}$ (the blue dot)
-- $N_1 = K_1 - \alpha_{12} N_2$ (the dashed line)
-
-Together this gives the zero net growth isocline (ZNGI) of species 1.
-]
-
-.pull-right[
-
-```{r echo = F, fig.align = 'center', out.width = '80%'}
-knitr::include_graphics("images/ZNGI_2.png")
-```
-
-The zero net growth isocline (ZNGI) of species 1
-]
-
----
-
-### ZNGI's for two species
-
-```{r echo = F, fig.align = 'center', out.width = '55%'}
-knitr::include_graphics("images/ZNGI_B1.png")
-```
-
----
-
-### ZNGI's and the coexistence of species
-
-.left-column[
-
-In (a) and (b) one species is a stronger competitor and competitive exclusion occurs
-
-(c) both species' interspecific competitive effects > their intraspecific competitive effects
-
-(d) both species' interspecific competitive effects < their intraspecific competitive effects
-
-]
-
-.right-column[
-```{r echo = F, fig.align = 'center', out.width = '75%'}
-knitr::include_graphics("images/ZNGI_B2.png")
-```
-.footnote[Brown = Species 1; Black = Species 2]
-]
-
----
-
-### ZNGI's and the coexistence of species
-
-.left-column[
-
-Only (d) shows stable coexistence!
-
-_Intraspecific competition must be greater than interspecific competition!_
-
-This conveys a **Rare Species Advantage**, allowing the species with lower population numbers to grow faster and avoid extinction.
-
-]
-
-.right-column[
-```{r echo = F, fig.align = 'center', out.width = '75%'}
-knitr::include_graphics("images/ZNGI_B2.png")
-```
-.footnote[Brown = Species 1; Black = Species 2]
-]
----
-
-### Limiting similarity and species coexistence
-
-.pull-left[
-```{r echo = F, fig.align = 'center', out.width = '90%'}
-knitr::include_graphics("images/MacArthur_Levins_1967_F1.png")
-```
 
 ```{r echo = F, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("images/MacArthur_Levins_1967.png")
+knitr::include_graphics("images/Latimer2005_F1.png")
 ```
 
-.footnote[[**MacArthur and Levins 1967**](https://doi.org/10.1086/282505)]
-]
-
-.pull-right[
-
-The **Rare Species Advantage** occurs when intraspecific competition is stronger than interspecific competition.
-
-> _"a community can retain all $n$ species if any one of them can increase when rare"_
-
-Their work suggested that this can only happen when species show some degree of niche differentiation. 
-
-It also suggested that the number of species that can be accommodated by a particular environment is proportional to the range of conditions or resources available divided by the niche breadth of the species.
-
-- i.e. the size of the pie and how finely you slice it
+- Communities in the Cape are dominated by locally abundant narrow endemics and high turnover between communities, suggesting strong dispersal limitation.
+- Amazon Forest communities are comprised of locally rare species with broad distributions and moderate turnover between communities.
 
 ]
-
 
 ---
 
-### Examples?
+### Neutral Theory
 
-.pull-left[
-```{r echo = F, fig.align = 'center', out.width = '60%'}
-knitr::include_graphics("images/Mills2019_Carnivores.jpg")
-```
-]
+> _"Neutral theory is thus a good starting point for an explanation of the universal patterns in species abundance distributions and it has indeed been successful at this."_
 
-.pull-right[
-```{r echo = F, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("images/desatge2017_F2.webp")
-```
+> _"The future of neutral theory is promising, but its concepts must be applied more broadly beyond the current focus on species–abundance distributions."_
 
-[**de Satgé et al. 2017**](http://dx.doi.org/10.1007/s00442-017-3916-2)
-]
+- [**Rosindell et al. 2011**](http://dx.doi.org/10.1016/j.tree.2011.03.024)
 
+<br>
+
+--
+
+> _"Probably no ecologist in the world with even a modicum of field experience would seriously question the existence of niche differences among competing species on the same trophic level."_
+
+> _"The real question, however, is how did these niche differences evolve, how are they maintained ecologically, and what niche differences, if any, matter to the assembly of ecological communities?"_
+
+> _"In my judgement, despite a long and rich tradition of research on these questions in community ecology, we are still far from having definitive answers."_
+
+- [**Hubbell 2005**](https://doi.org/10.1111/j.0269-8463.2005.00965.x)
+    
 ---
 
 class: middle
@@ -1025,7 +553,7 @@ class: middle
 
 >**
 
-Check out this [**Crash Course** in community ecoogy](https://www.youtube.com/watch?v=GxE1SSqbSn4) for a rapid recap of the basics.
+Check out this [**Crash Course** in community ecology](https://www.youtube.com/watch?v=GxE1SSqbSn4) for a rapid recap of the basics.
 
 ---
 class: center, middle
