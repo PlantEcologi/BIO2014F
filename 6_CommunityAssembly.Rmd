@@ -164,6 +164,51 @@ knitr::include_graphics("images/fynbos_community.jpg")
 
 ---
 
+.pull-left[
+
+### Assembly Rules
+
+In 1975, Jared Diamond proposed assembly rules based on the assertion that competition is responsible for determining the composition of biotic assemblages.
+
+Perhaps the most famous is the _"forbidden species combinations" hypothesis_, that competition is the main force structuring species composition on islands, not immigration, such that certain combinations of species should not occur.
+
+The rule was based on observations of avian assemblages on islands near New Guinea where "checkerboards" were common - a pattern of mutual exclusivity such that if one species occurs on an island the other does not, and _vice versa_.
+
+[**Cody and Diamond 1975**](https://books.google.co.za/books/about/Ecology_and_Evolution_of_Communities.html?id=j_idbVxwzpQC&redir_esc=y)
+]
+
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '90%'}
+knitr::include_graphics("images/CodyDiamond1975.jpg")
+```
+]
+
+---
+
+.pull-left[
+
+### Assembly Rules
+
+> "I think what we’re going to find out is that assembly rules are vague, gentle constraints," - Evan Weiher
+
+Much effort has been invested exploring assembly rules, but few general rules have emerged.
+
+This is a problem for predicting changes in the structure, composition and function of communities under global change...
+
+On the positive side, we have developed a pretty good idea of the processes that determine community assembly, even if we can't always predict the outcome.
+
+[**Weiher and Keddy 1999**](https://www.cambridge.org/core_title/gb/139891)
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '80%'}
+knitr::include_graphics("images/ecological_assembly_rules.jpg")
+```
+]
+
+---
+
 .left-column[
 ### Community Assembly
 
@@ -171,6 +216,7 @@ Starting with the pool of species from a region that could possibly occur (dispe
 
 This is the **regional species pool**, and can be defined in different ways, depending on your purpose.
 
+Dispersal we'll get to later.
 ]
 
 .right-column[
@@ -186,7 +232,7 @@ knitr::include_graphics("images/Tony_CA1.png")
 .left-column[
 ### Community Assembly
 
-Firstly, species should be "filtered" such that they only occur in environments that they are adapted to (i.e. match their abiotic niche).
+Firstly, species should be "filtered" such that they only occur in environments that they are adapted to (this is in effect their fundamental Hutchinsonian niche).
 
 A process called **habitat filtering** or **ecological sorting**.
 ]
@@ -204,9 +250,9 @@ knitr::include_graphics("images/Tony_CA2.png")
 .left-column[
 ### Community Assembly
 
-Secondly, the species that pass through the abiotic habitat filter then have to pass through a biotic filter.
+Secondly, the species must now pass through a biotic filter.
 
-This means surviving -ve interspecific interactions (competition, predation, parasitism) and finding required +ve interactions like mutualists (pollinators, seed dispersers, mycorrhizae) or hosts (for parasites).
+This means surviving -ve interspecific interactions (competition, predation, parasitism) and finding required +ve interactions like mutualists (pollinators, seed dispersers, mycorrhizae), facilitators or hosts (for parasites).
 
 ]
 
@@ -223,7 +269,7 @@ knitr::include_graphics("images/Tony_CA3.png")
 .left-column[
 ### Community Assembly
 
-Lastly, once the assembled community can then alter the environment in various ways that affect future community assembly at that site (e.g. flammability, nutrient availability, etc).
+Lastly, once assembled, over time the community may alter the environment in ways that affect future community assembly at that site (e.g. flammability, nutrient availability).
 
 This is termed **niche construction**, and if you want to hear more about it do the [**BIO3018F field course**](https://science.uct.ac.za/department-biological-sciences/undergraduate-study/third-year-courses) next year...
 ]
@@ -235,6 +281,150 @@ knitr::include_graphics("images/Tony_CA4.png")
 
 .footnote[image: Tony Verboom]
 ]
+
+---
+
+### Niche Construction
+
+.pull-left[
+As an example, here's a patch of Peninsula Granite Fynbos behind Kirstenbosch Gardens where fire has been excluded and forest species are invading.
+
+Eventually, the less flammable forest species will exclude fire, and the necessary cues for most Fynbos species to recruit. They're also altering the soils and light environment, shifting the environmental filter for new species and selecting forest species.
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Cramer2019_F4.png")
+```
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/forest_invasion.jpeg")
+```
+
+[Figure from **Cramer et al. 2019**](https://doi.org/10.1111/ecog.03860)
+
+]
+
+---
+
+### Communities as "superorganisms" vs coincidental associations
+
+.pull-left[
+```{r echo = F, fig.align = 'center', out.width = '40%'}
+knitr::include_graphics("images/Clements.jpg")
+```
+
+_"The developmental study of vegetation necessarily rests upon the assumption that the unit or climax formation is an organic entity. **As an organism the formation arises, grows, matures, and dies.** Furthermore, each climax formation is able to reproduce itself, repeating with essential fidelity the stages of its development."_ — [**Frederic Clements 1916**](https://ia601309.us.archive.org/1/items/cu31924000531818/cu31924000531818.pdf)
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '40%'}
+knitr::include_graphics("images/Gleason.jpg")
+```
+
+_"An association is not an organism, scarcely even a vegetational unit, but merely a coincidence."_ — [**Henry Gleason 1926**](https://www.jstor.org/stable/2479933)
+
+i.e. Species largely respond to the environment individualistically
+]
+
+---
+
+### Communities as "superorganisms" vs coincidental associations
+
+.pull-left[
+
+But what about our Fynbos vs Forest niche construction example?
+
+Few species are shared between the two formations, and they appear to be alternative stable states that we can shift between by adding or excluding fire.
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/pausas_bond_2020_abs_2.jpg")
+```
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/forest_invasion.jpeg")
+```
+
+[Figure from **Pausas and Bond 2020**](https://doi.org/10.1016/j.tplants.2019.11.003)
+]
+
+---
+
+### Communities as "superorganisms" vs coincidental associations
+
+.pull-left[
+
+While there's been rigorous debate in the literature for almost 100 years, it is difficult to completely exclude either notion...
+
+_"Figure 1: Classical [Gleasonian] pattern of species response curves along a climate gradient (a), and the alternative pattern along the same climatic gradient when considering the shading factor (b). Note that in the driest and the wettest section of the gradient, we find open (e.g. grassland) and closed (forest) biomes, respectively; but at intermediate levels of the gradient, both are possible depending mainly on the disturbance regimes and feedback processes (alternative biome states, ABS; Pausas & Bond, 2020). Thus, under the intermediate levels of the gradient, species that may seem to coexist when considering climate only (a) are not really coexisting but occurring in drastically different biomes."_ - [**Pausas and Bond 2021**](https://doi.org/10.1111/1365-2745.13781)
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '65%'}
+knitr::include_graphics("images/Pausas2021_F1.jpg")
+```
+
+]
+
+---
+
+class: center, middle
+
+### Where does this leave us with respect to understanding community assembly?
+
+---
+
+Community assembly: Deterministic or Stochastic?
+
+.pull-left[
+Slides 9 - 12 suggest that community assembly is a deterministic process - i.e. one whose behaviour is entirely determined by its initial state and inputs, and which is not random or stochastic. The outcome should be predictable.
+
+While it may be predictable, we haven't worked out quite how yet and there are many mysteries and contrasting theories and concepts: Elton vs Grinnell, Gleason vs Clements, etc
+
+]
+
+.pull-right[
+
+```{r echo = F, fig.align = 'center', out.width = '65%'}
+knitr::include_graphics("images/Tony_Deterministic.png")
+```
+
+.footnote[image: Tony Verboom]
+
+]
+
+---
+
+class: center, middle
+
+### But wait! It gets worse!!!
+
+--
+
+```{r echo = F, fig.align = 'center', out.width = '65%'}
+knitr::include_graphics("images/StephenHubbell.jpg")
+```
+
+We have yet to meet Stephen Hubbell!
+
+
+---
+
+class: center, middle
+
+### But wait! It gets worse!!!
+
+```{r echo = F, fig.align = 'center', out.width = '65%'}
+knitr::include_graphics("images/DarthSidious.jpeg")
+```
+
+We have yet to meet Darth Hubbell!
+
+---
+
+Neutral theory...
 
 ---
 
