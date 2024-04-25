@@ -7,3 +7,4 @@ BIO2014F Principles of Ecology and Evolution module on Niche Theory
 3. [Geographic Distributions and Niche modelling](3_GeographicNiche)
 4. [Population Growth and Intraspecific Competition](4_PopulationGrowth)
 5. [Interspecific Competition and Coexistence](5_CompetitionCoexistence)
+6. [Community Assembly](6_CommunityAssembly)
