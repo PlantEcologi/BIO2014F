@@ -63,6 +63,13 @@ library(kableExtra)
 # xaringanExtra::use_tile_view()
 ```
 
+class: center, middle
+
+> _"...species of the same genus usually have, though by no means invariably, much similarity in habits and constitution, and always in structure..."_ 
+
+> [**Darwin 1859**](https://books.apple.com/za/book/on-the-origin-of-species/id395536758)
+
+---
 
 .pull-left[
 
@@ -72,48 +79,71 @@ While it seems obvious now, it took a long time for people to realise that the s
 
 They were once identical, because they were once the same thing!
 
-The degree to which they differ now is a function of time and selective pressure.
+The degree to which they differ is a function of time, genetic variation (including mutation rates), genetic and developmental constraints, and selective pressure.
 
 .footnote[The first phylogeny. From Darwin's Notebook B.]
 ]
 
 .pull-right[
-```{r echo = F, fig.align = 'center', out.width = '75%'}
+```{r echo = F, fig.align = 'center', out.width = '65%'}
 knitr::include_graphics("images/Darwin_notebookB.png")
 ```
 ]
 
 ---
 
-Who is the elephant's closest ancestor?
+### Who is the elephant's closest ancestor?
 
 Elephant, Dugong, Hyrax, Rhino, Aardvark
 
 ---
 
-PoulakakisStamatakis2010.jpg
+
 
 Quite a bit of divergence, but then it has been 67 million years...
 
-https://doi.org/10.1080/14772000.2010.484436
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/PoulakakisStamatakis2010.jpg")
+```
+
+.footnote[[**Poulakakis and Stamatakis 2010.jpg**](https://doi.org/10.1080/14772000.2010.484436)]
 
 ---
 
-Who can tell me how you tell the difference between a crocodile and an alligator?
+### What's the difference between a crocodile and an alligator?
 
 ---
-
-Compare that with crocodiles?
-
-Darlim2022_Crocodylia.jpg
 
 So similar despite ±95 million years of independent evolution!!!
 
-https://doi.org/10.1098/rsbl.2021.0603
+```{r echo = F, fig.align = 'center', out.width = '60%'}
+knitr::include_graphics("images/Darlim2022_Crocodylia.jpg")
+```
+
+.footnote[[**Darlim et al 2022**](https://doi.org/10.1098/rsbl.2021.06036)]
 
 ---
 
-Phylogeny and similarity
+.pull-left[
+
+### Phylogeny and ecological similarity
+
+**Phylogenetic signal** is the tendency for related species to resemble each other more than they resemble species drawn at random from the phylogenetic tree.
+
+**Phylogenetic niche conservatism** is when closely related species are _more_ similar ecologically than expected based on their relatedness (i.e. given the time they've had to diverge).
+
+
+.footnote[East African terns by [**H Douglas Pratt**](http://hdouglaspratt.com/Art_Gallery/kenyantanzania/smallerternsinflightdraft.html)]
+
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '75%'}
+knitr::include_graphics("images/terns_HDouglasPratt.gif")
+```
+]
+
+---
 
 - non-ecological speciation
 - phylogenetic signal (check Losos 2008 definition?)
@@ -129,34 +159,346 @@ class: center, middle
 
 ### The Competition-Relatedness Hypothesis
 
+<br>
+
 > _"As the species of the same genus usually have, though by no means invariably, much similarity in habits and constitution, and always in structure, the struggle will generally be more severe between them, if they come into competition with each other, than between the species of distinct genera."_ - [**Darwin 1859**](https://books.apple.com/za/book/on-the-origin-of-species/id395536758)
 
 <br>
 
 In modern ecology, this translates as:
 
+<br>
+
 > Since close relatives usually have similar traits, and thus similar niches, the limiting similarity principle dictates that they should compete more strongly than distant relatives.
 
 ---
 
+.pull-left[
+
 ### The Competition-Relatedness Hypothesis
 
-Slingsby and Verboom 2006
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/SlingsbyVerboom2006.png")
+```
+
+[**Slingsby and Verboom 2006**](http://dx.doi.org/10.1086/505158) explored patterns of co-occurrence of _Tetraria_ species in plots sampled across several mountains in the CFR.
+]
+
+.pull-right[
+
+```{r echo = F, fig.align = 'center', out.width = '90%'}
+knitr::include_graphics("images/Slingsby2013_Plate.png")
+```
+
+]
 
 ---
 
-### Relatedness and habitat filtering?
+.pull-left[
 
-As a counter to the competition-relatedness hypothesis, since close relatives should have similar traits and niches, you might expect them to be filtered into the same communities?
+### The Competition-Relatedness Hypothesis
+
+[**Slingsby and Verboom 2006**](http://dx.doi.org/10.1086/505158) explored patterns of co-occurrence of _Tetraria_ species in plots sampled across several mountains in the CFR.
+
+They found that close relatives were functionally similar and that they rarely co-occur (empty top-left corner of figures), as one would expect if close relatives competitively exclude one another.
+
+Similar patterns have been found for many taxonomic groups all over the world, but it is difficult to exclude processes other than competition as potential drivers of the pattern.
+]
+
+.pull-right[
+
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/SlingsbyVerboom_F3.jpeg")
+```
+
+]
+
+---
+
+class: center, middle
+
+### But what about relatedness and habitat filtering?
+
+---
+
+.pull-left[
+
+### Relatedness and habitat filtering
+
+As a counter to the competition-relatedness hypothesis, since close relatives should have similar traits and niches, you might expect them to be filtered into the same communities.
 
 This sets up contrasting predictions, depending on whether competition or habitat filtering are the dominant processes...
 
-[Cavender-Bares 2006 quadrants (but excluding trait convergence for now)]
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Cavender2004_F2_conserved.png")
+```
+
+]
+
+.pull-right[
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Cavender2004_F1_conserved.png")
+```
+
+.footnote[[**Cavender-Bares et al. 2004**](https://doi.org/10.1086/386375)]
+]
 
 ---
 
+.pull-left[
+
+### Relatedness and habitat filtering
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/KraftAckerly2010.png")
+```
+
+Revisiting our rainforest example from the previous lecture, [**Kraft and Ackerly 2010**](https://doi.org/10.1890/09-1672.1) did a follow-up study looking at trait conservatism and phylogenetic relatedness in their Amazon forest plot.
+
+They found that the range and variance of a set of key traits were smaller than expected by chance (i.e. clustered), and that the communities showed phylogenetic clustering at a range of plot sized from 5 to 100m.
+
+]
+
+.pull-right[
+
+```{r echo = F, fig.align = 'center', out.width = '55%'}
+knitr::include_graphics("images/KraftAckerly2010_F4.jpg")
+```
+
+]
+
+---
+
+.pull-left[
+
+### Relatedness and habitat filtering
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/VerduPausas2007.png")
+```
+
+Mediterranean plant species persist after fire by having hard-coated seeds or serotinous cones to protected them from the heat of the fire and permit rapid post-fire recruitment.
+
+[**Verdu and Pausas 2007**](https://doi.org/10.1111/j.1365-2745.2007.01300.x) tested and showed: 
+
+1. seed traits show phylogenetic signal
+2. co-occurring species have similar seed/cone phenotypes (phenotypic clustering)
+3. communities in high fire frequency environments are significantly phylogenetically clustered
+
+]
+
+.pull-right[
+
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/VerduPausas2007_Phylogeny.gif")
+```
+
+]
+
+---
+
+.pull-left[
+
+### Relatedness and habitat filtering
+
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/crisp2009_1.png")
+```
+
+]
+
+.pull-right[
+
+#### Niche conservatism and global biogeography!
+
+```{r echo = F, fig.align = 'center', out.width = '80%'}
+knitr::include_graphics("images/crisp2009_2.png")
+```
+
+Speciation is more likely to occur via dispersal to a similar biome on a different continent than to a different biome right next door!
+
+```{r echo = F, fig.align = 'center', out.width = '80%'}
+knitr::include_graphics("images/Donoghue2008_EasierToMove.png")
+```
 
 
+.footnote[Figures: [**Crisp et al. 2009**](https://doi.org/10.1038/nature07764); Quote: [**Donoghue 2008**](http://dx.doi.org/10.1073/pnas.0801962105)]
+]
+
+---
+
+class: center, middle
+
+### But what if the key traits/niche are not conserved?
+
+---
+
+Divergence in traits and/or niches is relatively common, as we see in adaptive radiations such as the Honeycreepers of the Hawaiian archipelago.
+
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/AllAboutBirds_Beaks.jpg")
+```
+
+[**Illustration by Jillian Ditner, photo by Ashlyn Gehrett**](https://www.allaboutbirds.org/news/why-evolution-goes-wild-on-islands-the-science-of-adaptive-radiation/#)
+
+---
+
+.pull-left[
+
+### Relatedness and habitat filtering
+
+If we consider that close relatives may not have similar traits and niches, you might expect them to be filtered into different communities.
+
+In fact, in this case, distant relatives are likely to have converged (**convergent evolution**) to the same traits or niche preferences, leading to habitat filtering selecting for communities of distantly related species!
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Cavender2004_F2.jpeg")
+```
+
+]
+
+.pull-right[
+
+```{r echo = F, fig.align = 'center', out.width = '95%'}
+knitr::include_graphics("images/Cavender2004_F1.jpeg")
+```
+
+Note that there are no clear predictions for competition and convergent evolution...
+
+.footnote[[**Cavender-Bares et al. 2004**](https://doi.org/10.1086/386375)]
+]
+
+---
+
+.pull-left[
+
+### Relatedness and habitat filtering
+
+#### Habitat filtering and _convergent_ evolution
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Cavender2004.png")
+```
+
+A similar pattern to Slingsby and Verboom 2006!
+
+]
+
+.pull-right[
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Cavender2004_F4.jpeg")
+```
+
+
+
+.footnote[[**Cavender-Bares et al. 2004**](https://doi.org/10.1086/386375)]
+]
+
+---
+
+.pull-left[
+
+### Relatedness and habitat filtering
+
+#### Habitat filtering and _convergent_ evolution
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Cavender2004.png")
+```
+
+A similar pattern to Slingsby and Verboom 2006!
+
+#### But 
+
+This pattern was driven by convergent evolution of niches!
+]
+
+.pull-right[
+
+```{r echo = F, fig.align = 'center', out.width = '85%'}
+knitr::include_graphics("images/Cavender2004_F3.jpeg")
+```
+
+.footnote[[**Cavender-Bares et al. 2004**](https://doi.org/10.1086/386375)]
+]
+
+---
+
+### Niches and Diversification
+
+Since niches are key for the distribution and coexistence of species, it stands to reason that they should feed back to affect the diversification process?
+
+```{r echo = F, fig.align = 'center', out.width = '60%'}
+knitr::include_graphics("images/Foote_1997.png")
+```
+
+One proposal is that diversification should slow through time as niche space is gradually filled. This is termed density- (or diversity-) dependent diversification.
+
+The idea has its roots in paleobiology, based on the study of fossils, but has since been explored using molecular phylogenies.
+
+.footnote[[**Foote 1997**](http://dx.doi.org/10.1146/annurev.ecolsys.28.1.129)]
+
+---
+
+.pull-left[
+
+### Diversity-dependent diversification
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Rabosky2008.png")
+```
+
+The key notion is that the diversification rate declines through time as the number of lineages increases (and presumably niche space saturates).
+
+While the notion that there is an ecological limit on diversification is a somewhat controversial one, there's enough evidence of a pattern that it cannot be ignored, even if we're not sure of the process. We may yet find alternative explanations...
+
+]
+
+.pull-right[
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Rabosky2008_F3.png")
+```
+
+.footnote[[**Rabosky and Lovette 2008**](https://doi.org/10.1098/rspb.2008.0630)]
+]
+
+---
+
+.pull-left[
+
+### Diversity-dependent diversification
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Slingsby2013.png")
+```
+
+There's even some evidence for it from the Cape...
+
+Revisiting the genus _Tetraria_...
+
+.footnote[[**Slingsby et al. 2013**](http://dx.doi.org/10.1016/j.ympev.2013.11.017)]
+]
+
+.pull-right[
+
+```{r echo = F, fig.align = 'center', out.width = '90%'}
+knitr::include_graphics("images/Slingsby2013_Plate.png")
+```
+
+]
+
+---
+
+### Diversity-dependent diversification
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Slingsby2013_GA.png")
+```
+
+.footnote[[**Slingsby et al. 2013**](http://dx.doi.org/10.1016/j.ympev.2013.11.017)]
 
 ---
 
@@ -171,26 +513,18 @@ Charles Darwin
 https://books.apple.com/za/book/on-the-origin-of-species/id395536758
 This material may be protected by copyright.
 
-Niche conservatism
-- non-ecological speciation
 
-Competition-relatedness hypothesis
 
 Habitat tracking
 
-Niche conservatism and Biogeography
-
-[Niche evolution and current ecology]
-
 Niche divergence
-  - adaptive radiation
   - the rate of trait evolution (Ackerly 2009 Traitgrams)
 
-Niche convergence
-- implications for community assembly
-
-
 Diversity dependence
+
+Slingsby2013_GA.pdf
+
+- Tony and Mike's paper on diversity begets diversity?
 
 ---
 
