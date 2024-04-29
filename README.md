@@ -9,3 +9,4 @@ BIO2014F Principles of Ecology and Evolution module on Niche Theory
 5. [Interspecific Competition and Coexistence](5_CompetitionCoexistence)
 6. [Community Assembly](6_CommunityAssembly)
 7. [Trait-based Ecology](7_TraitEcology)
+8. [Niches and Evolution](8_NicheEvolution)
