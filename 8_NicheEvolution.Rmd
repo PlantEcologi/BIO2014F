@@ -75,11 +75,14 @@ class: center, middle
 
 ### Relatedness
 
-While it seems obvious now, it took a long time for people to realise that the similarity among some species that we observe is because they have descended from a common ancestor.
+While it seems obvious now, it took a long time for people to realise that the similarity among some species that we observe is because they have descended from a common ancestor. i.e. They were once identical, because they were once the same thing!
 
-They were once identical, because they were once the same thing!
+The degree to which they differ is a function of:
 
-The degree to which they differ is a function of time, genetic variation (including mutation rates), genetic and developmental constraints, and selective pressure.
+- time
+- genetic variation (including mutation rates)
+- genetic and developmental constraints
+- selective pressure
 
 .footnote[The first phylogeny. From Darwin's Notebook B.]
 ]
@@ -92,15 +95,33 @@ knitr::include_graphics("images/Darwin_notebookB.png")
 
 ---
 
-### Who is the elephant's closest ancestor?
+.pull-left[
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/elephant.JPG")
+```
 
-Elephant, Dugong, Hyrax, Rhino, Aardvark
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/dugong.jpeg")
+```
+
+.footnote[Who is the elephant's closest ancestor?]
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/tapir.jpeg")
+```
+
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/hyrax.JPG")
+```
+
+.footnote[[**Tapir: guyincognito**](https://www.inaturalist.org/observations/17547825); [**Dugong: Dennis Rabeling**](https://www.inaturalist.org/observations/72603891)]
+]
 
 ---
 
-
-
-Quite a bit of divergence, but then it has been 67 million years...
+Quite a bit of divergence, but then it has been 60+ million years...
 
 ```{r echo = F, fig.align = 'center', out.width = '70%'}
 knitr::include_graphics("images/PoulakakisStamatakis2010.jpg")
@@ -111,6 +132,22 @@ knitr::include_graphics("images/PoulakakisStamatakis2010.jpg")
 ---
 
 ### What's the difference between a crocodile and an alligator?
+
+<br>
+
+.pull-left[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/alligator.jpg")
+```
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/crocodile.jpg")
+```
+]
+
+.footnote[[**Alligator: joemdo**](https://www.inaturalist.org/observations/19501898); [**Crocodile: Wayne and Pam Osborn**](https://www.inaturalist.org/photos/254500796)]
 
 ---
 
@@ -145,9 +182,17 @@ knitr::include_graphics("images/terns_HDouglasPratt.gif")
 
 ---
 
-- non-ecological speciation
-- phylogenetic signal (check Losos 2008 definition?)
-- niche conservatism
+### Drivers of niche conservatism
+
+<br>
+
+I'm not going to go into detail, but conservatism may be maintained through a variety of processes, including:
+
+- lack of genetic variation for necessary traits
+- genetic constraints
+- developmental/morphological constraints
+- selection favouring maintenance of the original niche 
+- competition with other species preventing divergence into other niches
 
 ---
 
@@ -200,7 +245,7 @@ knitr::include_graphics("images/Slingsby2013_Plate.png")
 
 [**Slingsby and Verboom 2006**](http://dx.doi.org/10.1086/505158) explored patterns of co-occurrence of _Tetraria_ species in plots sampled across several mountains in the CFR.
 
-They found that close relatives were functionally similar and that they rarely co-occur (empty top-left corner of figures), as one would expect if close relatives competitively exclude one another.
+They found that close relatives were functionally similar (phylogenetic signal) and that they rarely co-occur (empty top-left corner of figures), as one would expect if close relatives competitively exclude one another.
 
 Similar patterns have been found for many taxonomic groups all over the world, but it is difficult to exclude processes other than competition as potential drivers of the pattern.
 ]
@@ -278,7 +323,7 @@ knitr::include_graphics("images/KraftAckerly2010_F4.jpg")
 knitr::include_graphics("images/VerduPausas2007.png")
 ```
 
-Mediterranean plant species persist after fire by having hard-coated seeds or serotinous cones to protected them from the heat of the fire and permit rapid post-fire recruitment.
+Mediterranean plant species persist after fire by having hard-coated seeds or serotinous cones to protect them from the heat of the fire and permit rapid post-fire recruitment.
 
 [**Verdu and Pausas 2007**](https://doi.org/10.1111/j.1365-2745.2007.01300.x) tested and showed: 
 
@@ -350,7 +395,7 @@ knitr::include_graphics("images/AllAboutBirds_Beaks.jpg")
 
 If we consider that close relatives may not have similar traits and niches, you might expect them to be filtered into different communities.
 
-In fact, in this case, distant relatives are likely to have converged (**convergent evolution**) to the same traits or niche preferences, leading to habitat filtering selecting for communities of distantly related species!
+In fact, in this case, distant relatives are likely to have converged to the same traits or niche preferences (**convergent evolution**), leading to habitat filtering selecting for communities of distantly related species!
 
 ```{r echo = F, fig.align = 'center', out.width = '100%'}
 knitr::include_graphics("images/Cavender2004_F2.jpeg")
@@ -413,6 +458,8 @@ A similar pattern to Slingsby and Verboom 2006!
 #### But 
 
 This pattern was driven by convergent evolution of niches!
+
+To discern between processes, you have to test for phylogenetic signal.
 ]
 
 .pull-right[
@@ -436,7 +483,7 @@ knitr::include_graphics("images/Foote_1997.png")
 
 One proposal is that diversification should slow through time as niche space is gradually filled. This is termed density- (or diversity-) dependent diversification.
 
-The idea has its roots in paleobiology, based on the study of fossils, but has since been explored using molecular phylogenies.
+The idea has its roots in paleobiology, based on the fossil record, but has since been explored using molecular phylogenies.
 
 .footnote[[**Foote 1997**](http://dx.doi.org/10.1146/annurev.ecolsys.28.1.129)]
 
@@ -502,630 +549,21 @@ knitr::include_graphics("images/Slingsby2013_GA.png")
 
 ---
 
-“In these remarks on predominence, it should be understood that reference is made only to the forms which come into competition with each other, and more especially to the members of the same genus or class having nearly similar habits of life.”
-
-“We can dimly see why the competition should be most severe between allied forms, which fill nearly the same place in the economy of nature; but probably in no one case could we precisely say why one species has been victorious over another in the great battle of life.”
-
-
-Excerpt From
-On the Origin of Species
-Charles Darwin
-https://books.apple.com/za/book/on-the-origin-of-species/id395536758
-This material may be protected by copyright.
-
-
-
-Habitat tracking
-
-Niche divergence
-  - the rate of trait evolution (Ackerly 2009 Traitgrams)
-
-Diversity dependence
-
-Slingsby2013_GA.pdf
-
-- Tony and Mike's paper on diversity begets diversity?
-
----
-
-### Niches and Biogeography
-
-```{r echo = F, fig.align = 'center', out.width = '85%'}
-knitr::include_graphics("images/Donoghue2008_EasierToMove.png")
-```
-
-.footnote[[**Donoghue 2008**](http://dx.doi.org/10.1073/pnas.0801962105)]
-
----
-
-class: center, middle
-
-### Why haven't we been talking about traits?
-
----
-
-### The Grinnellian Niche
-
-.pull-left[
-```{r echo = F, fig.align = 'center', out.width = '85%'}
-knitr::include_graphics("images/grinnell_1917.png")
-```
-
-> _"An explanation of this restricted distribution is probably to be found in the **close adjustment of the bird in various physiological and psychological respects** to a narrow range of environmental conditions. The nature of these critical conditions is to be learned through an examination of the bird's habitat."_
-
-.footnote[[**Grinnell 1917**](http://dx.doi.org/10.2307/4072271)]
-]
-
-.pull-right[
-```{r echo = F, fig.align = 'center', out.width = '85%'}
-knitr::include_graphics("images/california_thrasher.jpg")
-```
-
-.footnote[Photo: Leslie Cavaliere, iNaturalist]
-]
-
----
-
-.pull-left[
-
-### The Eltonian Niche
-
-> _"what [it] is doing in its community,... its place in the **biotic** environment, its relations to food and enemies"_ - [**Elton 1927**](https://press.uchicago.edu/ucp/books/book/chicago/A/bo25281897.html)
-
-> _"used in ecology in the sense that we speak of trades or professions or jobs in a human community"_ - [**Elton 1933**](https://books.google.co.za/books/about/The_Ecology_of_Animals.html?id=OxzZAAAAMAAJ&redir_esc=y)
-
-Focuses on the organism's role or **function** in the ecosystem, often in relation to trophic position (consumers, predators, etc) and **resource use**.
-
-Often considers the **attributes or traits** of species that allow them to fulfill their role.
-
-]
-
-.pull-right[
-```{r echo = F, fig.align = 'center', out.width = '90%'}
-knitr::include_graphics("images/elton_interactions.jpg")
-```
-
-.footnote[image: _The Atlas of World Wildlife_ 1973]
-]
-
----
-
-### Eltonian Niche Traits
-
-Honeycreepers evolved a range of bill forms in response to available food sources on the Hawaiian archipelago.
-
-```{r echo = F, fig.align = 'center', out.width = '70%'}
-knitr::include_graphics("images/AllAboutBirds_Beaks.jpg")
-```
-
-[**Illustration by Jillian Ditner, photo by Ashlyn Gehrett**](https://www.allaboutbirds.org/news/why-evolution-goes-wild-on-islands-the-science-of-adaptive-radiation/#)
-
----
-
-### Eltonian and Grinnellian Niche Traits?
-
-```{r echo = F, fig.align = 'center', out.width = '65%'}
-knitr::include_graphics("images/Lambers2008_F1.png")
-```
-
-Plants have a range of nutrient-acquisition strategies that affect both their ability to compete for (or partition) nutrients and the soil environmental conditions where they are most likely to occur ([**Lambers et al. 2008**](http://dx.doi.org/10.1016/j.tree.2007.10.008)).
-
----
-
-### Eltonian and Grinnellian Niche Traits?
-
-```{r echo = F, fig.align = 'center', out.width = '65%'}
-knitr::include_graphics("images/Santos2023_F5.webp")
-```
-
-East African cichlid fishes have diverged in traits relating diet, mating behaviour, competition and habitat.
-
-.footnote[[**Santos et al. 2023**](http://dx.doi.org/10.1186/s13227-022-00205-5)]
-
----
-
-.pull-left[
-
-### Grinnellian Niche Traits?
-
-Not only have _Anolis_ lizard species of the Greater Antilles specialised to use different parts of the trees they live in (niche partitioning), but these niches are filled by different species on each island and unrelated species have converged to similar morphology for each habitat type!
-
-.footnote[[**Losos and de Queiroz 1997**](https://repository.si.edu/handle/10088/38506)]
-]
-
-.pull-right[
-```{r echo = F, fig.align = 'center', out.width = '60%'}
-knitr::include_graphics("images/Losos1997_Anoles.png")
-```
-]
-
----
-
-.pull-left[
-
-### Grinnellian Niche Traits
-
-There are clear climatic preferences among plant functional types in Africa.
-
-.footnote[[**Conradi et al. 2021**](http://dx.doi.org/10.1111/nph.16580)]
-]
-
-.pull-right[
-```{r echo = F, fig.align = 'center', out.width = '90%'}
-knitr::include_graphics("images/Conradi2021_PFTs.jpg")
-```
-]
-
----
-
-```{r echo = F, fig.align = 'center', out.width = '80%'}
-knitr::include_graphics("images/McGill2006.png")
-```
-
-> _"There is considerable debate about whether community ecology will ever produce general principles."_
-
-> _"...this can be achieved [,but] community ecology has lost its way by focusing on pairwise species interactions independent of the environment."_
-
-> _"...community ecology should return to an emphasis on ..._
-
-> [1.] _how the fundamental niche is governed by functional traits within the context of abiotic environmental gradients; and_
-
-> [2.] _how the interaction between traits and fundamental niches maps onto the realized niche in the context of a biotic interaction milieu._
-
-> _"...this approach can create a more quantitative and predictive science that can more readily address issues of global change."_
-
----
-
-```{r echo = F, fig.align = 'center', out.width = '80%'}
-knitr::include_graphics("images/McGill2006.png")
-```
-
-> _"There is considerable debate about whether community ecology will ever produce general principles."_
-
-> _"...this can be achieved [,but] community ecology has lost its way by focusing on pairwise species interactions independent of the environment."_
-
-> _"...community ecology should return to an emphasis on ..._
-
-> [1.] _how the fundamental niche is governed by functional traits within the context of abiotic environmental gradients; and_        [**Traits and the Fundamental Niche**]
-
-> [2.] _how the interaction between traits and fundamental niches maps onto the realized niche in the context of a biotic interaction milieu._       [**Traits and Community Assembly**]
-
-> _"...this approach can create a more quantitative and predictive science that can more readily address issues of global change."_
-
-
----
-
-class: center, middle
-
-## Traits and the fundamental niche
-
-### Can traits be used to predict the fundamental niche of species?
-
----
-
-.pull-left[
-
-### Traits and the fundamental niche
-
-An example from serotinous Cape Proteaceae...
-
-```{r echo = F, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("images/treurnicht2020.png")
-```
-
-<br>
-
-Related inter- and intraspecific variation in 11 functional traits to measures of the fundamental Hutchinsonian niches of 26 Proteaceae species in the Cape Floristic Region.
-
-.footnote[[**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048)]
-]
-
-.pull-right[
-
-```{r echo = F, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("images/proteas_Roets2006.jpg")
-```
-
-.footnote[image: Roets et al 2006]
-]
-
----
-
-.pull-left[
-
-### Traits and the fundamental niche
-
-An example from serotinous Cape Proteaceae...
-
-```{r echo = F, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("images/treurnicht2020.png")
-```
-
-Sampled traits and demographic parameters (fecundity, recruitment and adult fire survival) for the 26 species from across their ranges.
-
-Most of the variation in traits was between species, but some (e.g. leaf and seed N) showed high intraspecific variability.
-
-.footnote[[**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048)]
-]
-
-.pull-right[
-
-```{r echo = F, fig.align = 'center', out.width = '95%'}
-knitr::include_graphics("images/treurnicht2020_F2.jpeg")
-```
-
-]
-
----
-
-.pull-left[
-
-### Traits and the fundamental niche
-
-An example from serotinous Cape Proteaceae...
-
-```{r echo = F, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("images/treurnicht2020.png")
-```
-
-Built demographic models to estimate measures of the fundamental Hutchinsonian niche for the 26 species. These were the niche optimum and niche width for each of 5 environmental variables (aridity, minimum and maximum temperature, soil fertility and fire interval) and the $r_{max}$ (which integrates across all variables).
-
-.footnote[[**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048)]
-]
-
-.pull-right[
-
-<br>
-
-<br>
-
-```{r echo = F, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("images/treurnicht2020_hutchinson.jpg")
-```
-
-]
----
-
-```{r echo = F, fig.align = 'center', out.width = '70%'}
-knitr::include_graphics("images/treurnicht2020.png")
-```
-
-.pull-left[
-
-<br>
-
-Built statistical models to predict the Hutchinsonian niche parameters as a function of the 11 functional traits.
-
-.footnote[[**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048)]
-
-]
-
-.pull-right[
-
-```{r echo = F, fig.align = 'center', out.width = '75%'}
-knitr::include_graphics("images/treurnicht2020_hutchinson.jpg")
-```
-
-]
-
----
-
-.left-column[
-
-<br>
-
-<br>
-
-The models could explain 30% of the variance in $r_{max}$ and >50% of the variance in the niche optima and widths!
-
-<br>
-
-<br>
-
-<br>
-
-P.S. This is good...
-]
-
-.right-column[
-```{r echo = F, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("images/treurnicht2020_F3.jpg")
-```
-]
-
-.footnote[[**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048)]
-
----
-
-.left-column[
-
-<br>
-
-<br>
-
-Several of the traits were significant predictors of the niche optima and widths for the 5 environmental variables.
-
-]
-
-.right-column[
-```{r echo = F, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("images/treurnicht2020_F5.jpg")
-```
-]
-
-.footnote[[**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048)]
-
----
-
-class: center, middle
-
-## Traits and Community Assembly
-
-### What can traits reveal about community assembly?
-
----
-
-### Traits and Community Assembly
-
-.left-column[
-
-<br>
-
-How would you expect traits to relate to the community assembly process?
-]
-
-.right-column[
-```{r echo = F, fig.align = 'center', out.width = '70%'}
-knitr::include_graphics("images/Tony_CA3.png")
-```
-
-.footnote[image: Tony Verboom]
-]
-
----
-
-### Traits and Community Assembly
-
-.left-column[
-**Environmental filtering** should select for species with the traits needed to survive in that environment, usually reducing the variation in traits.
-
-**Biotic interactions** can have two outcomes. Competition should drive trait divergence. Conversely, a common limiting factor (e.g. a resource or shared predator) should drive convergence.
-]
-
-.right-column[
-```{r echo = F, fig.align = 'center', out.width = '90%'}
-knitr::include_graphics("images/Lechene2018_TraitAssembly.png")
-```
-
-.footnote[Figure from [**Lechene et al 2018**](https://doi.org/10.1371/journal.pone.0209025)]
-]
-
----
-
-.pull-left[
-
-```{r echo = F, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("images/Kraft2009.png")
-```
-
-[**Kraft et al. 2009**](https://doi.org/10.1126/science.1160662) explored trait means and variances in trees across a 25 Ha Amazonian forest plot - the ancestral home of Hubbell's Neutral Theory.
-
-Trait means were non-random - e.g. panel A shows that SLA was lower than expected on ridgetops (pink) and higher than expected in valleys (turquoise).
-
-They also found that the range of traits was smaller than null expectation.
-
-This is strong evidence of niche-based trait filtering!
-]
-
-.pull-right[
-```{r echo = F, fig.align = 'center', out.width = '95%'}
-knitr::include_graphics("images/Kraft2009_F1.jpeg")
-```
-
-```{r echo = F, fig.align = 'center', out.width = '95%'}
-knitr::include_graphics("images/Kraft2009_F1_Caption.png")
-```
-
-]
-
----
-
-.pull-left[
-
-### Traits and Community Assembly
-
-There have been quite a few tests! Here is just a small sample from plant communities.
-
-o = overdispersion (or evenness) = trait divergence
-
-u = underdispersion = trait convergence
-
-<br>
-
-Results are clearly quite mixed!!!
-
-Unfortunately, we're not always able to make sense of the patterns and reconcile them with the expected ecological processes... but we're learning!
-]
-
-.pull-right[
-```{r echo = F, fig.align = 'center', out.width = '95%'}
-knitr::include_graphics("images/HilleRisLambers2012_T1.png")
-```
-
-.footnote[[**HilleRisLambers et al. 2012**](http://dx.doi.org/10.1146/annurev-ecolsys-110411-160411)]
-
-]
-
----
-
-### Traits and Community Assembly
-
-One issue is that these things are complex to measure! Different measures may be more or less suitable to different datasets or biotic communities, and can give different outcomes...
-
-.left-column[
-For example, limiting similarity may result in a greater range of traits, but there's a lot going on within that range too. Only species with overlapping niches should compete, so many species within the range should be competitively excluded...
-
-.footnote[[**Luo et al 2016**](https://doi.org/10.1371/journal.pone.0155749)]
-]
-
-.right-column[
-```{r echo = F, fig.align = 'center', out.width = '90%'}
-knitr::include_graphics("images/Luo2016_F2.png")
-```
-]
-
-
----
-
-class: center, middle
-
-## But how do we know these are the right traits?
-
----
-
-### Traits and Community Assembly
-
-.pull-left[
-If one has a clear understanding of the system and necessary traits, you could be more specific in your predictions than just changes in trait convergence or divergence.
-
-e.g. This example shows the need for plants to have aerenchyma to survive in inundated wetlands, because otherwise they can't get oxygen to their roots and they would rot.
-
-Unfortunately, it is rare to have this detailed an understanding of the biology _a priori_. It is also difficult to generalise this rule beyond wetland plants...
-]
-
-.pull-right[
-```{r echo = F, fig.align = 'center', out.width = '95%'}
-knitr::include_graphics("images/Keddy1992_F4.png")
-```
-
-.footnote[Figure from [**Keddy 1992**](http://dx.doi.org/10.2307/3235676)]
-]
-
----
-
-class: center, middle
-
-## But how do we know these are the right traits?
-
-### This is why step 1 is looking at the relationship between traits and fundamental niches!
-
----
-
-### Selecting the right traits
-
-```{r echo = F, fig.align = 'center', out.width = '80%'}
-knitr::include_graphics("images/Laughlin2020_Fitness.png")
-```
-
-This is essentially the process we followed in [**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048). Figure from [**Laughlin et al. 2020**](https://doi.org/10.1016/j.tree.2020.07.010).
-
----
-
-class: center, middle
-
-### Other considerations and advantages of trait-based ecology?
-
----
-
-### Traits and scaling
-
-```{r echo = F, fig.align = 'center', out.width = '75%'}
-knitr::include_graphics("images/Funk2017_F1.png")
-```
-
-Traits affect processes from the organism to ecosystem and should help us scale across the hierarchy or ecology, [**Funk et al. 2017**](http://dx.doi.org/10.1111/brv.12275)
-
----
-
-### Traits and ecosystem function
-
-```{r echo = F, fig.align = 'center', out.width = '80%'}
-knitr::include_graphics("images/Chapin1997_F1.png")
-```
-
-A focus on traits allows us to link community assembly and outcomes for ecosystem function, [**Chapin et al 1997**](http://dx.doi.org/10.1126/science.277.5325.500)
-
----
-
-layout: false
-
-.pull-left[
-### Trade-offs among traits
-
-A trade-off occurs when one trait cannot increase without a decrease in another. This can put profound limitations on the ecology of organisms.
-
-E.g. Leaf dry mass per unit area (LMA) positively correlates with:
-- Nitrogen content 
-- photosynthetic capacity
-- relative growth rate
-
-But is negatively correlated with:
-- leaf longevity
-
-.footnote[The leaf economics spectrum (LES) - Wright et al. 2004]
-
-]
-
-.pull-right[
-```{r echo = F, fig.align = 'center', out.width = '40%'}
-knitr::include_graphics("images/LES.webp")
-```
-]
-
----
-
-layout: false
-
-.pull-left[
-### Trade-offs among traits
-
-LMA correlates with environment (temp and rainfall)
-- Higher LMA in hot, dry places
-
-<br>
-
-This also represents a trade-off in that specific traits can limit species to specific resource/habitat requirements (water, light, nutrients). i.e. the trade-offs in traits can have a direct effect on species niches!
-
-.footnote[The leaf economics spectrum (LES) - Wright et al. 2004]
-]
-
-.pull-right[
-```{r echo = F, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("images/LES_env.webp")
-```
-]
-
----
-
-### Where to for trait-based ecology and niche theory?
-
-<br>
-
-> _"Opinions  regarding  the relative   importance   of   the   niche,   and   hence   traits,   to community dynamics fall loosely into three camps._
-
-> - _The first argues  that  trait  differences  among  individuals  are  largely irrelevant  at  the  community  level  compared  to  factors such  as  demographic  stochasticity  (e.g.  Neutral  Theory: Hubbell, 2001)._
-> - _The second argues that traits are relevant to  individuals,  but  the  complexity  of  biotic  and  abiotic interactions  precludes  us  from  scaling  individual  processes to the community level (e.g. Lawton, 1999)._
-> - _The final camp argues that traits provide a path forward to a unified theory of  community  ecology  by  providing  a  taxon-independent means  for  generalizing  the  structure  and/or  functioning of  communities  that  is  based  on  functional  traits  rather than  species  identity  (e.g. Westoby  &  Wright,  2006; McGill et al.,  2006a)."_
-   
-- [**Funk et al. 2017**](http://dx.doi.org/10.1111/brv.12275)
-
----
-
 class: middle
 
 ## Take-home
 
->*Traits were clearly included in early definitions of the niche by Grinnell and Elton.*
+>*Phylogenetic relatedness can have a profound effect on the similarity of species' niches, with the expectation being that species should show phylogenetic signal (close relatives are more similar than distant relatives).*
 
->*While some traits may be more Grinnellian (relating to environmental conditions) and other more Eltonian (relating to resource exploitation and the species functional role), they are often difficult to classify as they may be related to both.*
+>*Under some circumstances, one may even have phylogenetic niche conservatism, where close relatives are more similar than you'd expect on the basis of phylogenetic signal alone.*
 
->*Integrating traits into niche theory requires being able to predict (a) aspects of the niche, and (b) community assembly processes, based on traits.*
-  - *We're having mixed results here, but we are making progress...*
+>*In other cases, one can have trait or niche convergence, where distant species evolve similar traits/niches (e.g. sharks and dolphins).*
 
->*A focus on traits allows us to integrate across the hierarchy of ecology from the individual to whole ecosystems.*
+>*The nature of trait/niche evolution has implications for the patterns of relatedness on biotic communities under different ecological processes (competition vs habitat filtering).*
 
->*A focus on traits allows us to link community assembly, ecosystem function and nature's contributions to people.*
+>*Niche conservatism can also have a big impact on global biogeography in that it seems to be easier for species to disperse between continents than to shift between biomes.*
 
+>*There is even some evidence that niche evolution can affect the rate of diversification, with rates slowing as more species accumulate and niche space saturates. This is often considered to be an ecological limit on diversification.*
 
 ---
 class: center, middle
