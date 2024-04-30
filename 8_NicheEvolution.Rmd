@@ -329,7 +329,7 @@ Mediterranean plant species persist after fire by having hard-coated seeds or se
 
 1. seed traits show phylogenetic signal
 2. co-occurring species have similar seed/cone phenotypes (phenotypic clustering)
-3. communities in high fire frequency environments are significantly phylogenetically clustered
+3. communities in high fire frequency environments (HiFi) are significantly phylogenetically clustered
 
 ]
 
@@ -339,6 +339,36 @@ Mediterranean plant species persist after fire by having hard-coated seeds or se
 knitr::include_graphics("images/VerduPausas2007_Phylogeny.gif")
 ```
 
+]
+
+---
+
+.pull-left[
+
+### Relatedness and habitat filtering
+
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/crisp2009_1.png")
+```
+
+]
+
+.pull-right[
+
+#### Niche conservatism and global biogeography!
+
+```{r echo = F, fig.align = 'center', out.width = '80%'}
+knitr::include_graphics("images/crisp2009_2.png")
+```
+
+Speciation is more likely to occur via dispersal to a similar biome on a different continent than to a different biome right next door!
+
+```{r echo = F, fig.align = 'center', out.width = '80%'}
+knitr::include_graphics("images/Donoghue2008_EasierToMove.png")
+```
+
+
+.footnote[Figures: [**Crisp et al. 2009**](https://doi.org/10.1038/nature07764); Quote: [**Donoghue 2008**](http://dx.doi.org/10.1073/pnas.0801962105)]
 ]
 
 ---
