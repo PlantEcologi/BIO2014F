@@ -229,9 +229,9 @@ class: center, middle
 
 ---
 
-### 1. Statistical models vs reality?
+### 1. Models vs reality?
 
-_Statistical models are simplifications of reality, and their predictions always come with some error (i.e. uncertainty)._
+_Models are simplifications of reality, and their predictions always come with some error (i.e. uncertainty)._
 
 --
 
@@ -247,8 +247,8 @@ Sources of error in SDMs:
 - quality of the occurrence and environmental data...
     - GIGO (garbage in - garbage out)
 --
-- the type and structure of the statistical model...
-    - continuous (abundance), discrete (presence/absence), frequentist vs Bayesian, etc
+- the type and structure of the model, e.g.
+    - statistical vs mechanistic, continuous (abundance) vs discrete (presence/absence), frequentist vs Bayesian
 
 --
 
@@ -282,7 +282,7 @@ Figure from [**Escobar et al 2017**](https://doi.org/10.3389/fvets.2017.00105)
 ]
 
 --
-.footnote[Answer: The realised niche, because the model is trained on where the species actually occurred. This can be a problem, because the model doesn't usually include spatial information about factors that determine the realised niche (competition, etc), so the predicted/projected distribution may be neither the fundamental nor the realised niche... ]
+.footnote[Answer: The model is trained on where the species actually occurred (i.e. the realised niche). This can be a problem, because the model doesn't usually include spatial information about factors that determine the realised niche (competition, etc), so the predicted/projected distribution may be neither the fundamental nor the realised niche... ]
 
 ---
 

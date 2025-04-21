@@ -307,15 +307,31 @@ knitr::include_graphics("images/pausas_bond_2020_1.jpg")
 
 ### The Hutchinsonian Niche
 
-<br>
+G Evelyn Hutchinson made key propositions that really expanded the utility of the niche concept.
 
-G Evelyn Hutchinson made a few key propositions that really expanded the utility of the niche concept in ecology.
+**Firstly**, he explicitly considered the niche as describing the set of **biotic and abiotic conditions** where a species can persist.
 
-**Firstly**, he proposed that _the niche is an n-dimensional hypervolume within which a species is able to maintain a viable population_ - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
+]
 
-This proposition both aids our ability to think about the niche, but also allows us to explicitly **quantify the niche and niche space**.
+.pull-right[
 
-It can be applied to both Eltonian and Grinnellian niches, depending on whether the axes are environmental (e.g. climate, soils) or resources (e.g. food sources).
+]
+
+---
+
+.pull-left[
+
+### The Hutchinsonian Niche
+
+G Evelyn Hutchinson made key propositions that really expanded the utility of the niche concept.
+
+**Firstly**, he explicitly considered the niche as describing the set of **biotic and abiotic conditions** where a species can persist.
+
+**Secondly**, he proposed that _the niche is an n-dimensional hypervolume within which a species is able to maintain a viable population_ - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
+
+- This aids our ability to think about the niche, but also allows us to explicitly **quantify the niche and niche space**.
+
+- It can be applied to both Eltonian and Grinnellian niches, depending on whether the axes are environmental (e.g. climate, soils) or resources (e.g. food sources).
 
 ]
 
@@ -324,7 +340,7 @@ It can be applied to both Eltonian and Grinnellian niches, depending on whether 
 knitr::include_graphics("images/treurnicht2020_hutchinson.jpg")
 ```
 
-The _n-dimensional hypervolume_ is a multidimensional space of ecological variables within which a species can maintain a viable population. This example shows 2 dimensions, minimum and maximum temperature.
+The _n-dimensional hypervolume_ is a multidimensional space of ecological variables within which a species can maintain a viable population. This example shows 2 dimensions, minimum and maximum temperature, and describes "viability" as population growth rate.
 
 .footnote[Figure from [**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048)]
 ]
@@ -335,7 +351,7 @@ The _n-dimensional hypervolume_ is a multidimensional space of ecological variab
 
 .pull-left[
 
-**Secondly**, Hutchinson made a distinction between the _fundamental_ versus the _realised_ niche - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
+**Thirdly**, Hutchinson made a distinction between the _fundamental_ versus the _realised_ niche - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
 
 - The _**fundamental niche**_ is the range of conditions (biotic and abiotic) and resources in which a species could survive and reproduce if free of interference from other species.
 - The _**realised niche**_ is a subset of the fundamental niche where a species actually occurs due to interference from other species (e.g. interspecific competition). 
@@ -374,7 +390,7 @@ class: middle
 
 >*Grinnell and Elton proposed niche concepts focused on the species' occurrence across the abiotic environment versus the species' functional role and use of resources respectively.*
 
->*Hutchinson proposed the n-dimensional hypervolume as a means to quantify the niche. He also made a distinction between the fundamental and realised niches.*
+>*Hutchinson considered both abiotic and biotic aspects and proposed the n-dimensional hypervolume as a means to quantify the niche. He also made a distinction between the fundamental and realised niches.*
 
 ---
 class: center, middle

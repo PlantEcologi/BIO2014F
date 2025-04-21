@@ -93,11 +93,21 @@ knitr::include_graphics("images/sabertooth.png")
 
 Of course, humans have been aware of these roles and relationships for some time...
 
-```{r echo = F, fig.align = 'center', out.width = '67%'}
+```{r echo = F, fig.align = 'center', out.width = '60%'}
 knitr::include_graphics("images/zuurvlakte_leopard.jpg")
 ```
 
 .footnote[e.g. Who to avoid...]
+
+---
+
+Of course, humans have been aware of these roles and relationships for some time...
+
+```{r echo = F, fig.align = 'center', out.width = '60%'}
+knitr::include_graphics("images/excited_botanist.jpg")
+```
+
+.footnote[e.g. Where to find exciting plants...]
 
 ---
 
@@ -302,7 +312,7 @@ layout: false
 .pull-left[
 ## Climate _niche_ and biomes
 
-Since biomes are largely defined by dominant plant functional types (PFT), we could model biomes by aggregating species distributions to PFT and assigning biomes based on PFT combinations.
+Since biomes are largely defined by dominant plant functional types (PFT), we could model biomes by aggregating species distributions by PFT and assigning biomes based on PFT combinations.
 
 
 ```{r echo = F, fig.align = 'center', out.width = '90%'}

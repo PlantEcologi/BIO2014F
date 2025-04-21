@@ -4,7 +4,7 @@
     <title>3. Geographic Distributions and Niche modelling</title>
     <meta charset="utf-8" />
     <meta name="author" content="Jasper Slingsby, BIO2014F" />
-    <meta name="date" content="2024-04-22" />
+    <meta name="date" content="2025-04-21" />
     <script src="3_GeographicNiche_files/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom styles.css" type="text/css" />
@@ -20,7 +20,7 @@ class: center, middle, inverse, title-slide
 ### Jasper Slingsby, BIO2014F
 ]
 .date[
-### 2024-04-22
+### 2025-04-21
 ]
 
 ---
@@ -179,9 +179,9 @@ class: center, middle
 
 ---
 
-### 1. Statistical models vs reality?
+### 1. Models vs reality?
 
-_Statistical models are simplifications of reality, and their predictions always come with some error (i.e. uncertainty)._
+_Models are simplifications of reality, and their predictions always come with some error (i.e. uncertainty)._
 
 --
 
@@ -197,8 +197,8 @@ Sources of error in SDMs:
 - quality of the occurrence and environmental data...
     - GIGO (garbage in - garbage out)
 --
-- the type and structure of the statistical model...
-    - continuous (abundance), discrete (presence/absence), frequentist vs Bayesian, etc
+- the type and structure of the model, e.g.
+    - statistical vs mechanistic, continuous (abundance) vs discrete (presence/absence), frequentist vs Bayesian
 
 --
 
@@ -230,7 +230,7 @@ Figure from [**Escobar et al 2017**](https://doi.org/10.3389/fvets.2017.00105)
 ]
 
 --
-.footnote[Answer: The realised niche, because the model is trained on where the species actually occurred. This can be a problem, because the model doesn't usually include spatial information about factors that determine the realised niche (competition, etc), so the predicted/projected distribution may be neither the fundamental nor the realised niche... ]
+.footnote[Answer: The model is trained on where the species actually occurred (i.e. the realised niche). This can be a problem, because the model doesn't usually include spatial information about factors that determine the realised niche (competition, etc), so the predicted/projected distribution may be neither the fundamental nor the realised niche... ]
 
 ---
 
@@ -387,11 +387,11 @@ The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihu
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
-"slideNumberFormat": "%current% / %total%",
-"highlightStyle": "github",
-"highlightLines": true,
-"ratio": "16:9",
-"countIncrementalSlides": true
+  "slideNumberFormat": "%current% / %total%",
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "ratio": "16:9",
+  "countIncrementalSlides": true
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
