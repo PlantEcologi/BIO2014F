@@ -4,7 +4,7 @@
     <title>1. Introduction to Niche Theory</title>
     <meta charset="utf-8" />
     <meta name="author" content="Jasper Slingsby, BIO2014F" />
-    <meta name="date" content="2024-04-19" />
+    <meta name="date" content="2025-04-21" />
     <script src="1_IntroNicheTheory_files/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom styles.css" type="text/css" />
@@ -20,7 +20,7 @@ class: center, middle, inverse, title-slide
 ### Jasper Slingsby, BIO2014F
 ]
 .date[
-### 2024-04-19
+### 2025-04-21
 ]
 
 ---
@@ -50,6 +50,14 @@ class: center, middle, inverse, title-slide
 &lt;img src="images/sabertooth.png" width="75%" style="display: block; margin: auto;" /&gt;
 
 .footnote[image: Mauricio Antón, CC BY 3.0]
+
+---
+
+Of course, humans have been aware of these roles and relationships for some time...
+
+&lt;img src="images/zuurvlakte_leopard.jpg" width="67%" style="display: block; margin: auto;" /&gt;
+
+.footnote[e.g. Who to avoid...]
 
 ---
 
@@ -102,7 +110,7 @@ A friend of Willdenow, and first to test his ideas.
 
 .pull-right[
 &lt;img src="images/humboldt.jpg" width="80%" style="display: block; margin: auto;" /&gt;
-.footnote[_Essay on the Geography of Plants_, von Humboldt and Bonpland (1805) documents repeated vegetation zones with elevation in the Andes.]
+.footnote[_Essay on the Geography of Plants_, von Humboldt and Bonpland (1805) documents repeated vegetation zones with elevation (and thus climate) in the Andes.]
 ]
 
 ---
@@ -145,14 +153,34 @@ The biomes are largely defined by the dominant plant functional types.
 
 ---
 
+layout: false
+
+.pull-left[
+## Climate zones and biomes
+
+### Applications of this idea? 
+
+Projecting the distribution of biomes under future climate change scenarios.
+
+Midgley et al. (2002) used a geographic information system (GIS) to derive a climate envelope for the Fynbos biome under current climate and projected where those conditions would be under a future climate scenario.
+
+.footnote[[**Midgley et al. 2002**](https://doi.org/10.1046/j.1466-822X.2002.00307.x)]
+]
+
+.pull-right[
+&lt;img src="images/midgley_GEB_2002.gif" width="60%" style="display: block; margin: auto;" /&gt;
+
+]
+
+---
+
 class: center, middle
 
 # Hang on?
 
 &lt;img src="images/world_seasonality.gif" width="80%" style="display: block; margin: auto;" /&gt;
 
-### We started by talking about growing vegetables and now we're looking at the whole world?
-
+#### We started by talking about growing vegetables and now we're looking at regions and the whole world?
 
 ---
 
@@ -188,15 +216,57 @@ The Niche Concept is **typically applied at the level of species**, but has impl
 &gt; _"The niche concept is not always used explicitly in theories at all these levels of organization, but it provides an important, if sometimes implicit connection between these disparate fields of ecology that justifies its status as a fundamental ecological concept."_ - [**Leibold 1995**](http://dx.doi.org/10.2307/1938141)
 
 ---
+
+layout: false
+
+## Climate _niche_ and species
+
+.pull-left[
+
+We often apply niche concepts in the context of species distributions, projecting their current and future distributions on the basis of climate
+
+In future lectures you will learn there are multiple niche concepts, and they can be applied to species distributions in different ways...
+]
+
+.pull-right[
+&lt;img src="images/wilson2016_crop.png" width="100%" style="display: block; margin: auto;" /&gt;
+
+.footnote[[**Wilson and Jetz 2016**](https://doi.org/10.1371/journal.pbio.1002415)]
+
+]
+
+---
+
+layout: false
+
+.pull-left[
+## Climate _niche_ and biomes
+
+Since biomes are largely defined by dominant plant functional types (PFT), we could model biomes by aggregating species distributions to PFT and assigning biomes based on PFT combinations.
+
+
+&lt;img src="images/conradi2020_F1.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+
+]
+
+.pull-right[
+&lt;img src="images/conradi2020_F2.jpg" width="90%" style="display: block; margin: auto;" /&gt;
+
+.footnote[[**Conradi et al. 2020**](https://doi.org/10.1111/nph.16580)]
+]
+
+---
 class: middle
 
 ## Take-home
 
-&gt;*While the idea that species have particular environmental preferences/requirements and that they play specific roles in ecosystems is as old as life itself, the formal recognition and development of definitions of the niche allows us to develop more sophisticated theory in ecology and evolution.*
+&gt;*While the idea that species have particular environmental preferences/requirements and that they play specific roles in ecosystems is as old as life itself, the formal recognition and development of definitions of the niche allows us to develop more sophisticated theory in ecology, evolution and conservation.*
 
 &gt;*Niche theory has its roots in early biogeographic observations about the geography of plants by Willdenow, von Humboldt and others.*
 
-&gt;*While the niche concept has implications for other levels of the ecological hierarchy (populations, communities, ecosystems, biomes), it is typically applied at the level of species.*
+&gt;*While the niche concept has implications for other levels of the ecological hierarchy (populations, communities, ecosystems, biomes), it is only formally defined at the level of species.*
+
+&gt;*That said, we often apply the concept somewhat flexibly to other levels of the hierarchy, and in particular to the distribution of species and biomes across the globe.*
 
 ---
 class: center, middle
@@ -213,11 +283,11 @@ The chakra comes from [remark.js](https://remarkjs.com), [**knitr**](http://yihu
 <style data-target="print-only">@media screen {.remark-slide-container{display:block;}.remark-slide-scaler{box-shadow:none;}}</style>
 <script src="https://remarkjs.com/downloads/remark-latest.min.js"></script>
 <script>var slideshow = remark.create({
-"slideNumberFormat": "%current% / %total%",
-"highlightStyle": "github",
-"highlightLines": true,
-"ratio": "16:9",
-"countIncrementalSlides": true
+  "slideNumberFormat": "%current% / %total%",
+  "highlightStyle": "github",
+  "highlightLines": true,
+  "ratio": "16:9",
+  "countIncrementalSlides": true
 });
 if (window.HTMLWidgets) slideshow.on('afterShowSlide', function (slide) {
   window.dispatchEvent(new Event('resize'));
