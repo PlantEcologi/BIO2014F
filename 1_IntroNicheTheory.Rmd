@@ -226,6 +226,10 @@ Projecting the distribution of biomes under future climate change scenarios.
 
 Midgley et al. (2002) used a geographic information system (GIS) to derive a climate envelope for the Fynbos biome under current climate and projected where those conditions would be under a future climate scenario.
 
+```{r echo = F, fig.align = 'center', out.width = '85%'}
+knitr::include_graphics("images/midgley_GEB_2002_F1_caption.png")
+```
+
 .footnote[[**Midgley et al. 2002**](https://doi.org/10.1046/j.1466-822X.2002.00307.x)]
 ]
 
