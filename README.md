@@ -11,6 +11,8 @@ BIO2014F Principles of Ecology and Evolution module on Niche Theory
 7. [Trait-based Ecology](7_TraitEcology)
 8. [Niches and Evolution](8_NicheEvolution)
 
+You can access the lectures as PDF files [here](https://github.com/PlantEcologi/BIO2014F/tree/main/lectures2025).
+
 ### Readings
 
 Stokstad, Erik. 2009. “On the Origin of Ecological Structure.” Science 326 (5949): 33–35. https://doi.org/10.1126/science.326_33.
