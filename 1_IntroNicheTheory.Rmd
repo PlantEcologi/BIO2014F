@@ -246,7 +246,7 @@ class: center, middle
 knitr::include_graphics("images/world_seasonality.gif")
 ```
 
-#### We started by talking about growing vegetables and now we're looking at regions and the whole world?
+#### We started by talking about growing vegetables and now we're looking at biomes and the whole world?
 
 ---
 
@@ -290,6 +290,8 @@ layout: false
 ## Climate _niche_ and species
 
 .pull-left[
+
+<br>
 
 We often apply niche concepts in the context of species distributions, projecting their current and future distributions on the basis of climate
 
