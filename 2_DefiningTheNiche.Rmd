@@ -185,10 +185,9 @@ What's the difference between Grinnell's niche concept and "habitat"?
 
 > _"[Grinnell's] niche is the sum of the habitat requirements and behaviors that allow a species to persist and produce offspring."_ - Wikipedia
 
-e.g. the California thrasher's "niche" is defined by the matching of its behavior and physical traits (camouflage, wings and leg size and shape, etc) with this habitat.
+The thrasher's "niche" is defined by the matching of its traits (camouflage, wings or leg size/shape, behaviour, etc) with its habitat - allowing it to complete its lifecycle there.
 
-
-.footnote[[**Grinnell 1917**](http://dx.doi.org/10.2307/4072271)]
+"Vagrant" birds are typically outside their niche - they are not able to reproduce there.
 
 ]
 
@@ -298,7 +297,7 @@ It is often a matter of spatial or temporal scale. E.g. there is good evidence f
 ```{r echo = F, fig.align = 'center', out.width = '90%'}
 knitr::include_graphics("images/pausas_bond_2020_1.jpg")
 ```
-.footnote[e.g. Biotic feedbacks - Pausas and Bond 2020. _Trends in Ecology and Evolution_]
+.footnote[e.g. Biotic feedbacks - [**Pausas and Bond 2020** _Trends in Ecology and Evolution_](https://doi.org/10.1016/j.tree.2020.04.004)]
 ]
 
 ---
@@ -309,7 +308,7 @@ knitr::include_graphics("images/pausas_bond_2020_1.jpg")
 
 G Evelyn Hutchinson made key propositions that really expanded the utility of the niche concept.
 
-**Firstly**, he explicitly considered the niche as describing the set of **biotic and abiotic conditions** where a species can persist.
+**Firstly**, he explicitly considered the niche as describing the set of **biotic _and_ abiotic conditions** where a species can persist.
 
 ]
 
@@ -325,7 +324,7 @@ G Evelyn Hutchinson made key propositions that really expanded the utility of th
 
 G Evelyn Hutchinson made key propositions that really expanded the utility of the niche concept.
 
-**Firstly**, he explicitly considered the niche as describing the set of **biotic and abiotic conditions** where a species can persist.
+**Firstly**, he explicitly considered the niche as describing the set of **biotic _and_ abiotic conditions** where a species can persist.
 
 **Secondly**, he proposed that _the niche is an n-dimensional hypervolume within which a species is able to maintain a viable population_ - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
 
@@ -351,10 +350,12 @@ The _n-dimensional hypervolume_ is a multidimensional space of ecological variab
 
 .pull-left[
 
-**Thirdly**, Hutchinson made a distinction between the _fundamental_ versus the _realised_ niche - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
+**Thirdly**, he made a distinction between _fundamental_ and _realised_ niches - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
 
 - The _**fundamental niche**_ is the range of conditions (biotic and abiotic) and resources in which a species could survive and reproduce if free of interference from other species.
+  - Largely abiotic, but can include biotic factors (e.g. food availability) that are not limited by other species.
 - The _**realised niche**_ is a subset of the fundamental niche where a species actually occurs due to interference from other species (e.g. interspecific competition). 
+  - Largely biotic, but can include abiotic factors (e.g. light availability) that are limited by other species.
 
 ]
 
@@ -364,6 +365,22 @@ knitr::include_graphics("images/Fundamental vs Realised Niche_Escobar et al 2017
 ```
 
 .footnote[Figure from [**Escobar et al 2017**](https://doi.org/10.3389/fvets.2017.00105)]
+]
+
+---
+
+### Connell's limpets and fundamental vs realised niches
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Connell1961.png")
+```
+
+.pull-left[
+.footnote[[**Connell 1961**](http://www.csun.edu/~msteele/classes/marine_ecology/readings/Connell%201961.pdf)]
+]
+
+.pull-right[
+.footnote[Image from [**Huneman 2019**](https://link.springer.com/chapter/10.1007/978-3-030-10991-2_13)]
 ]
 
 ---
