@@ -1,5 +1,5 @@
 ---
-title: "4. Population Growth and Intraspecific Competition"
+title: "4. Population Growth and Density Dependence"
 subtitle: ""  
 author: 
   - "Jasper Slingsby, BIO2014F"
@@ -309,29 +309,30 @@ data.frame(N = c(2,4,8,16,32),
 ### Is growth always exponential?
 
 
-```{r echo = F, fig.align = 'center', out.width = '75%'}
-knitr::include_graphics("images/Branch1975_F3.png")
+```{r echo = F, fig.align = 'center', out.width = '65%'}
+knitr::include_graphics("images/Scutellastra cochlear.jpeg")
 ```
+
 
 Resources available to individuals typically shrink as population size and density increase. 
 
 Competition between individuals limits growth and reproductive output.
 
-.footnote[A study of the Pear Limpet, _Scutellastra cochlear_, by [**Branch 1975**](http://dx.doi.org/10.1111/geb.13048)]
+.footnote[A study of the Pear Limpet, _Scutellastra cochlear_ ([**Branch 1975**](http://dx.doi.org/10.1111/geb.13048)).
+
+Photo: Allan Ellis, [**iNaturalist**](https://www.inaturalist.org/observations/99128657)]
 
 ]
 
 .pull-right[
 
 ```{r echo = F, fig.align = 'center', out.width = '65%'}
-knitr::include_graphics("images/Scutellastra cochlear.jpeg")
+knitr::include_graphics("images/Branch1975_F3.png")
 ```
 
 ```{r echo = F, fig.align = 'center', out.width = '65%'}
 knitr::include_graphics("images/Branch1975_F6.png")
 ```
-
-.footnote[image: Allan Ellis, [**iNaturalist**](https://www.inaturalist.org/observations/99128657)]
 
 ]
 
@@ -340,7 +341,7 @@ knitr::include_graphics("images/Branch1975_F6.png")
 ### Population growth curve
 
 .pull-left[
-What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+What does our curve look like once we include **density-dependent** effects like int**_ra_**specific competition (competition among individuals of the same species)?
 
 ]
 
@@ -369,7 +370,7 @@ data.frame(N = c(2),
 ### Population growth curve
 
 .pull-left[
-What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+What does our curve look like once we include **density-dependent** effects like int**_ra_**specific competition (competition among individuals of the same species)?
 
 It starts out much the same while resources are abundant...
 ]
@@ -399,7 +400,7 @@ data.frame(N = c(2,4),
 ### Population growth curve
 
 .pull-left[
-What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+What does our curve look like once we include **density-dependent** effects like int**_ra_**specific competition (competition among individuals of the same species)?
 
 It starts out much the same while resources are abundant...
 
@@ -430,7 +431,7 @@ data.frame(N = c(2,4,8,16),
 ### Population growth curve
 
 .pull-left[
-What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+What does our curve look like once we include **density-dependent** effects like int**_ra_**specific competition (competition among individuals of the same species)?
 
 It starts out much the same while resources are abundant...
 
@@ -461,7 +462,7 @@ data.frame(N = c(2,4,8,16,24),
 ### Population growth curve
 
 .pull-left[
-What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+What does our curve look like once we include **density-dependent** effects like int**_ra_**specific competition (competition among individuals of the same species)?
 
 It starts out much the same while resources are abundant...
 
@@ -493,7 +494,7 @@ data.frame(N = c(2,4,8,16,24,28),
 ### Population growth curve
 
 .pull-left[
-What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+What does our curve look like once we include **density-dependent** effects like int**_ra_**specific competition (competition among individuals of the same species)?
 
 It starts out much the same while resources are abundant...
 
@@ -525,7 +526,7 @@ data.frame(N = c(2,4,8,16,24,28,30),
 ### Population growth curve
 
 .pull-left[
-What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+What does our curve look like once we include **density-dependent** effects like int**_ra_**specific competition (competition among individuals of the same species)?
 
 It starts out much the same while resources are abundant...
 
@@ -559,7 +560,7 @@ data.frame(N = c(2,4,8,16,24,28,30,30,30),
 ### Population growth curve
 
 .pull-left[
-What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+What does our curve look like once we include **density-dependent** effects like int**_ra_**specific competition (competition among individuals of the same species)?
 
 It starts out much the same while resources are abundant...
 
@@ -597,7 +598,7 @@ data.frame(N = c(2,4,8,16,24,28,30,30,30),
 ### Population growth curve
 
 .pull-left[
-What does our curve look like once we include **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species)?
+What does our curve look like once we include **density-dependent** effects like int**_ra_**specific competition (competition among individuals of the same species)?
 
 It starts out much the same while resources are abundant...
 
@@ -637,7 +638,7 @@ data.frame(N = c(2,4,8,16,24,28,30,30,30),
 ### Population growth curve
 
 .pull-left[
-The population growth curve including **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species) is a logistic function, flattening out as resources become limiting.
+The population growth curve including **density-dependent** effects like int**_ra_**specific competition (competition among individuals of the same species) is a logistic function, flattening out as resources become limiting.
 
 $dN/dt = rN (K – N)/K$
 
@@ -671,7 +672,7 @@ data.frame(N = c(2,4,8,16,24,28,30,30,30),
 ### Population growth curve
 
 .pull-left[
-The population growth curve including **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species) is a logistic function, flattening out as resources become limiting.
+The population growth curve including **density-dependent** effects like int**_ra_**specific competition (competition among individuals of the same species) is a logistic function, flattening out as resources become limiting.
 
 $dN/dt = rN (K – N)/K$
 
@@ -719,7 +720,7 @@ knitr::include_graphics("images/terry_rvsK.png")
 ### Population growth curve
 
 .pull-left[
-The population growth curve including **density-dependent** effects like int*ra*specific competition (competition among individuals of the same species) is a logistic function, flattening out as resources become limiting.
+The population growth curve including **density-dependent** effects like int**_ra_**specific competition (competition among individuals of the same species) is a logistic function, flattening out as resources become limiting.
 
 $dN/dt = rN (K – N)/K$
 
@@ -852,6 +853,9 @@ While some of this may be exogenous, driven by external forces like climate fluc
 ### Density-dependence in serotinous Cape Proteaceae 
 
 .pull-left[
+
+<br>
+
 Empirical datasets showed evidence for a negative impact of density-dependence on:
 
 - recruitment (Figure 1)
@@ -941,88 +945,92 @@ knitr::include_graphics("images/Bond1995_F5.png")
 
 ---
 
-### How does this relate to the original question at the start of the lecture?
+class: center, middle
 
-#### The Hutchinsonian Niche
+### What other factors could cause density-dependence? 
+
+---
+
+### What other factors could cause density-dependence? 
 
 .pull-left[
 
-G Evelyn Hutchinson proposed that _the niche is an n-dimensional hypervolume within which a species is **able to maintain a viable population**_ - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
+### Disease or parasites
 
-Does the occurrence of a species at a locality mean it is able to maintain a viable population there...?
+As population density increases, so does the probability of transmission.
 
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Sy2021_USCovidMap.PNG")
+```
+
+.footnote[Covid transmission in the USA ([**Sy et al. 2021**](https://doi.org/10.1371/journal.pone.0249271)).]
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '91%'}
+knitr::include_graphics("images/Sy2021_USCovidBoxplot.PNG")
+```
+]
+
+
+---
+
+### What other factors could cause density-dependence? 
+
+.pull-left[
+
+### Predation
+
+As the prey population density increases, so does the predator population. Eventually, the high number of predators causes the prey population to crash. This causes the predator population to crash, which allows the prey population to recover. This cycle continues, creating a predator-prey cycle.
+
+There are many variations and elaborations of this theme...
 ]
 
 .pull-right[
 ```{r echo = F, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("images/treurnicht2020_hutchinson.jpg")
+knitr::include_graphics("images/Predator_prey_curve.png")
 ```
 
-.footnote[Figure from [**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048)]
+.footnote[Image: Hczarn on [**Wikimedia Commons**](https://commons.wikimedia.org/wiki/File:Predator_prey_curve.png), CC-BY-SA 4.0]
 ]
 
 ---
 
-### How does this relate to the original question at the start of the lecture?
-
-#### The Hutchinsonian Niche
+### What other factors could cause density-dependence? 
 
 .pull-left[
 
-G Evelyn Hutchinson proposed that _the niche is an n-dimensional hypervolume within which a species is **able to maintain a viable population**_ - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
+### Accumulation of waste products
 
-Does the occurrence of a species at a locality mean it is able to maintain a viable population there...?
+If the wastes can't be recycled fast enough, they can become toxic to the population. This is a common problem in aquaculture, where fish are kept in high densities and the water becomes polluted with their waste products.
 
-> No! We need estimates of their population growth rate ( $r$ ).
-
-<br>
-
-We can estimate population growth rate ( $r$ ) from demographic parameters that we can measure in the field (e.g. birth, death and dispersal rates) using demographic models.
+Another example is fermentation in the making of wine. Alcohol is a waste product created by the yeast. As the yeast population grows, alcohol builds up, but it is toxic to the yeast. Above 13% alcohol content, the yeast population is doomed, which is why no naturally fermented wine contains more than 13% alcohol. To make stronger alcoholic beverages, they must be distilled out of wine or beer.
 
 ]
 
 .pull-right[
+
 ```{r echo = F, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("images/treurnicht2020_hutchinson.jpg")
+knitr::include_graphics("images/winebarrels.jpeg")
 ```
 
-.footnote[Figure from [**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048)]
+.footnote[Image: [**Pexels**](https://www.pexels.com/photo/wine-tank-room-434311/), CC-0]
+
 ]
 
 ---
 
-### How does this relate to SDMs?
+class: center, middle
 
-.pull-left[
+### What about positive density-dependence? 
 
-We can build SDMs based on demographic models that estimate population growth across different environmental conditions.
+--
 
-```{r echo = F, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("images/Schurr2012.png")
-```
-
-These types of SDMs are often called Demographic Distribution Models (DDMs), and can tell us where species should be able to maintain a viable population!
-]
-
-.pull-right[
-```{r echo = F, fig.align = 'center', out.width = '100%'}
-knitr::include_graphics("images/Schurr2012_F1.webp")
-```
-
-.footnote[[**Schurr et al. 2012**](http://dx.doi.org/10.1111/j.1365-2699.2012.02737.x)]
-]
+Often called Allee effects after ecologist W.C. Allee, who described the phenomenon in the context of cooperative feeding in social insects ([**Allee 1931**](https://doi.org/10.1111/j.1469-7998.1931.tb02175.x)).
 
 ---
 
-### How does this relate to SDMs?
-
-Interestingly, positive population growth can be maintained using very different strategies.
-
-```{r echo = F, fig.align = 'center', out.width = '70%'}
-knitr::include_graphics("images/protearates.jpg")
-```
-
-Here seeding vs sprouting serotinous Proteaceae show classic differentiation on the $r$ (invest in recruitment) vs $K$ (invest in survival) life history strategy spectrum [**(Treurnicht et al. 2020)**](http://dx.doi.org/10.1111/geb.13048).
+mate limitation to cooperative feeding to predator satiation
 
 ---
 
@@ -1036,9 +1044,9 @@ class: middle
 
 >*Density-dependence creates an endogenous control on populations and has big implications for their size and stability.*
 
->*One needs estimates of population growth rates to know whether populations can be maintained and define the environmental conditions of the Hutchinsonian niche. This can be done if you can estimate birth, death and dispersal rates.*
+>*There are other factors that can cause negative density dependence (predation, disease, etc) and some that can cause positive density dependence (also known as Allee effects).*
 
->*Newer SDMs can include a demographic modelling component to map species distributions based on the Hutchinsonion niche.*
+>*One needs estimates of population growth rates to know whether populations can be maintained and define the environmental conditions of the Hutchinsonian niche. This can be done if you can estimate birth, death and dispersal rates.*
 
 ---
 class: center, middle

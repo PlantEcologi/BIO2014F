@@ -235,20 +235,33 @@ _Models are simplifications of reality, and their predictions always come with s
 
 --
 
-Sources of error in SDMs:
+Some sources of error in SDMs:
+
+- the type and structure of the model, e.g.
+    - statistical vs mechanistic, continuous (abundance) vs discrete (presence/absence), frequentist vs Bayesian
+--
 
 - the choice of variables included in the model 
     - have all of the most important determinants of a species distribution been included?
     - are all the variables independent? Correlation among variables (autocorrelation) creates bias
+
+---
+
+### 1. Models vs reality?
+
+_Models are simplifications of reality, and their predictions always come with some error (i.e. uncertainty)._
+
 --
-- biases in the occurrence data 
-    - easy-to-access areas are usually over-represented (e.g. near roads)
---
-- quality of the occurrence and environmental data...
-    - GIGO (garbage in - garbage out)
---
-- the type and structure of the model, e.g.
-    - statistical vs mechanistic, continuous (abundance) vs discrete (presence/absence), frequentist vs Bayesian
+
+Some sources of error in SDMs **_(continued)_**:
+
+- quality of the occurrence and environmental data... - GIGO (garbage in - garbage out)
+    - taxonomic accuracy (are you modelling the same thing?)
+    - spatial accuracy/resolution
+      - e.g. 10 km accuracy of species localities vs 1 km environmental grid cells
+    - biases in the occurrence data 
+      - easy-to-access areas are usually over-represented (e.g. near roads or paths)
+    - inaccurate environmental data layers?
 
 --
 
@@ -390,11 +403,7 @@ class: center, middle
 
 .pull-left[
 
-<br>
-
 G Evelyn Hutchinson proposed that _the niche is an n-dimensional hypervolume within which a species is **able to maintain a viable population**_ - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
-
-<br>
 
 Does the occurrence of a species at a locality mean it is able to maintain a viable population there...?
 
@@ -410,13 +419,69 @@ knitr::include_graphics("images/treurnicht2020_hutchinson.jpg")
 
 ---
 
-class: center, middle
+### The Hutchinsonian Niche
 
-### What does maintaining a viable population even mean?
+.pull-left[
 
---
+G Evelyn Hutchinson proposed that _the niche is an n-dimensional hypervolume within which a species is **able to maintain a viable population**_ - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
 
-The topic of our next lecture...
+Does the occurrence of a species at a locality mean it is able to maintain a viable population there...?
+
+> No! We need estimates of their population growth rate ( $r$ ).
+
+<br>
+
+We can estimate population growth rate ( $r$ ) from demographic parameters that we can measure in the field (e.g. birth, death and dispersal rates) using demographic models.
+
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/treurnicht2020_hutchinson.jpg")
+```
+
+.footnote[Figure from [**Treurnicht et al. 2020**](http://dx.doi.org/10.1111/geb.13048)]
+]
+
+---
+
+### How does this relate to SDMs?
+
+.pull-left[
+
+We can build SDMs based on demographic models that estimate population growth across different environmental conditions.
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Schurr2012.png")
+```
+
+These types of SDMs are often called Demographic Distribution Models (DDMs), and can tell us where species should be able to maintain a viable population!
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/Schurr2012_F1.webp")
+```
+
+.footnote[[**Schurr et al. 2012**](http://dx.doi.org/10.1111/j.1365-2699.2012.02737.x)]
+]
+
+---
+
+How this is done with Protea species?
+
+
+---
+
+### How does this relate to SDMs?
+
+Interestingly, positive population growth can be maintained using very different strategies.
+
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/protearates.jpg")
+```
+
+Here seeding vs sprouting serotinous Proteaceae show classic differentiation on the $r$ (invest in recruitment) vs $K$ (invest in survival) life history strategy spectrum [**(Treurnicht et al. 2020)**](http://dx.doi.org/10.1111/geb.13048).
 
 ---
 
@@ -429,6 +494,8 @@ class: middle
 >*While SDMs can be very useful, they have many issues and assumptions that need to be taken into account.*
 
 >*Acknowledging the issues or assumptions of SDMs can actually be very useful for learning about species and testing hypotheses.*
+
+>*Newer SDMs can include a demographic modelling component to estimate population growth rates to know whether populations can be maintained under different environmental conditions, allowing them to map species distributions based on the Hutchinsonion niche.*
 
 >_**Proviso:** There are many ways to build SDMs and it is a rapidly moving field. There are methods to address some of the issues I highlight, but they are less commonly used and since I am covering SDMs in one lecture for this course I'm not going to go there..._
 
