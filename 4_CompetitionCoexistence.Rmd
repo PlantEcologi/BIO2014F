@@ -1,5 +1,5 @@
 ---
-title: "5. Interspecific Competition and Coexistence"
+title: "4. Interspecific Competition and Coexistence"
 subtitle: ""  
 author: 
   - "Jasper Slingsby, BIO2014F"
@@ -162,7 +162,7 @@ knitr::include_graphics("images/Paramecium_aurelia.jpg")
 
 ### Experiments with _Paramecium_ spp
 
-_Paramecium_ species cultured separately demonstrated **_intraspecific_** competition.
+_Paramecium_ species cultured separately demonstrated logistic growth (i.e. **_intraspecific_** competition).
 
 ```{r echo = F, fig.align = 'center', out.width = '60%'}
 knitr::include_graphics("images/paramecium_separate.png")
@@ -202,7 +202,7 @@ The pair on the **right** appear to be able to coexist, albeit at lower densitie
 
 #### Explanation
 
-**Left:** _P. caudatum_ and _P. aurelia_ both feed on bacteria, but _P. aurelia_ grows 6 times faster than _P. caudatum_, resulting in its **competitive exclusion**.
+**Left:** _P. caudatum_ and _P. aurelia_ both feed on bacteria, but _P. aurelia_ grows 6 times faster than _P. caudatum_, resulting in **competitive exclusion**.
 
 **Right:** While _P. caudatum_ out-competes _P. bursaria_ for bacteria, _P. bursaria_ can also survive on yeast in the lower, less oxygenated part of the test tube, because it contains tiny green algae that provide it with oxygen. We call this **resource (or niche) partitioning**.
 
@@ -277,15 +277,15 @@ _"Two closely related species have overlapping ranges. In the parts of the range
 knitr::include_graphics("images/Brown_Hutchinson_1956_F2.png")
 ```
 
-Size and shape of the bill and facial stripe in _Sitta neumayer_ and _S. tephronota_. A and B are collections of the respective species where they occur alone. D and C were collected where they co-occur.
+Size and shape of the bill and facial stripe in _Sitta neumayer_ and _S. tephronota_. A and B are collections of the respective species where they occur alone. C and D were collected where they co-occur.
 
 ]
 
 ---
 
-### Character Displacement
-
 .pull-left[
+
+### Character Displacement
 
 A process by which niche partitioning can occur.
 
@@ -298,13 +298,16 @@ knitr::include_graphics("images/Britton2010_F1.png")
 ]
 
 .pull-right[
+
+<br>
+
 ```{r echo = F, fig.align = 'center', out.width = '100%'}
 knitr::include_graphics("images/Britton2010_GraphicalAbstract.png")
 ```
 
 They found that while populations on different peaks had been genetically isolated for millions of years and had evolved into different haplotypes, they were nearly morphologically and ecologically identical.
 
-Where secondary dispersal resulted in haplotypes co-occurring, they showed morphological and habitat divergence.
+Where secondary dispersal resulted in haplotypes co-occurring, they showed morphological and habitat divergence - i.e. they do not interbreed and are separate cryptic species.
 
 ]
 
@@ -332,7 +335,7 @@ Why would we need experiments? Why would field observations not be good enough?
 
 ### Competitive exclusion and the Ghost of Competition Past
 
-```{r echo = F, fig.align = 'center', out.width = '70%'}
+```{r echo = F, fig.align = 'center', out.width = '65%'}
 knitr::include_graphics("images/Connell_1980_Ghost.png")
 ```
 
@@ -340,7 +343,7 @@ In nature, while interspecific competition may be common, where competitive excl
 
 - i.e. the loser is driven to extinction or there is spatial segregation of competitors (i.e. the species do not coexist locally, but occur in sympatry)
 
-While similar species occurring in sympatry may suggest that competitive exclusion has occurred, there are other potential explanations like dispersal limitation that prevents them accessing the same physical space.
+While similar species occurring in sympatry may suggest that competitive exclusion has occurred, there are other potential explanations like dispersal limitation or minor niche differences that prevents them accessing the same physical space.
 
 The criteria required to demonstrate that competitive exclusion has occurred, or that species have coevolved due to competition (e.g. resource partitioning or character displacement) are onerous! - see [**Connell 1980**](http://dx.doi.org/10.2307/3544421).
 
@@ -442,7 +445,7 @@ $dN_1/dt = r_1 N_1(K_1 – {N_1 \mathbf{+ \alpha_{12} N_2}})/K_1$
 
 <br>
 
-This is the logistic curve with a new term, $\mathbf{\alpha_{12} N_2}$, to account for the competitive effect of species 2 on species 1. 
+This is the logistic curve with numeric subscripts top indicate the species (1 & 2) and a new term, $\mathbf{\alpha_{12} N_2}$, to account for the competitive effect of species 2 on species 1. 
 
 - $N_2$ gives the population size of species 2
 - $\alpha_{12}$ is the per-capita competitive effect of species 2 on species 1. It is called **the competition coefficient**.
@@ -460,7 +463,7 @@ It is expressed relative to intraspecific competition (i.e. the effect of specie
   - the equation would essentially reduce to the logistic growth curve and you could treat all individuals as one species
 - if $> 1$ the effect of species 2 on species 1 is greater
 - if $< 1$ the effect of species 2 on species 1 is less
-- if $= 0$ there is no effect of species 2 on species 1 and the new term effectively disappears (= 0)
+- if $= 0$ there is no effect of species 2 on species 1 and the new term effectively disappears (= 0)   - i.e. the presence of individuals of species 2 is irrelevant for species 1
 ]
 
 ---
@@ -481,7 +484,9 @@ Similarly, the population growth of species 2 can be modelled as:
 
 $dN_2/dt = r_2 N_2(K_2 – {N_2 + \alpha_{21} N_1})/K_2$
 
-.footnote[These are the Lotka-Volterra competition equations, independently developed by Alfred Lotka and Vito Volterra in the 1920s.]
+<br>
+
+These are **the Lotka-Volterra competition equations**, independently developed by Alfred Lotka and Vito Volterra in the 1920s.
 
 ---
 
@@ -554,7 +559,7 @@ Focusing on species 1, popln growth will drop to zero:
 
 **Secondly**, when $N_1$ is negligible but $N_2$ is so large that species 2 is using up all the resources. This is represented by the blue dot.
 
-- Notice that the size of $N_2$ at this point depends on $\alpha_{12}$. $K_1$ is reached at lower $N_2$ when $\alpha_{12}$ is large (species 2 has a strong competitive effect).
+- Notice that the size of $N_2$ at this point depends on $\alpha_{12}$. Population growth declines to 0 (the ZNGI) at lower $N_2$ when $\alpha_{12}$ is large (species 2 has a strong competitive effect).
 
 ]
 
@@ -579,7 +584,7 @@ Focusing on species 1, popln growth will drop to zero:
 
 **Secondly**, when $N_1$ is negligible but $N_2$ is so large that species 2 is using up all the resources. This is represented by the blue dot.
 
-- Notice that the size of $N_2$ at this point depends on $\alpha_{12}$. $K_1$ is reached at lower $N_2$ when $\alpha_{12}$ is large (species 2 has a strong competitive effect).
+- Notice that the size of $N_2$ at this point depends on $\alpha_{12}$. Population growth declines to 0 (the ZNGI) at lower $N_2$ when $\alpha_{12}$ is large (species 2 has a strong competitive effect).
 
 **Lastly**, there is a series of intermediate combinations of $N_1$ and $N_2$ that also result in complete use of the available resources and halt population growth. These are represented by the dashed line.
 ]
@@ -638,7 +643,7 @@ knitr::include_graphics("images/ZNGI_B1.png")
 
 .left-column[
 
-In (a) and (b) one species is a stronger competitor and competitive exclusion occurs
+In (a) and (b) species 1 and species 2 are stronger competitors respectively and competitive exclusion occurs
 
 (c) both species' interspecific competitive effects > their intraspecific competitive effects
 
