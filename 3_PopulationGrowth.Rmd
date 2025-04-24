@@ -1,5 +1,5 @@
 ---
-title: "4. Population Growth and Density Dependence"
+title: "3. Population Growth and Density Dependence"
 subtitle: ""  
 author: 
   - "Jasper Slingsby, BIO2014F"
@@ -1039,11 +1039,10 @@ Often called Allee effects after ecologist W.C. Allee, who described the phenome
 
 ### Mate or pollination limitation
 
-In some species, individuals need to be close together to find mates. In these cases, the population growth rate is positively correlated with population density. This is a huge problem for species of conservation concern, where populations have become small and isolated.
+In some species, individuals need to be close together to find mates, creating a positive correlation between population growth rate and population density - at least initially. This is a huge problem for species of conservation concern, where populations have been thinned and/or become small and isolated, but now struggle to recover.
 
-It is believed that this may be a factor in the decline of species like the Clanwilliam cedar (_Widdingtonia cedarbergensis_), which is endemic to the Cedarberg mountains of South Africa. The trees are wind-pollinated, but they are also self-incompatible, meaning that they need to cross-pollinate with other trees to produce seeds. This means that if the population density is too low, there may not be enough pollen available to fertilize the ovules.
+This may be a factor in the decline of species like the Clanwilliam cedar (_Widdingtonia cedarbergensis_), which is endemic to the Cederberg mountains of South Africa. The trees are wind-pollinated, and if the population density is too low, there may not be enough pollen available to fertilize the ovules.
 
-Other examples of Allee effects include **cooperative feeding** and **predator satiation**.
 ]
 
 .pull-right[
@@ -1051,6 +1050,119 @@ Other examples of Allee effects include **cooperative feeding** and **predator s
 ```{r echo = F, fig.align = 'center', out.width = '100%'}
 knitr::include_graphics("images/cedar_one_tree.jpeg")
 ```
+
+]
+
+---
+
+### What could cause positive density-dependence (Allee effects)? 
+
+.pull-left[
+
+### Mate or pollination limitation
+
+Another example are abalone (perlemoen), which are marine molluscs that are harvested for food. They are broadcast spawners, meaning that they release their eggs and sperm into the water column, where fertilization occurs. If the population density is too low, there may not be enough sperm available to fertilize the eggs.
+
+Other examples include solitary species struggling to find a mate, or plants that need to be in high enough densities to attract their pollinators or seed dispersers.
+
+.footnote[[**Babcock and Keesing 1999**](https://doi.org/10.1139/f99-106)]
+
+]
+
+.pull-right[
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/perlemoen.jpg")
+```
+
+.footnote[Image: [**Peter Southwood on iNaturalist**](https://www.inaturalist.org/observations/11192940), CC-BY-SA 4.0]
+
+]
+
+---
+
+### What could cause positive density-dependence (Allee effects)? 
+
+.pull-left[
+
+### Cooperative feeding
+
+In some species, cooperation among individuals improves their ability to acquire food. This is common among most social animals where individuals work together to find and capture prey (e.g. insects, lions, wild dogs). 
+
+For example, orca (killer whales) hunt cooperatively, using sophisticated techniques to catch seals. Often, the more individuals there are in the pod, the more successful they are at hunting.
+
+This is a classic example of a positive density-dependence effect, where the population growth rate increases with population density.
+]
+
+.pull-right[
+
+```{r echo = F, fig.align = 'center', out.width = '60%'}
+knitr::include_graphics("images/orca_ice.webp")
+```
+
+```{r echo = F, fig.align = 'center', out.width = '60%'}
+knitr::include_graphics("images/orca_seal.webp")
+```
+
+Images: [**Pitman and Durban 2011**](https://doi.org/10.1111/j.1748-7692.2010.00453.x)
+
+]
+
+---
+
+### What could cause positive density-dependence (Allee effects)? 
+
+.pull-left[
+
+### Predator satiation
+
+Periodical cicadas (genus _Magicicada_) are a classic example of predator satiation, where the adults all emerge synchronously every 13 or 17 years causing the population density to be so high that predators can't eat them all. 
+
+This is also a common strategy among many species of insects, which produce large numbers of offspring at once to overwhelm their predators.
+
+Many plants employ the same strategy, producing large numbers of seeds at once to overwhelm seed predators. This is called masting, and is common among many species of trees, including oaks and pines.
+
+]
+
+.pull-right[
+
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/cicada.jpg")
+```
+
+.footnote[Image: [**jsatler on iNaturalist**](https://www.inaturalist.org/photos/5139584?size=large), CC-BY-NC 4.0]
+
+]
+
+---
+
+class: center, middle
+
+### What about positive _and_ negative density-dependence? 
+
+Most populations are affected by multiple density-dependent factors at the same time, and the relative importance of each factor can change over time. For example, a population may be limited by mate or pollination limitation at low densities, but as the population grows, it may become limited by predation, disease or competition (or a combination thereof).
+
+---
+
+### What about positive _and_ negative density-dependence? 
+
+.pull-left[
+_Fig. 1. Image and text from [**Stephens et al. 1999**](https://doi.org/10.2307/3547011)_
+
+_(a)  As populations grow there will often be reductions in the fitness of individuals, for example from increasing competition  and depletion of resources, resulting in decreased natality and  survival._
+
+_(b) Population growth rate will decline linearly with increasing abundance, as illustrated by the logistic equation,  giving a single, stable equilibrium (k)._
+
+_(c) For many species however, there are benefits associated with the presence of conspecifics. At low numbers or densities, the benefits from the  addition of each successive individual outweigh the costs, such that there is a net gain in individual fitness, and fitness is highest at intermediate numbers or densities._
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/dendity_dependence.png")
+```
+
+_(d) In this case, population growth rate may also be low at low levels of abundance, as shown by the adjusted logistic equation. If growth becomes negative at low numbers, two equilibria will  result: a lower, unstable equilibrium (C) and an upper, stable  equilibrium (U)._
+
 
 ]
 
@@ -1066,7 +1178,7 @@ class: middle
 
 >*Density-dependence creates an endogenous control on populations and has big implications for their size and stability.*
 
->*There are other factors that can cause negative density dependence (predation, disease, etc) and some that can cause positive density dependence (also known as Allee effects).*
+>*There are other factors that can cause negative density dependence (predation, disease, etc) and some that can cause positive density dependence (also known as Allee effects). Often they can act in unison.*
 
 >*One needs estimates of population growth rates to know whether populations can be maintained and define the environmental conditions of the Hutchinsonian niche. This can be done if you can estimate birth, death and dispersal rates.*
 
