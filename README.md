@@ -5,7 +5,7 @@ BIO2014F Principles of Ecology and Evolution module on Niche Theory
 1. [Introduction to Niche Theory](1_IntroNicheTheory)
 2. [Defining the Niche](2_DefiningTheNiche)
 3. [Population Growth and Density Dependence](3_PopulationGrowth)
-4. [Interspecific Competition and Coexistence](5_CompetitionCoexistence)
+4. [Interspecific Competition and Coexistence](4_CompetitionCoexistence)
 5. [Geographic Distributions and Niche modelling](3_GeographicNiche)
 6. [Community Assembly](6_CommunityAssembly)
 7. [Trait-based Ecology](7_TraitEcology)
