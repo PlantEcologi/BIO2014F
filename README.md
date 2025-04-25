@@ -18,3 +18,8 @@ You can access the lectures as PDF files [here](https://github.com/PlantEcologi/
 Stokstad, Erik. 2009. “On the Origin of Ecological Structure.” Science 326 (5949): 33–35. https://doi.org/10.1126/science.326_33.
 
 - Accessible via Amathuba [here](https://amathuba.uct.ac.za/d2l/le/lessons/103848/topics/3050494)
+
+Leibold, Mathew, and Veronica F. Frans. 2025. “Re-Revisiting the Niche Concept,” April. https://ecoevorxiv.org/repository/view/8978/.
+https://doi.org/10.32942/X2XH05
+
+- Accessible via Amathuba [here](https://amathuba.uct.ac.za/d2l/le/lessons/103848/topics/3288604)

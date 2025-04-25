@@ -445,7 +445,7 @@ $dN_1/dt = r_1 N_1(K_1 – {N_1 \mathbf{+ \alpha_{12} N_2}})/K_1$
 
 <br>
 
-This is the logistic curve with numeric subscripts top indicate the species (1 & 2) and a new term, $\mathbf{\alpha_{12} N_2}$, to account for the competitive effect of species 2 on species 1. 
+This is the logistic curve with numeric subscripts to indicate the species (1 & 2) and a new term, $\mathbf{\alpha_{12} N_2}$, to account for the competitive effect of species 2 on species 1. 
 
 - $N_2$ gives the population size of species 2
 - $\alpha_{12}$ is the per-capita competitive effect of species 2 on species 1. It is called **the competition coefficient**.
