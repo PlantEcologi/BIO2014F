@@ -23,3 +23,10 @@ Leibold, Mathew, and Veronica F. Frans. 2025. “Re-Revisiting the Niche Concept
 https://doi.org/10.32942/X2XH05
 
 - Accessible via Amathuba [here](https://amathuba.uct.ac.za/d2l/le/lessons/103848/topics/3288604)
+
+Some concepts you should make sure to know (but there may be more):
+- What are _priority effects_ and how do they relate to species coexistence?
+- What is the difference between _fundamental_ and _realised_ niches?
+- What is the difference between _niche breadth_ and _niche overlap_?
+- What are the _effect_ and _response_ components of the niche according to Contempoary Niche Theory?
+- Understand why ZNGIs can be depicted in the context of niche axes in addition to population numbers as for the Lotka-Volterra competition equations.
