@@ -6,10 +6,11 @@ BIO2014F Principles of Ecology and Evolution module on Niche Theory
 2. [Defining the Niche](2_DefiningTheNiche)
 3. [Population Growth and Density Dependence](3_PopulationGrowth)
 4. [Interspecific Competition and Coexistence](4_CompetitionCoexistence)
-5. [Geographic Distributions and Niche modelling](3_GeographicNiche)
-6. [Community Assembly](6_CommunityAssembly)
-7. [Trait-based Ecology](7_TraitEcology)
-8. [Niches and Evolution](8_NicheEvolution)
+5. [Coexistence and the Niche](5_CoexistenceAndTheNiche)
+6. [Geographic Distributions and Niche modelling](3_GeographicNiche)
+7. [Community Assembly](6_CommunityAssembly)
+8. [Trait-based Ecology](7_TraitEcology)
+9. [Niches and Evolution](8_NicheEvolution)
 
 You can access the lectures as PDF files [here](https://github.com/PlantEcologi/BIO2014F/tree/main/lectures2025).
 
