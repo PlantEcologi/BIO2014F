@@ -7,7 +7,7 @@ BIO2014F Principles of Ecology and Evolution module on Niche Theory
 3. [Population Growth and Density Dependence](3_PopulationGrowth)
 4. [Interspecific Competition and Coexistence](4_CompetitionCoexistence)
 5. [Coexistence and the Niche](5_CoexistenceAndTheNiche)
-6. [Geographic Distributions and Niche modelling](3_GeographicNiche)
+6. [Geographic Distributions and Niche modelling](6_GeographicNiche)
 7. [Community Assembly](6_CommunityAssembly)
 8. [Trait-based Ecology](7_TraitEcology)
 9. [Niches and Evolution](8_NicheEvolution)
@@ -27,6 +27,7 @@ https://doi.org/10.32942/X2XH05)
 - Accessible via Amathuba [here](https://amathuba.uct.ac.za/d2l/le/lessons/103848/topics/3288604)
 
 Some concepts you should make sure to know (but there may be more):
+
 - What are _priority effects_ and how do they relate to species coexistence?
 - What is the difference between _fundamental_ and _realised_ niches?
 - What is the difference between _niche breadth_ and _niche overlap_?

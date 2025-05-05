@@ -1,5 +1,5 @@
 ---
-title: "3. Geographic Distributions and Niche modelling"
+title: "6. Geographic Distributions and Niche Modelling"
 subtitle: ""  
 author: 
   - "Jasper Slingsby, BIO2014F"
@@ -238,8 +238,13 @@ _Models are simplifications of reality, and their predictions always come with s
 Some sources of error in SDMs:
 
 - the type and structure of the model, e.g.
-    - statistical vs mechanistic, continuous (abundance) vs discrete (presence/absence), frequentist vs Bayesian
+    - statistical vs mechanistic
+    - modelling continuous (abundance) vs discrete (presence/absence) only 
+    - frequentist vs Bayesian (wait for BIO3019F for explanation of this...)
+
+    
 --
+
 
 - the choice of variables included in the model 
     - have all of the most important determinants of a species distribution been included?
@@ -251,21 +256,23 @@ Some sources of error in SDMs:
 
 _Models are simplifications of reality, and their predictions always come with some error (i.e. uncertainty)._
 
---
-
 Some sources of error in SDMs **_(continued)_**:
+
+--
 
 - quality of the occurrence and environmental data... - GIGO (garbage in - garbage out)
     - taxonomic accuracy (are you modelling the same thing?)
+        - Have they been misidentified?
+        - Is the taxonomy any good in the first place (i.e. could be separate species, etc)
     - spatial accuracy/resolution
       - e.g. 10 km accuracy of species localities vs 1 km environmental grid cells
+        - in this case you're very likely to extract the wrong environmental data and thus train a poor model
     - biases in the occurrence data 
-      - easy-to-access areas are usually over-represented (e.g. near roads or paths)
+      - easy-to-access areas are usually over-represented (e.g. near roads or paths) and bias the models
     - inaccurate environmental data layers?
+      - e.g. climate data is often interpolated from weather stations, which are not evenly distributed, and may be poor estimates of the actual conditions at a locality
 
 --
-
-<br>
 
 There are ways to account for some of these issues, if you are aware of them.
 
@@ -314,16 +321,6 @@ Species rarely occupy their full potential niche!
 .pull-right[
 .footnote[Figure from [**Brown and Carnaval 2019**](http://dx.doi.org/10.21425/F5FBG44158)]
 ]
-
----
-
-### A simplified summary of how the approaches fit together
-
-```{r echo = F, fig.align = 'center', out.width = '60%'}
-knitr::include_graphics("images/Niches_Escobar and Craft.jpg")
-```
-
-.footnote[[**Escobar and Craft 2016**](https://doi.org/10.3389/fmicb.2016.01174)]
 
 ---
 
@@ -468,12 +465,64 @@ knitr::include_graphics("images/Schurr2012_F1.webp")
 
 ---
 
-How this is done with Protea species?
+### How this is done with _Protea_ species?
 
+```{r proteacynaroides, echo=FALSE, fig.cap = "", fig.width=3, out.width="60%", fig.align='center'}
+knitr::include_graphics("images/cynaroideslive.jpg")
+```
 
 ---
 
-### How does this relate to SDMs?
+### Proteaceae life cycles and demography
+
+<br>
+
+.pull-left[
+
+```{r proteaharvesting, echo=FALSE, fig.width=3, fig.align = 'center', out.width="100%"}
+knitr::include_graphics("images/protealifecycle.jpg")
+```
+
+.footnote[from **Treurnicht et al 2021**]
+
+]
+
+.pull-right[
+The fire-driven life-cycle of Fynbos Proteaceae species. 
+
+Population size/stability are determined by ***key demographic rates***:
+
+- adult **fecundity** (size of the canopy seed bank)
+    - mean number of cones x mean seeds per cone x number of plants
+- post-fire seedling **recruitment**
+- adult **survival** (especially through fire) 
+
+These rates are affected in various ways by environmental conditions, life-history traits, density dependence, the timing, intensity and severity of fire, pathogens, wildflower harvesting, etc. 
+
+]
+
+---
+
+### Intraspecific variation in demographic parameters
+
+.pull-left[
+```{r proteavariation, echo=FALSE, fig.width=3, out.width="100%"}
+knitr::include_graphics("images/proteavariation.jpg")
+```
+
+.footnote[from **Treurnicht et al 2016**]
+]
+
+.pull-right[
+
+Intraspecific variation in (a) fecundity and (b) recruitment in response to range-wide variation in fire return interval (time since fire), adult population density and soil moisture stress (% days with soil moisture stress) for *Protea punctata*.
+
+Together, the covariation between these parameters and environmental variables can be used to determine where the population growth rate ($\lambda$) of *Protea punctata* allows the species to occur.
+
+]
+---
+
+### This approach also allows us to learn about the species' strategies!
 
 Interestingly, positive population growth can be maintained using very different strategies.
 
@@ -482,6 +531,18 @@ knitr::include_graphics("images/protearates.jpg")
 ```
 
 Here seeding vs sprouting serotinous Proteaceae show classic differentiation on the $r$ (invest in recruitment) vs $K$ (invest in survival) life history strategy spectrum [**(Treurnicht et al. 2020)**](http://dx.doi.org/10.1111/geb.13048).
+
+---
+
+### Joint Species Distribution Models (JSDMs)
+
+Joint Species Distribution Models (JSDMs) are a new generation of SDMs that allow us to model the distributions of multiple species simultaneously. They are based on the idea that species distributions are not independent of each other, and that the presence or absence of one species can influence the distribution of another.
+
+These approaches model multiple species at the same time, considering the interactions between species and the environment.
+
+They estimate co-occurrence patterns among species while also accounting for environmental and spatial structure and attempt to decompose variation in species composition into components attributable to abiotic, spatial, and  biotic factors.
+
+This is a promising and cutting-edge avenue for better understanding the realised niche of species, and how they interact with each other (in multispecies communities rather than pairs only) and their environment, but there are persistent issues in trying to disentangle the effects of the environment, space and species interactions.
 
 ---
 
@@ -496,6 +557,8 @@ class: middle
 >*Acknowledging the issues or assumptions of SDMs can actually be very useful for learning about species and testing hypotheses.*
 
 >*Newer SDMs can include a demographic modelling component to estimate population growth rates to know whether populations can be maintained under different environmental conditions, allowing them to map species distributions based on the Hutchinsonion niche.*
+
+>*Joint Species Distribution Models (JSDMs) are a promising and cutting-edge avenue for better understanding the realized niches of multiple species across their range, and how they interact with each other and their environment.* 
 
 >_**Proviso:** There are many ways to build SDMs and it is a rapidly moving field. There are methods to address some of the issues I highlight, but they are less commonly used and since I am covering SDMs in one lecture for this course I'm not going to go there..._
 
