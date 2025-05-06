@@ -238,9 +238,9 @@ _Models are simplifications of reality, and their predictions always come with s
 Some sources of error in SDMs:
 
 - the type and structure of the model, e.g.
-    - statistical vs mechanistic
+    - statistical (e.g. a correlation) vs mechanistic (i.e. based on first principles)
     - modelling continuous (abundance) vs discrete (presence/absence) only 
-    - frequentist vs Bayesian (wait for BIO3019F for explanation of this...)
+    - frequentist vs Bayesian (different statistical approaches - wait for BIO3019F for explanation of this...)
 
     
 --
@@ -442,20 +442,23 @@ knitr::include_graphics("images/treurnicht2020_hutchinson.jpg")
 
 ---
 
-### How does this relate to SDMs?
-
 .pull-left[
 
+### How does this relate to SDMs?
+
 We can build SDMs based on demographic models that estimate population growth across different environmental conditions.
+
+These types of SDMs are often called Demographic Distribution Models (DDMs), and can tell us where species should be able to maintain a viable population!
+
+While they are still typically modelled statistically, by including the underlying biology of the species and its interactions with the environment they are also partly mechanistic.
+]
+
+.pull-right[
 
 ```{r echo = F, fig.align = 'center', out.width = '100%'}
 knitr::include_graphics("images/Schurr2012.png")
 ```
 
-These types of SDMs are often called Demographic Distribution Models (DDMs), and can tell us where species should be able to maintain a viable population!
-]
-
-.pull-right[
 ```{r echo = F, fig.align = 'center', out.width = '100%'}
 knitr::include_graphics("images/Schurr2012_F1.webp")
 ```
@@ -493,7 +496,7 @@ The fire-driven life-cycle of Fynbos Proteaceae species.
 Population size/stability are determined by ***key demographic rates***:
 
 - adult **fecundity** (size of the canopy seed bank)
-    - mean number of cones x mean seeds per cone x number of plants
+    - mean number of cones $*$ mean seeds per cone $*$ number of plants
 - post-fire seedling **recruitment**
 - adult **survival** (especially through fire) 
 
@@ -517,8 +520,9 @@ knitr::include_graphics("images/proteavariation.jpg")
 
 Intraspecific variation in (a) fecundity and (b) recruitment in response to range-wide variation in fire return interval (time since fire), adult population density and soil moisture stress (% days with soil moisture stress) for *Protea punctata*.
 
-Together, the covariation between these parameters and environmental variables can be used to determine where the population growth rate ($\lambda$) of *Protea punctata* allows the species to occur.
+Together $^*$ , the covariation between these parameters and environmental variables can be used to determine where the population growth rate ($\lambda$) of *Protea punctata* allows the species to occur.
 
+$^*$ Note that this species is killed by fire, so there is no adult survival to consider.
 ]
 ---
 

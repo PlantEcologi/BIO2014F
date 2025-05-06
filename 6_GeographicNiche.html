@@ -4,7 +4,7 @@
     <title>6. Geographic Distributions and Niche Modelling</title>
     <meta charset="utf-8" />
     <meta name="author" content="Jasper Slingsby, BIO2014F" />
-    <meta name="date" content="2025-05-05" />
+    <meta name="date" content="2025-05-06" />
     <script src="6_GeographicNiche_files/header-attrs/header-attrs.js"></script>
     <link rel="stylesheet" href="xaringan-themer.css" type="text/css" />
     <link rel="stylesheet" href="custom styles.css" type="text/css" />
@@ -20,7 +20,7 @@ class: center, middle, inverse, title-slide
 ### Jasper Slingsby, BIO2014F
 ]
 .date[
-### 2025-05-05
+### 2025-05-06
 ]
 
 ---
@@ -188,9 +188,9 @@ _Models are simplifications of reality, and their predictions always come with s
 Some sources of error in SDMs:
 
 - the type and structure of the model, e.g.
-    - statistical vs mechanistic
+    - statistical (e.g. a correlation) vs mechanistic (i.e. based on first principles)
     - modelling continuous (abundance) vs discrete (presence/absence) only 
-    - frequentist vs Bayesian (wait for BIO3019F for explanation of this...)
+    - frequentist vs Bayesian (different statistical approaches - wait for BIO3019F for explanation of this...)
 
     
 --
@@ -382,18 +382,21 @@ We can estimate population growth rate ( `\(r\)` ) from demographic parameters t
 
 ---
 
-### How does this relate to SDMs?
-
 .pull-left[
+
+### How does this relate to SDMs?
 
 We can build SDMs based on demographic models that estimate population growth across different environmental conditions.
 
-&lt;img src="images/Schurr2012.png" width="100%" style="display: block; margin: auto;" /&gt;
-
 These types of SDMs are often called Demographic Distribution Models (DDMs), and can tell us where species should be able to maintain a viable population!
+
+While they are still typically modelled statistically, by including the underlying biology of the species and its interactions with the environment they are also partly mechanistic.
 ]
 
 .pull-right[
+
+&lt;img src="images/Schurr2012.png" width="100%" style="display: block; margin: auto;" /&gt;
+
 &lt;img src="images/Schurr2012_F1.webp" width="100%" style="display: block; margin: auto;" /&gt;
 
 .footnote[[**Schurr et al. 2012**](http://dx.doi.org/10.1111/j.1365-2699.2012.02737.x)]
@@ -425,7 +428,7 @@ The fire-driven life-cycle of Fynbos Proteaceae species.
 Population size/stability are determined by ***key demographic rates***:
 
 - adult **fecundity** (size of the canopy seed bank)
-    - mean number of cones x mean seeds per cone x number of plants
+    - mean number of cones `\(*\)` mean seeds per cone `\(*\)` number of plants
 - post-fire seedling **recruitment**
 - adult **survival** (especially through fire) 
 
@@ -447,8 +450,9 @@ These rates are affected in various ways by environmental conditions, life-histo
 
 Intraspecific variation in (a) fecundity and (b) recruitment in response to range-wide variation in fire return interval (time since fire), adult population density and soil moisture stress (% days with soil moisture stress) for *Protea punctata*.
 
-Together, the covariation between these parameters and environmental variables can be used to determine where the population growth rate (`\(\lambda\)`) of *Protea punctata* allows the species to occur.
+Together `\(^*\)` , the covariation between these parameters and environmental variables can be used to determine where the population growth rate (`\(\lambda\)`) of *Protea punctata* allows the species to occur.
 
+`\(^*\)` Note that this species is killed by fire, so there is no adult survival to consider.
 ]
 ---
 
