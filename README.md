@@ -9,7 +9,7 @@ BIO2014F Principles of Ecology and Evolution module on Niche Theory
 5. [Coexistence and the Niche](5_CoexistenceAndTheNiche)
 6. [Geographic Distributions and Niche modelling](6_GeographicNiche)
 7. [Community Assembly](7_CommunityAssembly)
-8. [Trait-based Ecology](7_TraitEcology)
+8. [Trait-based Ecology](8_TraitEcology)
 9. [Niches and Evolution](8_NicheEvolution)
 
 You can access the lectures as PDF files [here](https://github.com/PlantEcologi/BIO2014F/tree/main/lectures2025).
