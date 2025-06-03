@@ -441,7 +441,7 @@ Assuming we have two species, 1 and 2. The population growth of species 1 can be
 
 <br>
 
-$dN_1/dt = r_1 N_1(K_1 – {N_1 \mathbf{+ \alpha_{12} N_2}})/K_1$
+$dN_1/dt = r_1 N_1(K_1 – {N_1 \mathbf{- \alpha_{12} N_2}})/K_1$
 
 <br>
 
@@ -474,7 +474,7 @@ The population growth of species 1 can be modelled as:
 
 <br>
 
-$dN_1/dt = r_1 N_1(K_1 – {N_1 + \alpha_{12} N_2})/K_1$
+$dN_1/dt = r_1 N_1(K_1 – {N_1 - \alpha_{12} N_2})/K_1$
 
 <br>
 
@@ -482,7 +482,7 @@ Similarly, the population growth of species 2 can be modelled as:
 
 <br>
 
-$dN_2/dt = r_2 N_2(K_2 – {N_2 + \alpha_{21} N_1})/K_2$
+$dN_2/dt = r_2 N_2(K_2 – {N_2 - \alpha_{21} N_1})/K_2$
 
 <br>
 
@@ -608,7 +608,7 @@ Or mathematically if you prefer?
 
 For population growth of species 1 to drop to zero:
 
-$dN_1/dt = r_1 N_1(K_1 – {N_1 + \alpha_{12} N_2})/K_1 = 0$
+$dN_1/dt = r_1 N_1(K_1 – {N_1 - \alpha_{12} N_2})/K_1 = 0$
 
 This can occur when:
 
