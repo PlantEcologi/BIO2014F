@@ -1,7 +1,7 @@
 # BIO2014F
 BIO2014F Principles of Ecology and Evolution module on Niche Theory
 
-### Lectures (22 April - 8 May 2025):
+### Lectures (23 April - 7 May 2025):
 1. [Introduction to Niche Theory](1_IntroNicheTheory)
 2. [Defining the Niche](2_DefiningTheNiche)
 3. [Population Growth and Density Dependence](3_PopulationGrowth)
