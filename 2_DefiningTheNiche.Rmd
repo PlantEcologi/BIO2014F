@@ -183,11 +183,11 @@ What's the difference between Grinnell's niche concept and "habitat"?
 
 > _"The physical space where an [organism] lives, which contains its environment, is its habitat"_ - [Hickman et al. 2008](https://www.mheducation.com/highered/product/integrated-principles-zoology-hickman-jr-larson/M9781264091218.html)
 
-> _"[Grinnell's] niche is the sum of the habitat requirements and behaviors that allow a species to persist and produce offspring."_ - Wikipedia
+> _"[Grinnell's] niche is the sum of the habitat requirements and behaviors that allow a species to **persist and produce offspring**."_ - Wikipedia
 
-The thrasher's "niche" is defined by the matching of its traits (camouflage, wings or leg size/shape, behaviour, etc) with its habitat - allowing it to complete its lifecycle there.
+The thrasher's "niche" is defined by the matching of its traits (camouflage, wings or leg size/shape, behaviour, etc) with its habitat - allowing it to **complete its lifecycle** there.
 
-"Vagrant" birds are typically outside their niche - they are not able to reproduce there.
+e.g. "Vagrant" birds are typically outside their niche - they are not able to reproduce there.
 
 ]
 
@@ -288,7 +288,7 @@ There certainly are gray areas of overlap...
 
 It is often difficult to separate variables into "resources" vs "environmental conditions" or biotic vs abiotic, e.g. fire, soil fertility, light availability 
 
-E.g. Light availability can be an abiotic environmental condition (incoming solar radiation) or a biotically alterable limiting resource (light competition among plants))...
+E.g. Light availability can be an abiotic environmental condition (e.g. incoming solar radiation, varying by aspect) or a biotically alterable limiting resource (e.g. light competition among plants)...
 
 It is often a matter of spatial or temporal scale. E.g. there is good evidence for biotic effects on the formation of geological strata!
 ]

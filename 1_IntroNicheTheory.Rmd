@@ -346,7 +346,7 @@ class: middle
 
 >*While the niche concept has implications for other levels of the ecological hierarchy (populations, communities, ecosystems, biomes), it is only formally defined at the level of species.*
 
->*That said, we often apply the concept somewhat flexibly to other levels of the hierarchy, and in particular to the distribution of species and biomes across the globe.*
+>*That said, we often apply the concept somewhat flexibly to other levels of the hierarchy, and in particular to the distribution of species and ecosystems or biomes across the globe.*
 
 ---
 class: center, middle
