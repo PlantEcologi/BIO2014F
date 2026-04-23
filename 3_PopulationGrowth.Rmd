@@ -610,7 +610,7 @@ Any thoughts on the equation to fit this curve?
 
 $dN/dt = rN (K – N)/K$
 
-A logistic function, or what we call the logistic growth curve.
+A logistic function, or what we call the **logistic growth curve**.
 ]
 
 .pull-right[
@@ -709,11 +709,20 @@ data.frame(N = c(2,4,8,16,24,28,30,30,30),
 
 ---
 
-```{r echo = F, fig.align = 'center', out.width = '65%'}
-knitr::include_graphics("images/terry_rvsK.png")
-```
+### Remember r vs K-selected species?
 
-.footnote[Terry Hedderson's lecture on life history models]
+.pull-left[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/celiwe_rk1.png")
+```
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '100%'}
+knitr::include_graphics("images/celiwe_rk2.png")
+```
+]
+.footnote[from Celiwe's lecture on life history models]
 
 ---
 
@@ -728,9 +737,7 @@ $dN/dt = rN (K – N)/K$
 
 $K$ = carrying capacity
 
-**Note:** _Where $N$ is small, the logistic growth curve approximates the exponential growth curve $(rN)$, because $(K – N)/K$ is close to 1._
-
-_It begins to deviate as $N$ increases._
+**Note:** _Where $N$ is small, the logistic growth curve approximates the exponential growth curve $(rN)$, because the term $(K – N)/K$ is close to 1. It begins to deviate as $N$ increases and the term tends to zero._
 ]
 
 .pull-right[
@@ -856,7 +863,7 @@ While some of this may be exogenous, driven by external forces like climate fluc
 
 <br>
 
-Empirical datasets showed evidence for a negative impact of density-dependence on:
+Empirical datasets showed evidence for a negative impact of density on:
 
 - recruitment (Figure 1)
 - fecundity (Figure 4)
@@ -947,7 +954,7 @@ knitr::include_graphics("images/Bond1995_F5.png")
 
 class: center, middle
 
-### What other factors could cause density-dependence? 
+### What factors other than competition could cause density-dependence? 
 
 ---
 
@@ -985,14 +992,14 @@ As the prey population density increases, so does the predator population. Event
 
 There are many variations and elaborations of this theme that account for prey vigilance, predator aggression (e.g. territoriality), etc...
 
-The same principle applies to **herbivory**, where the herbivore population increases with the plant population, but the plant population is reduced by the herbivores.
-
 ]
 
 .pull-right[
 ```{r echo = F, fig.align = 'center', out.width = '100%'}
 knitr::include_graphics("images/Predator_prey_curve.png")
 ```
+
+The same principle applies to **herbivory**, where the herbivore population increases with the plant population, but the plant population is reduced by the herbivores.
 
 .footnote[Image: Hczarn on [**Wikimedia Commons**](https://commons.wikimedia.org/wiki/File:Predator_prey_curve.png), CC-BY-SA 4.0]
 ]
