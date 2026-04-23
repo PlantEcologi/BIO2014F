@@ -20,9 +20,7 @@ Stokstad, Erik. 2009. “On the Origin of Ecological Structure.” Science 326 (
 
 - Accessible via Amathuba [here](https://amathuba.uct.ac.za/d2l/le/lessons/103848/topics/3050494)
 
-Leibold, Mathew, and Veronica F. Frans. 2025. “Re-Revisiting the Niche Concept,” April. [https://ecoevorxiv.org/repository/view/8978/.
-https://doi.org/10.32942/X2XH05](https://ecoevorxiv.org/repository/view/8978/.
-https://doi.org/10.32942/X2XH05)
+Leibold, Mathew, and Veronica F. Frans. 2025. “Re-Revisiting the Niche Concept,” April. [https://doi.org/10.32942/X2XH05](https://doi.org/10.32942/X2XH05)
 
 - Accessible via Amathuba [here](https://amathuba.uct.ac.za/d2l/le/lessons/103848/topics/3288604)
 
