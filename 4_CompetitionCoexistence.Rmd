@@ -315,7 +315,7 @@ Where secondary dispersal resulted in haplotypes co-occurring, they showed morph
 
 ### Competitive Exclusion
 
-The **competitive exclusion principle** is often attributed to Gause, and sometimes called Gause's law, but there were earlier observations by Grinnell, Darwin and others, e.g.
+The **competitive exclusion principle** is often attributed to Gause, and sometimes called Gause's law, but there were earlier observations by Darwin, Grinnell and others, e.g.
 
 >_Two species of approximately the same food habits are not likely to remain long evenly balanced in numbers in the same region. One will crowd out the other._ - [**Grinnell 1904**](https://doi.org/10.2307/4070199)
 
@@ -460,10 +460,10 @@ This is the logistic curve with numeric subscripts to indicate the species (1 & 
 It is expressed relative to intraspecific competition (i.e. the effect of species 1 on species 1), so:
 
 - if $= 1$ then the effect of species 2 on species 1 is the same as the effect of species 1 on species 1
-  - the equation would essentially reduce to the logistic growth curve and you could treat all individuals as one species
-- if $> 1$ the effect of species 2 on species 1 is greater
-- if $< 1$ the effect of species 2 on species 1 is less
-- if $= 0$ there is no effect of species 2 on species 1 and the new term effectively disappears (= 0)   - i.e. the presence of individuals of species 2 is irrelevant for species 1
+  - _the equation would essentially reduce to the logistic growth curve and you could treat all individuals as one species_
+- if $> 1$ species 2 has a greater effect on species 1
+- if $< 1$ species 2 has a smaller effect on species 1
+- if $= 0$ there is no effect of species 2 on species 1   - _i.e. the presence of individuals of species 2 is irrelevant for species 1 and the new term effectively disappears (= 0) and the equation would essentially reduce to the logistic growth curve for species 1_
 ]
 
 ---
@@ -559,7 +559,7 @@ Focusing on species 1, popln growth will drop to zero:
 
 **Secondly**, when $N_1$ is negligible but $N_2$ is so large that species 2 is using up all the resources. This is represented by the blue dot.
 
-- Notice that the size of $N_2$ at this point depends on $\alpha_{12}$. Population growth declines to 0 (the ZNGI) at lower $N_2$ when $\alpha_{12}$ is large (species 2 has a strong competitive effect).
+- Notice that the size of $N_2$ at this point depends on $\alpha_{12}$. Population growth declines to 0 (the ZNGI) at lower $N_2$ when $\alpha_{12}$ is large (species 2 has a stronger competitive effect).
 
 ]
 

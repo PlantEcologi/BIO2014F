@@ -302,15 +302,7 @@ knitr::include_graphics("images/Mayfield_Levine_2010_F2.png")
 
 .pull-right[
 
-Chesson proposed a new framework for understanding coexistence, which distinguished between two types of mechanisms:
-
-_Stabilizing_ mechanisms, which promote coexistence by allowing rare species to recover from low population sizes. These are essentially _niche differences_ as discussed above an the the previous lecture.
-
-_Equalizing_ mechanisms, which reduce the differences in population growth rates between species (i.e. _fitness differences_). The argument is that these mechanisms are not necessarily niche differences, but rather _differences in the competitive ability_ of species.
-
-Larger competitive ability differences favor competitive exclusion, while larger niche differences promote coexistence.
-
-_"equalizing mechanisms can, at best, slow competitive exclusion; but in the presence of stabilizing mechanisms, [they] may enable coexistence"_ - [**Chesson 2000**](https://doi.org/10.1146/annurev.ecolsys.31.1.343)
+[**Chesson 2000**](https://doi.org/10.1146/annurev.ecolsys.31.1.343) proposed a new framework for understanding coexistence, based on **niche differences** and **fitness differences** (differences in competitive ability). Larger competitive ability differences favor competitive exclusion, while larger niche differences promote coexistence.
 
 ]
 
@@ -319,17 +311,51 @@ _"equalizing mechanisms can, at best, slow competitive exclusion; but in the pre
 
 ---
 
-### Examples of stabilizing mechanisms
+.pull-left[
 
+### Modern Coexistence Theory
+
+```{r echo = F, fig.align = 'center', out.width = '70%'}
+knitr::include_graphics("images/Mayfield_Levine_2010_F2.png")
+```
+
+]
+
+.pull-right[
+
+[**Chesson 2000**](https://doi.org/10.1146/annurev.ecolsys.31.1.343) proposed a new framework for understanding coexistence, based on **niche differences** and **fitness differences** (differences in competitive ability). Larger competitive ability differences favor competitive exclusion, while larger niche differences promote coexistence.
+
+He distinguished between two types of mechanisms that promote coexistence by affecting each of these factors:
+
+_Stabilizing_ mechanisms, which promote coexistence by allowing rare species to recover from low population sizes. These are essentially _niche differences_ as discussed above an the the previous lecture.
+
+_Equalizing_ mechanisms, which reduce the differences in population growth rates between species (i.e. _fitness differences_). The argument is that these mechanisms are not niche differences, but rather _differences in the competitive ability_ of species.
+
+]
+
+.footnote[Image from [**Mayfield and Levine 2010**](https://doi.org/10.1111/j.1461-0248.2010.01509.x)]
+
+---
+
+### Stabilizing mechanisms
+
+
+- Stabilizing mechanisms **increase niche differentiation**, making intraspecific competition stronger than interspecific competition. 
 - Niche differences (e.g. resource partitioning, temporal partitioning, etc.). The stuff we've already talked about.
 
 ---
 
-### Examples of equalizing mechanisms
+### Equalizing mechanisms
 
-- Generalist predation or herbivory, fire, etc or other large disturbances or unpredictable environmental fluctuations that affect all species equally (i.e. no species should be better adapted to coping with the disturbance).
+- Equalizing mechanisms **reduce fitness differences** among species, making the effect of competitive differences less important.
+    
+    - They minimize the competitive advantage of dominant species.
 
-- These effects reduce the impact of fitness differences, effectively making all species equal competitors and facilitating coexistence even where niche differences are small/.
+- Factors include predation or herbivory, fire, or other large disturbances or unpredictable environmental fluctuations that affect all species equally (i.e. no species should be better adapted to coping with the disturbance).
+
+- These effects reduce the impact of fitness differences, effectively making all species equal competitors and facilitating coexistence even where niche differences (stabilizing mechanisms) are small.
+
+> _"equalizing mechanisms can, at best, slow competitive exclusion; but in the presence of stabilizing mechanisms, [they] may enable coexistence"_ - [**Chesson 2000**](https://doi.org/10.1146/annurev.ecolsys.31.1.343)
 
 ---
 
