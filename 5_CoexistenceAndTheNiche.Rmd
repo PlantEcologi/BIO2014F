@@ -230,7 +230,7 @@ knitr::include_graphics("images/Leibold_Frans_2025_F3c.png")
 ]
 
 .pull-right[
-Niche theory accounted for species **_response_** to the environment (_~ the fundamental niche_) and interactions with other species (_~the realised niche_), but did not consider how species resource use and other influences alter their environment (i.e. species **_effects_**).
+Niche theory accounted for species **_response_** to the environment (_~ the fundamental niche_) and interactions with other species (_~the realised niche_), but did not consider how species' resource use and other influences alter their environment (i.e. species **_effects_**).
 
 Here the steady state of the environmental resource is the red dot (i.e. state when not altered by the species present). The green arrows indicate the direction of the environmental response to the effect of the species.
 
@@ -378,7 +378,7 @@ Coexistence is facilitated when species are different in niches (stabilizing eff
 
 Where the difference in fitness is minimal (fitness ratio ~ 1), the stabilizing effect of niche differences is maximized, allowing for coexistence even with very small niche differences.
 
-Where niche overlap is large (stabilizing effect <0), but fitness differences are small (fitness ratio ~ 1), then _priority effects_ dominate and the species that has the larger population will most likely outcompete the other.
+Where niche overlap is large (stabilizing effect <0), but fitness differences are small (fitness ratio ~ 1), then _priority effects_ dominate and the species that has the larger population (or gets there first) will most likely outcompete the other.
 
 .footnote[[**Chesson 2000**](https://doi.org/10.1146/annurev.ecolsys.31.1.343), **Ke and Letton 2018**]
 
