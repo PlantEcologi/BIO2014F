@@ -446,7 +446,7 @@ knitr::include_graphics("images/treurnicht2020_hutchinson.jpg")
 
 ### How does this relate to SDMs?
 
-We can build SDMs based on demographic models that estimate population growth across different environmental conditions.
+We can build SDMs based on models that estimate population growth across different environmental conditions based on their **demographic parameters** (typically related to _birth, death and dispersal_ rates).
 
 These types of SDMs are often called Demographic Distribution Models (DDMs), and can tell us where species should be able to maintain a viable population!
 
@@ -493,7 +493,7 @@ knitr::include_graphics("images/protealifecycle.jpg")
 .pull-right[
 The fire-driven life-cycle of Fynbos Proteaceae species. 
 
-Population size/stability are determined by ***key demographic rates***:
+Population size/stability are determined by ***key demographic rates*** representing birth and death:
 
 - adult **fecundity** (size of the canopy seed bank)
     - mean number of cones $*$ mean seeds per cone $*$ number of plants
@@ -520,9 +520,10 @@ knitr::include_graphics("images/proteavariation.jpg")
 
 Intraspecific variation in (a) fecundity and (b) recruitment in response to range-wide variation in fire return interval (time since fire), adult population density and soil moisture stress (% days with soil moisture stress) for *Protea punctata*.
 
-Together $^*$ , the covariation between these parameters and environmental variables can be used to determine where the population growth rate ($\lambda$) of *Protea punctata* allows the species to occur.
+Together $^1$ , the covariation between these parameters and environmental variables can be used to determine where the population growth rate ($r$) of *Protea punctata* allows the species to occur.
 
-$^*$ Note that this species is killed by fire, so there is no adult survival to consider.
+.footnote[
+$^1$ Note that this species is killed by fire, so there is no adult survival to consider. Similarly, dispersal rates are so low/slow at the spatial scale of the model that they can be ignored.]
 ]
 ---
 
@@ -554,7 +555,7 @@ class: middle
 
 ## Take-home
 
->*One of the most common applications of the concept of the niche is Species Distribution Modelling (also known as Ecological Niche Modelling).*
+>*One of the most common applications of the concept of the niche is Species Distribution Modelling (also known as Ecological Niche Modelling), which typically invoke the Grinnellian niche and Hutchinson's n-dimensional hypervolume concept.*
 
 >*While SDMs can be very useful, they have many issues and assumptions that need to be taken into account.*
 
