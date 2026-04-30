@@ -92,9 +92,9 @@ knitr::include_graphics("images/grinnell_1917_map.png")
 
 <br>
 
-G Evelyn Hutchinson proposed that _the niche is an n-dimensional hypervolume within which a species is able to maintain a viable population_ - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
+G Evelyn Hutchinson proposed that _the niche is an n-dimensional hypervolume..._ - [**Hutchinson 1957**](https://doi.org/10.1101%2Fsqb.1957.022.01.039)
 
-This both aids our ability to think about the niche, but also allows us to explicitly **quantify the niche and niche space**.
+This both aids our ability to think about the niche, but also allows us to **explicitly quantify the niche and niche space**.
 
 ]
 
@@ -117,7 +117,7 @@ Utilise concepts proposed by Grinnell and Hutchinson to predict the geographic d
 
 SDMs propose that a species' distribution can be predicted based on the environmental conditions at localities where they have been observed.
 
-The "prediction" is usually based on a statistical model that uses the known localities to estimate the probability of a species occurring across the given environmental space.
+The "prediction" is usually based on a statistical model that uses the known localities to estimate the probability of a species occurring across the given (n-dimensional) environmental space.
 ]
 
 .pull-right[
@@ -125,7 +125,7 @@ The "prediction" is usually based on a statistical model that uses the known loc
 knitr::include_graphics("images/simpleSDM.png")
 ```
 
-.footnote[Figure by [**Ragnvald**](https://commons.wikimedia.org/wiki/File:Predicting_habitats.png)]
+.footnote[Conceptual figure by [**Ragnvald**](https://commons.wikimedia.org/wiki/File:Predicting_habitats.png)]
 ]
 ---
 
@@ -171,7 +171,7 @@ knitr::include_graphics("images/SDM_Leuc.jpg")
 
 ### What are SDMs used for?
 
-Projected species distributions are used in many ways, including in conservation. Our National Screening Tool for environmental impact authorizations for developments includes modelled distributions of animals. Sites where sensitive species occur are required to do more thorough site inspection studies.
+Projected species distributions are used in many ways, including in conservation. Our National Screening Tool for environmental impact authorizations for developments includes modelled distributions of animals. Sites where sensitive species are predicted to occur are required to do more thorough site inspection studies.
 
 ```{r echo = F, fig.align = 'center', out.width = '100%'}
 knitr::include_graphics("images/GoldenMole.jpeg")
@@ -396,7 +396,7 @@ class: center, middle
 
 ---
 
-### The Hutchinsonian Niche
+### 4. The Hutchinsonian Niche
 
 .pull-left[
 
@@ -416,7 +416,7 @@ knitr::include_graphics("images/treurnicht2020_hutchinson.jpg")
 
 ---
 
-### The Hutchinsonian Niche
+### 4. The Hutchinsonian Niche
 
 .pull-left[
 
@@ -536,6 +536,33 @@ knitr::include_graphics("images/protearates.jpg")
 ```
 
 Here seeding vs sprouting serotinous Proteaceae show classic differentiation on the $r$ (invest in recruitment) vs $K$ (invest in survival) life history strategy spectrum [**(Treurnicht et al. 2020)**](http://dx.doi.org/10.1111/geb.13048).
+
+---
+
+.pull-left[
+
+### 5. Biotic interactions?
+
+#### e.g. The Eltonian Niche
+
+> _"what [it] is doing in its community,... its place in the **biotic** environment, its relations to food and enemies"_ - [**Elton 1927**](https://press.uchicago.edu/ucp/books/book/chicago/A/bo25281897.html)
+
+Focuses on the organism's role or **function** in the ecosystem, often in relation to trophic position (consumers, predators, etc) other interactions like competition, mutualisms and **resource use**.
+
+These are tricky things to try to include! You'd need to know the occurrence or abundance of all other species' your focal species interacts with across its range! 
+
+...and how those interactions change across environmental gradients! 
+...and how they affect the species' demographic parameters across its range!
+
+]
+
+.pull-right[
+```{r echo = F, fig.align = 'center', out.width = '90%'}
+knitr::include_graphics("images/elton_interactions.jpg")
+```
+
+.footnote[image: _The Atlas of World Wildlife_ 1973]
+]
 
 ---
 
