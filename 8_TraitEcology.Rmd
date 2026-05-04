@@ -537,7 +537,7 @@ class: center, middle
 
 ## But how do we know which are the right traits?
 
-...for prediocting the fundamental niche and/or competitive ability?
+...for predicting the fundamental niche and/or competitive ability?
 
 ---
 
