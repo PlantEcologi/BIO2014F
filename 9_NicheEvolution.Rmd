@@ -152,7 +152,7 @@ knitr::include_graphics("images/crocodile.jpg")
 ```
 ]
 
-.footnote[[**Alligator: joemdo**](https://www.inaturalist.org/observations/19501898); [**Crocodile: Wayne and Pam Osborn**](https://www.inaturalist.org/photos/254500796)]
+.footnote[[**Crocodile: Wayne and Pam Osborn**](https://www.inaturalist.org/photos/254500796); [**Alligator: joemdo**](https://www.inaturalist.org/observations/19501898)]
 
 ---
 
@@ -212,6 +212,8 @@ class: center, middle
 <br>
 
 > _"As the species of the same genus usually have, though by no means invariably, much similarity in habits and constitution, and always in structure, the struggle will generally be more severe between them, if they come into competition with each other, than between the species of distinct genera."_ - [**Darwin 1859**](https://books.apple.com/za/book/on-the-origin-of-species/id395536758)
+
+--
 
 <br>
 
@@ -464,7 +466,7 @@ A similar pattern to Slingsby and Verboom 2006!
 
 This pattern was driven by convergent evolution of niches!
 
-To discern between processes, you have to test for phylogenetic signal.
+*_To discern between habitat filtering vs competition driving phylogenetic overdispersion, you have to test for phylogenetic signal!_*
 ]
 
 .pull-right[
